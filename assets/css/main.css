@@ -2019,7 +2019,7 @@ input, select, textarea {
 		.button.special {
 			background: #ffffff;
 			box-shadow: none;
-			color: rgb(84, 165, 166) !important;
+			color: rgb(12, 87, 116) !important;
 		}
 
 			input[type="submit"].special:hover,
@@ -2035,7 +2035,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: rgb(84, 165, 166);
+			background-color: rgb(12, 87, 116);
 			box-shadow: none;
 			color: #ffffff !important;
 		}
@@ -3432,13 +3432,13 @@ input, select, textarea {
 					box-shadow: none;
 					color: #ffffff !important;
 				}
-
+/* button hover */
 					.wrapper.style1 input[type="submit"].primary:hover,
 					.wrapper.style1 input[type="reset"].primary:hover,
 					.wrapper.style1 input[type="button"].primary:hover,
 					.wrapper.style1 button.primary:hover,
 					.wrapper.style1 .button.primary:hover {
-						background-color: rgba(226, 117, 99, 0.875);
+						background-color: rgb(28, 154, 204);
 						box-shadow: none;
 					}
 
@@ -3683,16 +3683,32 @@ input, select, textarea {
 } */
 
 #two {
-	background-image: url("/assets/images/woodlicensed.jpg");
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgb(0, 0, 0, .1)), url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg");
+	
 	/* background-attachment: fixed; */
-	background-blend-mode: luminosity;
-	background-repeat: no-repeat;
-	background-size: cover;
+	/* background-blend-mode: luminosity; */
+	/* background-repeat: no-repeat;
+	background-size: contain; */
+	background-position: 50%;
+	background-repeat: repeat, no-repeat, repeat;
+	margin-top: 0;
 }
 
-#three {
-	/* background-color: #1e2022; */
+#two88 {
+	background-image: linear-gradient(to right bottom, rgba(253, 252, 252, 0.1), rgba(253, 253, 253, 1)), url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg");
+	
+	/* background-attachment: fixed; */
+	/* background-blend-mode: luminosity; */
+	/* background-repeat: no-repeat;
+	background-size: contain; */
+	background-position: 50%;
+	background-repeat: repeat, no-repeat, repeat;
+	margin-top: 0;
 }
+
+/* #two2{
+	background-image: linear-gradient(to bottom, rgb(141, 140, 140), white);
+} */
 
 #five {
 	background-image: url("/assets/images/stairslicensed.jpg");
@@ -3700,7 +3716,7 @@ input, select, textarea {
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: 100% 0%;
-	height: 60vh;
+	height: 55vh;
 }
 
 @media screen and (max-width: 900px) {
@@ -4623,7 +4639,7 @@ input, select, textarea {
 			#footer .button.special {
 				background: #ffffff;
 				box-shadow: none;
-				color: rgb(84, 165, 166) !important;
+				color: rgb(12, 87, 116) !important;
 			}
 
 				#footer input[type="submit"].special:hover,
@@ -4639,7 +4655,7 @@ input, select, textarea {
 			#footer input[type="button"].primary,
 			#footer button.primary,
 			#footer .button.primary {
-				background-color: rgb(84, 165, 166);
+				background-color: rgb(12, 87, 116);
 				box-shadow: none;
 				color: #ffffff !important;
 			}
