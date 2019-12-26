@@ -3675,6 +3675,43 @@ input, select, textarea {
 	text-align: center;
 }
 
+/* #three, #four {
+	background-image: url("/assets/images/woodlicensedgrey.jpeg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+} */
+
+#two {
+	background-image: url("/assets/images/woodlicensed.jpg");
+	/* background-attachment: fixed; */
+	background-blend-mode: luminosity;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#three {
+	/* background-color: #1e2022; */
+}
+
+#five {
+	background-image: url("/assets/images/stairslicensed.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 100% 0%;
+	height: 60vh;
+}
+
+@media screen and (max-width: 900px) {
+	#five {
+		background-attachment: scroll;
+		background-position: 100% 5%;
+		height: 40vh;
+		background-size: cover;
+	}
+}
+
 
 
 /* Header */
@@ -4994,5 +5031,17 @@ input, select, textarea {
 			z-index: 0;
 			width: 100%;
 			height: 50vh;
+		}
+
+		#herologo {
+			z-index: 1000;
+			position: relative;
+			width: 40vw;
+			height: 10vh;
+			margin: auto;
+			bottom: 15%;
+			object-fit: contain;
+
+	
 		}
 
