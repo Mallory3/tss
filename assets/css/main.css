@@ -82,13 +82,13 @@ input, select, textarea {
 		-ms-overflow-style: scrollbar;
 	}
 
-	@media screen and (max-width: 480px) {
+	/* @media screen and (max-width: 480px) {
 
 		html, body {
 			min-width: 320px;
 		}
 
-	}
+	} */
 
 	html {
 		box-sizing: border-box;
@@ -2940,7 +2940,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 860px) {
 
 			.posts-grid > * {
 				width: 100%;
@@ -3230,7 +3230,7 @@ input, select, textarea {
 
 	.servicing h3 {
 		font-size: 1.2rem;
-		color: rgb(12, 87, 116);
+		color: #363b41;
 		
 	}
 
@@ -3259,35 +3259,35 @@ input, select, textarea {
 		.servicing .triangle .icon {
 			font-size: 3rem;
 			margin-top: 1.75rem;
-			color: rgb(12, 87, 116);
+			color: #363b41;
 		}
 
 	@media screen and (max-width: 1280px) {
 
-		.features {
-			margin-bottom: 4.125rem;
+		.servicing {
+			margin-bottom: 3rem;
 		}
 
-			.features p {
+			.servicing p {
 				font-size: 1rem;
 			}
 
-			.features .triangle {
+			.servicing .triangle {
 				background-size: 8rem;
-				height: 6rem;
-				width: 8rem;
+				height: 4rem;
+				width: 6rem;
 			}
 
-				.features .triangle .icon {
+				.servicing .triangle .icon {
 					font-size: 2.5rem;
 					margin-top: 1.75rem;
 				}
 
 	}
 
-	@media screen and (max-width: 980px) {
+	@media screen and (max-width: 650px) {
 
-		.features {
+		.servicing {
 			-moz-flex-direction: row;
 			-webkit-flex-direction: row;
 			-ms-flex-direction: row;
@@ -3299,22 +3299,21 @@ input, select, textarea {
 			margin-left: 0;
 		}
 
-			.features li {
-				border-bottom: 1px solid;
+			.servicing li {
 				border-right: none;
 				margin-bottom: 2.75rem;
 				margin-left: 0;
-				max-width: 30rem;
+				max-width: 50%;
 				padding-bottom: 2.75rem;
 				padding-right: 0;
 				width: 100%;
 			}
 
-				.features li > :last-child {
+				.servicing li > :last-child {
 					margin-bottom: 0;
 				}
 
-				.features li:last-child {
+				.servicing li:last-child {
 					margin-bottom: 0;
 					padding-bottom: 0;
 				}
@@ -3323,7 +3322,7 @@ input, select, textarea {
 
 	@media screen and (max-width: 736px) {
 
-		.features li {
+		.servicing li {
 			margin-bottom: 2.75rem;
 			padding-bottom: 2.75rem;
 		}
@@ -3695,7 +3694,7 @@ input, select, textarea {
 }
 
 #two88 {
-	background-image: linear-gradient(to right bottom, rgba(253, 252, 252, 0.1), rgba(253, 253, 253, 1)), url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg");
+	background-image: linear-gradient(to right, rgba(253, 252, 252, 0.1), rgba(253, 253, 253, 1)), url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg");
 	
 	/* background-attachment: fixed; */
 	/* background-blend-mode: luminosity; */
@@ -3706,9 +3705,9 @@ input, select, textarea {
 	margin-top: 0;
 }
 
-/* #two2{
-	background-image: linear-gradient(to bottom, rgb(141, 140, 140), white);
-} */
+#two2 {
+	background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 1), rgba(143, 143, 143, 0.1));
+}
 
 #five {
 	background-image: url("/assets/images/stairslicensed.jpg");
@@ -3727,6 +3726,25 @@ input, select, textarea {
 		background-size: cover;
 	}
 }
+
+
+#two > .inner #trustedheader:before {
+		background-color: rgb(84, 165, 166);
+		content: '';
+		display: block;
+		height: 4px;
+		margin: 1.5rem auto;
+		width: 8rem;
+	}
+
+	#two2 > .inner #serviceheader:before {
+		background-color: rgb(84, 165, 166);
+		content: '';
+		display: block;
+		height: 4px;
+		margin: 1.5rem auto;
+		width: 8rem;
+	}
 
 
 
