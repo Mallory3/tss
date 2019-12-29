@@ -3840,7 +3840,7 @@ input, select, textarea {
 
 
 @media screen and (max-width: 600px) {
-	#two {
+	#two, #seven {
 		background-image: url("/assets/images/woodlicensedgrey.jpeg");
 		background-size: cover;
 
