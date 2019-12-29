@@ -3852,6 +3852,7 @@ input, select, textarea {
 	#two {
 		background-image: url("/assets/images/woodlicensedgrey.jpeg");
 		background-size: contain;
+		background-repeat: repeat;
 	}
 	#seven {
 		background-image: url("/assets/images/woodlicensedgrey.jpeg");
