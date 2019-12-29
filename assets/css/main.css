@@ -3856,7 +3856,8 @@ input, select, textarea {
 	}
 	#seven {
 		background-image: url("/assets/images/woodlicensedgrey.jpeg");
-		background-size: cover;
+		background-size: contain;
+		background-repeat: repeat;
 	}
 	
 
