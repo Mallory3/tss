@@ -3839,15 +3839,6 @@ input, select, textarea {
 }
 
 
-@media screen and (max-width: 600px) {
-	#two, #seven {
-		background-image: url("/assets/images/woodlicensedgrey.jpeg");
-		background-size: cover;
-
-	}
-	
-
-}
 
 #seven {
 	background-image: url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg");
@@ -3855,6 +3846,19 @@ input, select, textarea {
 	background-size: 50%;
 	background-repeat: repeat, no-repeat, repeat;
 	margin-top: 0;
+}
+
+@media screen and (max-width: 600px) {
+	#two {
+		background-image: url("/assets/images/woodlicensedgrey.jpeg");
+		background-size: cover;
+	}
+	#seven {
+		background-image: url("/assets/images/woodlicensedgrey.jpeg");
+		background-size: cover;
+	}
+	
+
 }
 
 #six h1, h2 {
