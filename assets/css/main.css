@@ -3855,7 +3855,7 @@ input, select, textarea {
 		background-repeat: repeat;
 	}
 	#seven {
-		background-image: url("/assets/images/woodlicensedgrey.jpeg");
+	background-image: url("/assets/images/woodlicensedgrey.jpeg");
 		background-size: contain;
 		background-repeat: repeat;
 	}
@@ -5065,8 +5065,9 @@ input, select, textarea {
 		}
 
 		#footer .sidebar {
-			margin-left: 2.75rem;
-			width: 30rem;
+			margin-left: 4.5rem;
+			min-width: 25rem;
+			width: 25rem;
 		}
 
 		#footer .content .split {
