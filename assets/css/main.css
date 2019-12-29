@@ -3811,8 +3811,8 @@ input, select, textarea {
 /* Styles */
 
 .shadow {
-  -moz-box-shadow: 1px 1px 4px 1px rgb(73, 73, 73, 0.7);
-  -webkit-box-shadow: 1px 1px 4px 1px rgb(73, 73, 73, 0.7);
+  -moz-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.7);
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.7);
 }
 
@@ -3839,9 +3839,10 @@ input, select, textarea {
 }
 
 #seven {
-	background-image: linear-gradient(to top, rgba(255, 255, 255, 0.05), rgb(0, 0, 0, .1)), url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg");
+	/* background-image: linear-gradient(to top, rgba(255, 255, 255, 0.05), rgb(0, 0, 0, .1)), url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg"); */
+	background-image: url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg");
 	background-size: 50%;
-	background-repeat: repeat, no-repeat, repeat;
+	background-repeat: no-repeat, repeat;
 	margin-top: 0;
 }
 
