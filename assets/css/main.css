@@ -3601,7 +3601,7 @@ input, select, textarea {
 				.wrapper.style1 select:focus,
 				.wrapper.style1 textarea:focus {
 					border-color: rgb(12, 87, 116);
-					box-shadow: 0 0 0 1px rgb(12, 87, 116);
+					box-shadow: 0 0 0 1px rgb(73, 73, 73, 0.7);
 				}
 
 			.wrapper.style1 input[type="search"] {
