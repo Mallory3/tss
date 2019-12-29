@@ -396,6 +396,133 @@ input, select, textarea {
 
 		}
 
+	.inner {
+		margin: 0 auto;
+		max-width: calc(100% - 10rem);
+		width: 80rem;
+	}
+
+		.inner.with-sidebar {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-justify-content: space-between;
+			-webkit-justify-content: space-between;
+			-ms-justify-content: space-between;
+			justify-content: space-between;
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			.inner {
+				max-width: calc(100% - 6rem);
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.inner.with-sidebar {
+				display: block;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.inner {
+				max-width: calc(100% - 3rem);
+			}
+
+		}
+
+
+/* Reviews */
+
+.review {
+	margin: 0 auto;
+	max-width: calc(100% - 10rem);
+	width: 80rem;
+}
+
+	.review.with-sidebar {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-justify-content: space-between;
+		-webkit-justify-content: space-between;
+		-ms-justify-content: space-between;
+		justify-content: space-between;
+	}
+
+	@media screen and (max-width: 1280px) {
+
+		.review {
+			max-width: calc(100% - 6rem);
+		}
+
+	}
+
+	@media screen and (max-width: 980px) {
+
+		.review.with-sidebar {
+			display: block;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.review {
+			max-width: calc(100% - 3rem);
+		}
+
+	}
+
+.review {
+	margin: 0 auto;
+	max-width: calc(100% - 10rem);
+	width: 80rem;
+}
+
+	.review.with-sidebar {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-justify-content: space-between;
+		-webkit-justify-content: space-between;
+		-ms-justify-content: space-between;
+		justify-content: space-between;
+	}
+
+	@media screen and (max-width: 1280px) {
+
+		.review {
+			max-width: calc(100% - 6rem);
+		}
+
+	}
+
+	@media screen and (max-width: 980px) {
+
+		.review.with-sidebar {
+			display: block;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.review {
+			max-width: calc(100% - 3rem);
+		}
+
+	}
+
+
 /* Row */
 
 	.row {
@@ -3613,16 +3740,27 @@ input, select, textarea {
 			width: 30rem;
 		}
 
+		.wrapper > .review .sidebar {
+			margin-left: 2.75rem;
+			min-width: 20rem;
+			width: 20rem;
+		}
+
 		@media screen and (max-width: 1280px) {
 
 			.wrapper {
 				padding-top: 3rem;
 			}
 
-				.wrapper > .inner .sidebar {
+			.wrapper > .inner .sidebar {
 					min-width: 20rem;
 					width: 20rem;
-				}
+			}
+
+			.wrapper > .review .sidebar {
+				min-width: 20rem;
+				width: 20rem;
+			}
 
 		}
 
@@ -3632,13 +3770,21 @@ input, select, textarea {
 				padding-top: 2rem;
 			}
 
-				.wrapper > .inner .sidebar {
+			.wrapper > .inner .sidebar {
 					border-top: 1px solid rgba(0, 0, 0, 0.15);
 					margin-left: 0;
 					margin-top: 2.75rem;
 					padding-top: 2.75rem;
 					width: 100%;
-				}
+			}
+
+			.wrapper > .review .sidebar {
+				border-top: 1px solid rgba(0, 0, 0, 0.15);
+				margin-left: 0;
+				margin-top: 2.75rem;
+				padding-top: 2.75rem;
+				width: 100%;
+		}
 
 		}
 
@@ -3653,6 +3799,10 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			.wrapper > .inner .sidebar {
+				min-width: auto;
+			}
+
+			.wrapper > .review .sidebar {
 				min-width: auto;
 			}
 
@@ -3688,6 +3838,13 @@ input, select, textarea {
 	margin-top: 0;
 }
 
+#seven {
+	background-image: linear-gradient(to top, rgba(255, 255, 255, 0.05), rgb(0, 0, 0, .1)), url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg");
+	background-size: 50%;
+	background-repeat: repeat, no-repeat, repeat;
+	margin-top: 0;
+}
+
 
 #two88 {
 	background-image: linear-gradient(to right, rgba(253, 252, 252, 0.1), rgba(253, 253, 253, 1)), url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg");
@@ -3702,7 +3859,7 @@ input, select, textarea {
 }
 
 #two2 {
-	background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 1), rgba(185, 166, 153, 0.3));
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(199, 199, 199, 0.2));
 }
 
 #five {
@@ -3711,7 +3868,7 @@ input, select, textarea {
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: 100% 0%;
-	height: 100vh;
+	height: 55vh;
 }
 
 @media screen and (max-width: 900px) {
@@ -3749,6 +3906,10 @@ input, select, textarea {
 
 	.button.primary.cardButton:hover {
 		background-color: #55534c;
+	}
+
+	.checked {
+		color: rgb(84, 165, 166);
 	}
 
 
