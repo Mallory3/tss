@@ -3832,6 +3832,7 @@ input, select, textarea {
 } */
 
 #two {
+	background-image: url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg");
 	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgb(0, 0, 0, .1)), url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg");
 	background-size: 50%;
 	background-repeat: repeat, no-repeat, repeat;
@@ -3839,18 +3840,8 @@ input, select, textarea {
 }
 
 #seven {
-	background: -moz-linear-gradient(rgba(255, 255, 255, 0.05), rgb(0, 0, 0, .1)), url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg");  /* FF 3.6+ */  
-	background: -ms-linear-gradient(rgba(255, 255, 255, 0.05), rgb(0, 0, 0, .1)), url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg"); /* IE10 */  
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.05)), color-stop(100%,rgb(0, 0, 0, .1))), url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg"); /* Safari 4+, Chrome 2+ */  
-	
-	
-	background: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgb(0, 0, 0, .1)), url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg");  /* Safari 5.1+, Chrome 10+ */  
-	background: -o-linear-gradient(rgba(255, 255, 255, 0.05), rgb(0, 0, 0, .1)), url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg");   /* Opera 11.10 */  
-	
 	background-image: url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg");
-
 	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgb(0, 0, 0, .1)), url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg");
-
 	background-size: 50%;
 	background-repeat: repeat, no-repeat, repeat;
 	margin-top: 0;
