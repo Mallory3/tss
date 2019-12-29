@@ -3832,11 +3832,21 @@ input, select, textarea {
 } */
 
 #two {
-	background-image: url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg");
 	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgb(0, 0, 0, .1)), url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg");
 	background-size: 50%;
 	background-repeat: repeat, no-repeat, repeat;
 	margin-top: 0;
+}
+
+
+@media screen and (max-width: 600px) {
+	#two {
+		background-image: url("/assets/images/woodlicensedgrey.jpeg");
+		background-size: cover;
+
+	}
+	
+
 }
 
 #seven {
