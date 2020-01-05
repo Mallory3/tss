@@ -3838,24 +3838,35 @@ input, select, textarea {
 	background-repeat: repeat, no-repeat, repeat;
 	margin-top: 0;
 }
-
+/* 
 #ten {
 	background-image: url("/assets/images/deckstairsadobe.jpeg");
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 60vh;
-}
+} */
 
+/* #teal {
+	background-color: teal;
+	width: 100%;
+} */
 
-
+/* 
 #seven {
 	background-image: url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg");
 	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgb(0, 0, 0, .1)), url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg");
 	background-size: 50%;
 	background-repeat: repeat, no-repeat, repeat;
 	margin-top: 0;
-}
+} */
+
+#seven {
+	background-image: url("/assets/images/spiral2.jpeg");
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	
 
 @media screen and (max-width: 600px) {
 	#two {
@@ -3904,7 +3915,7 @@ input, select, textarea {
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: 100% 0%;
-	height: 55vh;
+	height: 60vh;
 }
 
 @media screen and (max-width: 900px) {
@@ -3915,6 +3926,12 @@ input, select, textarea {
 		background-size: cover;
 	}
 }
+/* #two222 {
+	background-image: url("/assets/images/spiral2.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}  */
 
 
 #two > .inner #trustedheader:before {
