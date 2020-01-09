@@ -2552,7 +2552,7 @@ input, select, textarea {
 
 	@media screen and (max-width: 900px) {
 		.card-grid > * {
-			width: 80%;
+			width: 100%;
 			padding: 0;
 			margin: auto;
 		}
