@@ -3852,6 +3852,9 @@ input, select, textarea {
 	object-fit: contain;
 }
 
+#four {
+	background-color: #1e2022;
+}
 /* 
 #ten {
 	background-image: url("/assets/images/deckstairsadobe.jpeg");
