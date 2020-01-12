@@ -3887,13 +3887,13 @@ input, select, textarea {
 	width: 100%;
 } */
 
-#seven {
+/* #seven {
 	background-image: url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg");
 	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgb(0, 0, 0, .1)), url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg");
 	background-size: 50%;
 	background-repeat: repeat, no-repeat, repeat;
 	margin-top: 0;
-}
+} */
 
 	
 
@@ -4021,7 +4021,7 @@ input, select, textarea {
 
 	.container1 {
 		position: relative;
-		width: 33.333%;
+		width: 25;
 	}
 	
 	.image1 {
