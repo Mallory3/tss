@@ -12,6 +12,12 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+				#div1 {
+					font-size:48px;
+				}
+				</style>
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body class="is-preload">
 
@@ -182,6 +188,45 @@
 				</div>
 			</section>
 
+
+
+
+
+
+
+
+			<section id="workCards" class="wrapper">
+					
+					<!-- <header class="major"><h2>Our Work</h2><h3 id="trustedheader" class="aboutParagraph serviceHeader"></h3>
+					</header> -->
+				<section class="card-grid">
+					<article>
+						<div class="image fit one">
+							<a href="#"><img class="shadow card1 grow" src="/assets/images/card2.png" alt="" /></a>
+						</div>
+					</article>
+					<article>
+							<div class="image fit three">
+								<a href="#"><img class="shadow card3 grow" src="/assets/images/card3.png" alt="" /></a>
+							</div>
+						</article>
+					<article>
+						<div class="image fit two">
+							<a href="#"><img class="shadow card2 grow" src="/assets/images/card1.png" alt="" /></a>
+						</div>
+					</article>
+					<article>
+							<div class="image fit two">
+								<a href="#"><img class="shadow card2 grow" src="/assets/images/card4.png" alt="" /></a>
+							</div>
+						</article>
+						<ul class="actions special">
+								<li><a href="#" class="button primary icon solid fa-info-circle">Inspiration Gallery</a></li>
+							</ul>
+				</section>
+			
+	 </section>
+
 			<!-- <section id="eight" class="wrapper style2">
 					<div class="inner">
 							<img class="image fit" src="/assets/images/woodstairlicensed4.jpg" alt="">
@@ -192,8 +237,8 @@
 				</section> -->
 
 
-				<div ><img class="bannerImg" src="/assets/images/spiral.png" alt="" /></div>
-			<section id="two222" class="wrapper style2">
+				<!-- <div ><img class="bannerImg" src="/assets/images/spiral.png" alt="" /></div> -->
+			<section id="customize" class="wrapper style2">
 					<div class="inner">
 						<header class="major"><h2>Customize Your Stairs to Fit Your Style</h2><p id="trustedheader" class="aboutParagraph serviceHeader">We are the only stair manufacturer using the Master Stair Builders™ System: a state-of-the-art computer program that generates precise customized orders. Choose from a varity of quality woods, spindles, posts and rails to design and build your custom staircase proven to enhance the value and identity of your home.  </p></header>
 					
@@ -206,7 +251,7 @@
 					<section class="posts-grid">
 						<article>
 							<div class="image fit">
-								<a href="#"><img class="shadow" src="/assets/images/woodsamples2.jpg" alt="" /></a>
+								<a href="#"><img class="shadow" src="/assets/images/laptopspiralstairslicensed.jpg" alt="" /></a>
 							</div>
 							<!-- <h3>Straight Stairs</h3>
 							<p>Our straight stairs are built with an emphasis on quality construction. Building stairs right leads to a number of benefits: longevity of the stairs, squeak-free construction, and greater safety.</p>
@@ -237,33 +282,7 @@
 		</div>
 			</section>
 
-			<section id="four" class="wrapper">
-					
-							<header class="major"><h2>Our Work</h2><h3 id="trustedheader" class="aboutParagraph serviceHeader">Building our business one step at a time</h3></header>
-						<section class="card-grid">
-							<article>
-								<div class="image fit one">
-									<a href="#"><img class="shadow card1" src="/assets/images/card1.png" alt="" /></a>
-								</div>
-							</article>
-							<article>
-									<div class="image fit three">
-										<a href="#"><img class="shadow card3" src="/assets/images/card2.png" alt="" /></a>
-									</div>
-								</article>
-							<article>
-								<div class="image fit two">
-									<a href="#"><img class="shadow card2" src="/assets/images/card3.png" alt="" /></a>
-								</div>
-							</article>
-							<article>
-									<div class="image fit two">
-										<a href="#"><img class="shadow card2" src="/assets/images/card3.png" alt="" /></a>
-									</div>
-								</article>
-						</section>
-					
-			 </section>
+			
 
 	
 			<section id="five" class="wrapper style2">
@@ -300,9 +319,22 @@
 								<div class="posts">
 									<article class="post">
 										<header>
-											<h1><span class="fa fa-paper-plane checked"></span> Connect With Us</span></h1>
+											<h1><span id="div2" class="fa"></span> Connect With Us</span></h1>
 											<p class="contactheader"></p>
 										</header>
+
+										<script>
+												function openfolder() {
+													var a;
+													a = document.getElementById("div2");
+													a.innerHTML = "&#xf1d8;";
+													setTimeout(function () {
+															a.innerHTML = "&#xf1d9;";
+														}, 1000);
+												}
+												openfolder();
+												setInterval(openfolder, 2000);
+												</script>
 										
 										<h3>Lets Start Building Your Stairs Together!</h3>
 								<form method="post" action="https://formspree.io/xkngyzaw">
@@ -346,8 +378,20 @@
 			<!-- Sidebar -->
 			<section class="sidebar">
 					<header>
-						<h2>Reviews</h2>
+							<h1><span id="div3" class="fa"></span> Reviews</span></h1>
 					</header>
+					<script>
+							function openfolder() {
+								var a;
+								a = document.getElementById("div3");
+								a.innerHTML = "&#xf005;";
+								setTimeout(function () {
+										a.innerHTML = "&#xf006;";
+									}, 1000);
+							}
+							openfolder();
+							setInterval(openfolder, 2000);
+							</script>
 					<div class="posts-list">
 						<article>
 								<span class="fa fa-star checked"></span>

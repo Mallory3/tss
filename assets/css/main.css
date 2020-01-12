@@ -2469,7 +2469,7 @@ input, select, textarea {
 	}
 
 		.image img {
-			border-radius: 5px;
+			border-radius: 3px;
 			display: block;
 		}
 
@@ -3820,9 +3820,17 @@ input, select, textarea {
 /* Styles */
 
 .shadow {
-  -moz-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.7);
-  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.7);
-  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+}
+
+.grow { 
+	transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+	transform: scale(1.1); 
 }
 
 .justify {
@@ -3855,10 +3863,12 @@ input, select, textarea {
 .bannerImg {
 	display: block;
 	width: 100%;
-	max-height: 70vh;
-	object-position: bottom;
-	object-fit: contain;
+	background-attachment: fixed;
+	height: 50vh;
+
 }
+
+
 
 /* #four {
 	background-color: #1e2022;
@@ -3906,6 +3916,12 @@ input, select, textarea {
 	text-align: center;
 }
 
+#workCards {
+	background-image: url("/assets/images/silver.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 
 
 #two88 {
@@ -3939,7 +3955,7 @@ input, select, textarea {
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: 100% 0%;
-	height: 200vh;
+	height: 55vh;
 }
 
 @media screen and (max-width: 900px) {
@@ -4002,6 +4018,68 @@ input, select, textarea {
 	.checked {
 		color: rgb(84, 165, 166);
 	}
+
+
+
+	
+
+
+
+
+	/* .fa-bounce {
+    display: inline-block;
+    position: relative;
+    -moz-animation: bounce 1s;
+    -o-animation: bounce 1s;
+    -webkit-animation: bounce 1s;
+		animation: bounce 2s;
+		animation-iteration-count: 2;
+}
+
+@-webkit-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-moz-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-o-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-ms-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@keyframes bounce {
+	0%,
+	25%,
+	50%,
+	75%,
+	100% {
+	transform: translateY(0);
+	}
+	40% {
+	transform: translateY(-20px);
+	}
+	60% {
+	transform: translateY(-12px);
+	}
+	}
+	
+	 */
+
+
+
 
 
 /* Header */
