@@ -3888,7 +3888,7 @@ input, select, textarea {
 } */
 
 #seven {
-	background-image: url("/assets/images/greygradient.jpg");
+	background-image: url("/assets/images/greylicensedlicensed.jpg");
 	background-size: cover;
 	background-position: right;
 
@@ -3902,10 +3902,10 @@ input, select, textarea {
 }
 
 #workCards {
-	/* background-image: url("/assets/images/greygradient.jpg");
+	background-image: url("/assets/images/greylicensedlicensed.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: left; */
+	background-position: left;
 	background-color: #1e2022;
 	margin-top: 5em;
 }
