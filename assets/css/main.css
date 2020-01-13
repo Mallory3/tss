@@ -3917,11 +3917,12 @@ input, select, textarea {
 }
 
 #workCards {
-	/* background-image: url("/assets/images/AdobeStock_299537863_Preview.jpeg");
+	/* background-image: url("/assets/images/blueprint3.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%; */
 	background-color: #1e2022;
+	margin-top: 5em;
 }
 
 
@@ -3976,7 +3977,7 @@ input, select, textarea {
 } 
 
 
-#two > .inner #trustedheader:before {
+#workCards #workheader:before {
 		background-color: rgb(84, 165, 166);
 		content: '';
 		display: block;
@@ -3984,6 +3985,16 @@ input, select, textarea {
 		margin: 1.5rem auto;
 		width: 8rem;
 	}
+
+
+#two > .inner #trustedheader:before {
+	background-color: rgb(84, 165, 166);
+	content: '';
+	display: block;
+	height: 4px;
+	margin: 1.5rem auto;
+	width: 8rem;
+}
 
 	#two2 > .inner .serviceheader:before {
 		background-color: rgb(84, 165, 166);
