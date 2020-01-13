@@ -3951,6 +3951,10 @@ input, select, textarea {
 	box-shadow: 1px 1px 4px black;
 	border-radius: 5px;
 	padding: 1em;
+	width: 90%;
+	margin: auto;
+	background-image: url("/assets/images/AdobeStock_71712811_Preview.jpeg");
+	background-position: right;
 }
 
 @media screen and (max-width: 900px) {
