@@ -3887,40 +3887,24 @@ input, select, textarea {
 	width: 100%;
 } */
 
-/* #seven {
-	background-image: url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg");
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgb(0, 0, 0, .1)), url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg");
-	background-size: 50%;
-	background-repeat: repeat, no-repeat, repeat;
-	margin-top: 0;
-} */
-
-	
-
-@media screen and (max-width: 600px) {
-	#two {
-		background-image: url("/assets/images/woodlicensedgrey.jpeg");
-		background-size: contain;
-		background-repeat: repeat;
-	}
-	#seven {
-	background-image: url("/assets/images/woodlicensedgrey.jpeg");
-		background-size: contain;
-		background-repeat: repeat;
-	}
-	
+#seven {
+	background-image: url("/assets/images/greygradient.jpg");
+	background-size: cover;
 
 }
+
+	
+
 
 #six h1, h2 {
 	text-align: center;
 }
 
 #workCards {
-	/* background-image: url("/assets/images/blueprint3.png");
+	/* background-image: url("/assets/images/greygradient.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 50% 50%; */
+	background-position: left; */
 	background-color: #1e2022;
 	margin-top: 5em;
 }
