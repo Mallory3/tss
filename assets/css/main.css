@@ -3917,9 +3917,11 @@ input, select, textarea {
 }
 
 #workCards {
-	background-image: url("/assets/images/silver.jpg");
+	/* background-image: url("/assets/images/AdobeStock_299537863_Preview.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: 50% 50%; */
+	background-color: #1e2022;
 }
 
 
@@ -4021,7 +4023,7 @@ input, select, textarea {
 
 	.container1 {
 		position: relative;
-		width: 25;
+		width: 33.33%;
 	}
 	
 	.image1 {
@@ -4865,7 +4867,7 @@ input, select, textarea {
 	padding-left: 2em;
 	padding-right: 2em;
 	font-size: 20px;
-
+	margin-bottom: 0;
 	
 }
 
@@ -4887,6 +4889,13 @@ input, select, textarea {
 
 #three button {
 	margin: auto;
+}
+
+#customize {
+	background-image: url("/assets/images/laptopspiralstairslicensed.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 82vh;
 }
 	
 
