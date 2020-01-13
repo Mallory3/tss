@@ -3951,7 +3951,6 @@ input, select, textarea {
 	box-shadow: 1px 1px 4px black;
 	border-radius: 5px;
 	padding: 1em;
-	background-image: url("/assets/images/greylicensedlicensed.jpg")
 }
 
 @media screen and (max-width: 900px) {
