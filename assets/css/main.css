@@ -3890,6 +3890,7 @@ input, select, textarea {
 #seven {
 	background-image: url("/assets/images/greygradient.jpg");
 	background-size: cover;
+	background-position: right;
 
 }
 
