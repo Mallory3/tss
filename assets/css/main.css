@@ -3902,9 +3902,10 @@ input, select, textarea {
 }
 
 #workCards {
-	background-image: url("/assets/images/greylicensedlicensed.jpg");
+	background-image: url("/assets/images/blueprint3.png");
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 	background-position: left;
 	background-color: #1e2022;
 	margin-top: 5em;
@@ -3943,7 +3944,13 @@ input, select, textarea {
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: 100% 0%;
-	height: 55vh;
+	height:65vh;
+}
+
+#showroom {
+	box-shadow: 1px 1px 4px black;
+	border-radius: 5px;
+	padding: 1em;
 }
 
 @media screen and (max-width: 900px) {
