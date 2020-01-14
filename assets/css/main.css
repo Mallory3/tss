@@ -3903,20 +3903,23 @@ input, select, textarea {
 	/* background-image:url("/assets/images/AdobeStock_71712811_Preview.jpeg");
 	background-repeat: no-repeat;
 	background-position: left; */
-	background-color: white;
+	background-color: teal;
 	color: black;
-	padding-top: 10em;
-	padding-bottom: 10em;
+	padding-top: 3em;
+	padding-bottom: 3em;
 }
 
 #showroom {
 	color: black;
-	width: 50%;
 	margin: auto;
 }
 
 #showroom h3, #showroom p {
 	color: black;
+}
+
+#laptop {
+	width: 80%;
 }
 
 
