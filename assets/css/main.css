@@ -3903,19 +3903,21 @@ input, select, textarea {
 	/* background-image:url("/assets/images/AdobeStock_71712811_Preview.jpeg");
 	background-repeat: no-repeat;
 	background-position: left; */
-	background-color: teal;
-	color: black;
-	padding-top: 3em;
+	background-color: rgb(9, 9, 9);
+	
+	padding-top: 2em;
 	padding-bottom: 3em;
+	margin-top: 7em;
+
 }
 
 #showroom {
-	color: black;
+
 	margin: auto;
 }
 
 #showroom h3, #showroom p {
-	color: black;
+
 }
 
 #laptop {
@@ -3938,7 +3940,7 @@ input, select, textarea {
 	background-attachment: fixed;
 	background-position: left;
 	background-color: #1e2022;
-	margin-top: 5em;
+
 }
 
 
@@ -4172,7 +4174,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #1e2022;
+		background: rgb(9, 9, 9);
 		color: #c1c5cb;
 		cursor: default;
 		height: 3.75rem;
@@ -5009,7 +5011,7 @@ input, select, textarea {
 		background-color: #ffffff;
 		color: #c1c5cb;
 		padding: 7rem 0 4.25rem 0 ;
-		background: #1e2022;
+		background: rgb(9, 9, 9);
 	}
 
 		#footer input, #footer select, #footer textarea {
