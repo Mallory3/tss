@@ -3894,7 +3894,34 @@ input, select, textarea {
 
 }
 
-	
+.hero {
+	object-position: top;
+	-o-object-position: top;
+}
+
+#showroomBanner {
+	/* background-image:url("/assets/images/AdobeStock_71712811_Preview.jpeg");
+	background-repeat: no-repeat;
+	background-position: left; */
+	background-color: white;
+	color: black;
+	padding-top: 10em;
+	padding-bottom: 10em;
+}
+
+#showroom {
+	color: black;
+	width: 50%;
+	margin: auto;
+}
+
+#showroom h3, #showroom p {
+	color: black;
+}
+
+
+
+
 
 
 #six h1, h2 {
@@ -3947,15 +3974,6 @@ input, select, textarea {
 	height:65vh;
 }
 
-#showroom {
-	box-shadow: 1px 1px 4px black;
-	border-radius: 5px;
-	padding: 1em;
-	width: 90%;
-	margin: auto;
-	background-image: url("/assets/images/AdobeStock_71712811_Preview.jpeg");
-	background-position: right;
-}
 
 @media screen and (max-width: 900px) {
 	#five {
@@ -4526,9 +4544,11 @@ input, select, textarea {
 		-ms-flex-wrap: no-wrap;
 		flex-wrap: no-wrap;
 		cursor: default;
-		height: 45rem;
+		height: 48rem;
 		position: relative;
 	}
+
+
 
 		#banner input, #banner select, #banner textarea {
 			color: #ffffff;
@@ -4561,10 +4581,10 @@ input, select, textarea {
 
 		#banner:after {
 			pointer-events: none;
-			-moz-transition: opacity1.5s ease-in-out, visibility 1.5s;
-			-webkit-transition: opacity1.5s ease-in-out, visibility 1.5s;
-			-ms-transition: opacity1.5s ease-in-out, visibility 1.5s;
-			transition: opacity1.5s ease-in-out, visibility 1.5s;
+			-moz-transition: opacity1.5s ease-in-out, visibility 1s;
+			-webkit-transition: opacity1.5s ease-in-out, visibility 1s;
+			-ms-transition: opacity1.5s ease-in-out, visibility 1s;
+			transition: opacity1.5s ease-in-out, visibility 1s;
 			background: #1e2022;
 			content: '';
 			display: block;
@@ -4579,10 +4599,10 @@ input, select, textarea {
 		}
 
 		#banner > article {
-			-moz-transition: opacity 1.5s, visibility 1.5s;
-			-webkit-transition: opacity 1.5s, visibility 1.5s;
-			-ms-transition: opacity 1.5s, visibility 1.5s;
-			transition: opacity 1.5s, visibility 1.5s;
+			-moz-transition: opacity 1s, visibility 1s;
+			-webkit-transition: opacity 1s, visibility 1s;
+			-ms-transition: opacity 1s, visibility 1s;
+			transition: opacity 1s, visibility 1s;
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
@@ -4607,10 +4627,10 @@ input, select, textarea {
 		}
 
 			#banner > article:after {
-				-moz-transition: opacity 1.5s ease-in-out;
-				-webkit-transition: opacity 1.5s ease-in-out;
-				-ms-transition: opacity 1.5s ease-in-out;
-				transition: opacity 1.5s ease-in-out;
+				-moz-transition: opacity 1s ease-in-out;
+				-webkit-transition: opacity 1s ease-in-out;
+				-ms-transition: opacity 1s ease-in-out;
+				transition: opacity 1s ease-in-out;
 				background-color: rgba(42, 48, 55, 0.5);
 				content: '';
 				height: 100%;
