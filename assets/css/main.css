@@ -4906,6 +4906,9 @@ input, select, textarea {
 
 	.aboutParagraph {
 		text-align: center;
+		padding-left: 0;
+		padding-right: 0;
+		font-size: 18px;
 	}
 
 }
