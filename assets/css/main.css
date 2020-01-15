@@ -318,7 +318,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #474d55;
+		color: #2c323a;
 	}
 
 	blockquote {
@@ -3022,7 +3022,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		@media screen and (max-width: 1280px) {
+		/* @media screen and (max-width: 1280px) {
 
 			.posts-grid > * {
 				width: 50%;
@@ -3081,7 +3081,7 @@ input, select, textarea {
 				width: calc(50% + 0rem);
 			}
 
-		}
+		} */
 
 		@media screen and (max-width: 860px) {
 
@@ -4906,8 +4906,6 @@ input, select, textarea {
 
 .aboutParagraph {
 	text-align: justify;
-	padding-left: 2em;
-	padding-right: 2em;
 	font-size: 20px;
 	margin-bottom: 0;
 }
@@ -4921,6 +4919,7 @@ input, select, textarea {
 	}
 
 }
+
 
 /* section 3 */
 /* #three {
