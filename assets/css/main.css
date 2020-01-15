@@ -2543,24 +2543,27 @@ input, select, textarea {
 	}
 
 	.card-grid > * {
-		width: 25%;
+		width: 33%;
+		margin-left: 6em;
+		margin-right: 6em;
+		margin: auto;
 	}
 
 	.card-grid > * {
 		padding: 1.375rem;
 	}
 
-	@media screen and (max-width: 1200px) {
+	/* @media screen and (max-width: 1200px) {
 		.card-grid > * {
 			width: 40%;
 			padding: 0;
 			margin: auto;
 		}
-	}
+	} */
 
 	@media screen and (max-width: 700px) {
 		.card-grid > * {
-			width: 90%;
+			width: 80%;
 			padding: 0;
 			margin: auto;
 		}
@@ -3895,6 +3898,7 @@ input, select, textarea {
 	background-image: url("/assets/images/greylicensedlicensed.jpg");
 	background-size: cover;
 	background-position: left;
+	margin-top: 3em;
 
 }
 
@@ -3941,9 +3945,11 @@ input, select, textarea {
 	background-image: url("/assets/images/blueprint3.png");
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: right;
 	background-attachment: fixed;
-	background-position: left;
 	background-color: #1e2022;
+	margin-top: 4em;
+
 
 }
 
@@ -4178,7 +4184,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: rgb(9, 9, 9);
+		background: #1e2022;
 		color: #c1c5cb;
 		cursor: default;
 		height: 3.75rem;
@@ -4930,6 +4936,7 @@ input, select, textarea {
 
 .card1, .card2, .card3, .card4 {
 	margin-bottom: 3em;
+	border: 1px solid black;
 }
 
 #three button {
@@ -5024,7 +5031,7 @@ input, select, textarea {
 		background-color: #ffffff;
 		color: #c1c5cb;
 		padding: 7rem 0 4.25rem 0 ;
-		background: rgb(9, 9, 9);
+		background: #1e2022;
 	}
 
 		#footer input, #footer select, #footer textarea {
