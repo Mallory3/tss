@@ -4900,7 +4900,14 @@ input, select, textarea {
 	padding-right: 2em;
 	font-size: 20px;
 	margin-bottom: 0;
-	
+}
+
+@media screen and (max-width: 480px) {
+
+	.aboutParagraph {
+		text-align: center;
+	}
+
 }
 
 /* section 3 */
