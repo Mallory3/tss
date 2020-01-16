@@ -3962,7 +3962,7 @@ input, select, textarea {
 @media screen and (max-width: 600px) {
 #imagination {
 	margin: auto;
-	text-align: center;
+	width: 80%;
 }
 /* #five {
 	padding: 0;
