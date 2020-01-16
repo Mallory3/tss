@@ -3965,7 +3965,7 @@ input, select, textarea {
 	margin-top: 0;
 	font-size: 1.3rem;
 	position: relative;
-	bottom: 1em;
+	bottom: .8em;
 
 }
 /* #five {
@@ -4036,12 +4036,12 @@ input, select, textarea {
 }
 
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
 	#five {
 		background-attachment: scroll;
-		background-position: top;
+		background-position: 100% 5%;
 		height: 40vh;
-		background-size: 100%;
+		background-size: cover;
 	}
 }
 #stairs {
@@ -4244,7 +4244,7 @@ input, select, textarea {
 	}
 
 		#header .logo {
-			background: white;
+			background: rgb(84, 165, 166);
 			color: #ffffff;
 			display: block;
 			height: 3.75rem;
@@ -4252,11 +4252,6 @@ input, select, textarea {
 			padding: 0 2.75rem;
 			text-decoration: none;
 			width: auto;
-		}
-
-		#logoimg {
-			position: relative;
-			bottom: 2em;
 		}
 
 			#header .logo strong {
