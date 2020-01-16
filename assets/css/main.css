@@ -3951,7 +3951,7 @@ input, select, textarea {
 
 
 #imagination {
-	width: 57%; 
+	width: 54%; 
 	margin-top: 3em; 
 	text-align: left;
 
@@ -4034,9 +4034,9 @@ input, select, textarea {
 
 @media screen and (max-width: 900px) {
 	#five {
-		background-attachment: scroll;
+		/* background-attachment: scroll; */
 		background-position: 100% 5%;
-		height: 40vh;
+		height: 60vh;
 		background-size: cover;
 	}
 }
@@ -4229,7 +4229,7 @@ input, select, textarea {
 		background: #1e2022;
 		color: #c1c5cb;
 		cursor: default;
-		height: 3.75rem;
+		height: 4.25rem;
 		left: 0;
 		line-height: 3.75rem;
 		padding-right: 2.75rem;
@@ -4240,14 +4240,19 @@ input, select, textarea {
 	}
 
 		#header .logo {
-			background: rgb(84, 165, 166);
+			background: white;
 			color: #ffffff;
 			display: block;
-			height: 3.75rem;
+			height: 4.25rem;
 			line-height: 3.75rem;
 			padding: 0 2.75rem;
 			text-decoration: none;
 			width: auto;
+		}
+
+		#logoimg {
+			position: relative;
+			bottom: 2em;
 		}
 
 			#header .logo strong {
