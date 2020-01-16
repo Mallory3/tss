@@ -3959,14 +3959,14 @@ input, select, textarea {
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 #imagination {
-	margin-top: 10px;
-	font-size: 18px;
+	margin: auto;
+	text-align: center;
 }
-#five {
+/* #five {
 	padding: 0;
-}
+} */
 }
 
 
