@@ -3963,6 +3963,7 @@ input, select, textarea {
 #imagination {
 	width: 50%;
 	margin-top: 0;
+	font-size: 1rem;
 
 }
 /* #five {
@@ -4230,7 +4231,7 @@ input, select, textarea {
 		background: #1e2022;
 		color: #c1c5cb;
 		cursor: default;
-		height: 4.25rem;
+		height: 3.75rem;
 		left: 0;
 		line-height: 3.75rem;
 		padding-right: 2.75rem;
@@ -4244,7 +4245,7 @@ input, select, textarea {
 			background: white;
 			color: #ffffff;
 			display: block;
-			height: 4.25rem;
+			height: 3.75rem;
 			line-height: 3.75rem;
 			padding: 0 2.75rem;
 			text-decoration: none;
