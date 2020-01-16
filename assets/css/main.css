@@ -3950,6 +3950,26 @@ input, select, textarea {
 
 
 
+#imagination {
+	width: 57%; 
+	margin-top: 3em; 
+	text-align: left;
+
+}
+
+@media screen and (max-width: 1000px) {
+	#imagination {
+		margin-top: 0;
+	}
+	}
+
+@media screen and (max-width: 500px) {
+#imagination {
+	margin-top: 0;
+}
+}
+
+
 
 
 
