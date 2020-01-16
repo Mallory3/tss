@@ -3957,16 +3957,15 @@ input, select, textarea {
 
 }
 
-@media screen and (max-width: 1000px) {
-	#imagination {
-		margin-top: 0;
-		font-size: 18px;
-	}
-	}
+
 
 @media screen and (max-width: 500px) {
 #imagination {
-	margin-top: 0;
+
+	font-size: 18px;
+}
+#five {
+	padding: 0;
 }
 }
 
