@@ -3959,11 +3959,7 @@ input, select, textarea {
 
 
 
-@media only screen 
-  and (min-width: 375px) 
-  and (max-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-
+@media only screen and (max-width: 812px) { 
 
 #imagination {
 	width: 60%;
@@ -3973,9 +3969,7 @@ input, select, textarea {
 	bottom: .8em;
 
 }
-/* #five {
-	padding: 0;
-} */
+
 }
 
 
