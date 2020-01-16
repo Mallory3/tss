@@ -3961,8 +3961,8 @@ input, select, textarea {
 
 @media screen and (max-width: 600px) {
 #imagination {
-	margin: auto;
-	width: 80%;
+	width: 50%;
+	margin-top: 0.5em;
 }
 /* #five {
 	padding: 0;
@@ -4034,10 +4034,10 @@ input, select, textarea {
 
 @media screen and (max-width: 900px) {
 	#five {
-		/* background-attachment: scroll; */
-		background-position: 100% 5%;
-		height: 60vh;
-		background-size: cover;
+		background-attachment: scroll;
+		background-position: top;
+		height: 40vh;
+		background-size: 100%;
 	}
 }
 #stairs {
