@@ -3962,7 +3962,8 @@ input, select, textarea {
 @media screen and (max-width: 600px) {
 #imagination {
 	width: 50%;
-	margin-top: 0.5em;
+	margin-top: 0;
+
 }
 /* #five {
 	padding: 0;
