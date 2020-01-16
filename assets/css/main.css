@@ -3959,11 +3959,13 @@ input, select, textarea {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 #imagination {
-	width: 50%;
+	width: 60%;
 	margin-top: 0;
-	font-size: 1rem;
+	font-size: 1.3rem;
+	position: relative;
+	bottom: 1em;
 
 }
 /* #five {
@@ -4034,7 +4036,7 @@ input, select, textarea {
 }
 
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
 	#five {
 		background-attachment: scroll;
 		background-position: top;
