@@ -3946,19 +3946,7 @@ input, select, textarea {
 	}
 }
 
-@media only screen 
-  and (min-width: 375px) 
-  and (max-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) { 
-		#laptopImg {
-			height: 90vh;
-			}
 
-			#five {
-				height: 100vh;
-			}
-}
 
 
 
@@ -4055,6 +4043,23 @@ input, select, textarea {
 		background-size: cover;
 	}
 }
+
+
+@media only screen 
+  and (min-width: 375px) 
+  and (max-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+		#laptopImg {
+			height: 90vh;
+			}
+
+			#five {
+				height: 100vh;
+			}
+}
+
+
 #stairs {
 	background-image: url("/assets/images/stairslicensed.jpg");
 	background-repeat: no-repeat;
