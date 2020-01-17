@@ -3924,9 +3924,7 @@ input, select, textarea {
 	margin: auto;
 }
 
-#showroom h3, #showroom p {
 
-}
 
 #laptop {
 	width: 80%;
@@ -3955,6 +3953,10 @@ input, select, textarea {
   and (orientation: landscape) { 
 		#laptopImg {
 			height: 90vh;
+			}
+
+			#five {
+				height: 90vh;
 			}
 }
 
