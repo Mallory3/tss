@@ -4057,6 +4057,10 @@ input, select, textarea {
 			#five {
 				height: 80vh;
 			}
+
+			#imagination {
+				font-size: 1.5rem;
+			}
 }
 
 
