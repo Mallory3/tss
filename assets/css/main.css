@@ -3954,7 +3954,7 @@ input, select, textarea {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) { 
 		#laptopImg {
-			height: 60vh;
+			height: 90vh;
 			}
 }
 
