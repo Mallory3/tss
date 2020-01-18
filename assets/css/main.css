@@ -5438,7 +5438,7 @@ select {
 
 	#mapP {
 		color: black;
-		max-width: 40vw;
+		max-width: 42vw;
 		text-align: center;
 	}
 
@@ -5466,8 +5466,7 @@ select {
 		}
 
 		#mapP {
-			width: 100%;
-			margin: 0;
+			display: none;
 		}
 
 	.googleMap {
