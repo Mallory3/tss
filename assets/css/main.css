@@ -66,10 +66,10 @@ input::-moz-focus-inner {
 }
 
 input, select, textarea {
-	-moz-appearance: none;
+	/* -moz-appearance: none;
 	-webkit-appearance: none;
 	-ms-appearance: none;
-	appearance: none;
+	appearance: none; */
 }
 
 /* Basic */
@@ -3982,7 +3982,11 @@ input, select, textarea {
 
 
 
-
+input[type="text"],
+input[type="email"],
+select {
+	box-shadow: 1px 1px 3px black inset;
+}
 
 
 
@@ -4000,6 +4004,10 @@ input, select, textarea {
 	margin-top: 4em;
 
 
+}
+
+.insetboxshadow {
+	box-shadow: 1px 1px 3px solid black;
 }
 
 
