@@ -5439,7 +5439,6 @@ select {
 
 	#mapP {
 		color: black;
-		font-weight: bold;
 		max-width: 40vw;
 		text-align: center;
 	}
@@ -5468,7 +5467,6 @@ select {
 		}
 
 		#mapP {
-			text-align: justify;
 			max-width: 90vw;
 		}
 
@@ -5500,7 +5498,6 @@ select {
 	.socialIcons {
 		max-width: 200px;
 		justify-content: center;
-		margin-bottom: 1em;
 	}
 
 
