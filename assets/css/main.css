@@ -3825,426 +3825,6 @@ input, select, textarea {
 
 		}
 
-/* Styles */
-
-.shadow {
-  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
-  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
-}
-
-.grow { 
-	transition: all .2s ease-in-out; 
-}
-
-.grow:hover { 
-	transform: scale(1.1); 
-}
-
-.justify {
-	text-align: justify;
-}
-
-.center {
-	text-align: center;
-}
-
-/* #three, #four {
-	background-image: url("/assets/images/woodlicensedgrey.jpeg");
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-} */
-
-/* #two {
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgb(0, 0, 0, .1)), url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg");
-	background-size: 50%;
-	background-repeat: repeat, no-repeat, repeat;
-	margin-top: 0;
-} */
-
-#two222 {
-	background: rgba(88, 30, 30, 0);
-	
-}
-
-.bannerImg {
-	display: block;
-	width: 100%;
-	background-attachment: fixed;
-	height: 50vh;
-
-}
-
-
-
-/* #four {
-	background-color: #1e2022;
-} */
-/* 
-#ten {
-	background-image: url("/assets/images/deckstairsadobe.jpeg");
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 60vh;
-} */
-
-/* #teal {
-	background-color: teal;
-	width: 100%;
-} */
-
-#seven {
-	background-image: url("/assets/images/greylicensedlicensed.jpg");
-	background-size: cover;
-	background-position: left;
-	margin-top: 3em;
-
-}
-
-.hero {
-	object-position: top;
-	-o-object-position: top;
-}
-
-#showroomBanner {
-	/* background-image:url("/assets/images/AdobeStock_71712811_Preview.jpeg");
-	background-repeat: no-repeat;
-	background-position: left; */
-	background-color: rgb(9, 9, 9);
-	
-	padding-top: 2em;
-	padding-bottom: 3em;
-	margin-top: 7em;
-
-}
-
-#showroom {
-
-	margin: auto;
-}
-
-
-
-#laptop {
-	width: 80%;
-}
-
-#laptopImg {
-	background-image: url("/assets/images/laptopspiralstairslicensed.jpg");
-	width: 100%;
-	height: 55vh;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: right;
-
-}
-
-@media screen and (max-width: 600px) {
-	#laptopImg {
-	height: 40vh;
-	}
-}
-
-
-
-
-
-#imagination {
-	width: 54%; 
-	margin-top: 3em; 
-	text-align: left;
-
-}
-
-
-
-@media only screen and (max-width: 812px) { 
-
-#imagination {
-	width: 60%;
-	margin-top: 0;
-	font-size: 1.3rem;
-	position: relative;
-	bottom: .8em;
-
-}
-
-}
-
-#newsletter {
-	background-color: #1e2022;
-}
-
-
-
-
-
-
-input[type="text"],
-input[type="email"],
-select {
-	box-shadow: 1px 1px 3px black inset;
-}
-
-
-
-#six h1, h2 {
-	text-align: center;
-}
-
-#workCards {
-	background-image: url("/assets/images/blueprint3.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: right;
-	background-attachment: fixed;
-	background-color: #1e2022;
-	margin-top: 4em;
-
-
-}
-
-.insetboxshadow {
-	box-shadow: 1px 1px 3px solid black;
-}
-
-
-
-#two88 {
-	background-image: linear-gradient(to right, rgba(253, 252, 252, 0.1), rgba(253, 253, 253, 1)), url("/assets/images/woodlicensedgrey.jpeg"), url("/assets/images/woodlicensedgreyreversed.jpg");
-	
-	/* background-attachment: fixed; */
-	/* background-blend-mode: luminosity; */
-	/* background-repeat: no-repeat;
-	background-size: contain; */
-	background-position: 50%;
-	background-repeat: repeat, no-repeat, repeat;
-	margin-top: 0;
-}
-
-
-
-/* #two2 {
-	background-color: rgb(0, 0, 0, .1)
-} */
-#eight {
-	padding: 0;
-}
-
-#two5 {
-
-	opacity: 0.7;
-}
-#five {
-	background-image: url("/assets/images/stairslicensed.jpg");
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: 100% 0%;
-	height:65vh;
-}
-
-
-@media screen and (max-width: 900px) {
-	#five {
-		background-attachment: scroll;
-		background-position: 100% 5%;
-		height: 40vh;
-		background-size: cover;
-	}
-}
-
-
-@media only screen 
-  and (min-width: 375px) 
-  and (max-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) { 
-		#laptopImg {
-			height: 90vh;
-			}
-
-			#five {
-				height: 70vh;
-			}
-
-			#imagination {
-				font-size: 1.7rem;
-				margin-top: 1em;
-			}
-}
-
-#footerLogo {
-	display: block;
-	margin: auto;
-	background-color: rgb(179, 177, 177);
-	height: 20vh;
-	
-}
-
-#stairs {
-	background-image: url("/assets/images/stairslicensed.jpg");
-	background-repeat: no-repeat;
-	background-size: contain;
-
-} 
-
-
-#workCards #workheader:before {
-		background-color: rgb(84, 165, 166);
-		content: '';
-		display: block;
-		height: 4px;
-		margin: 1.5rem auto;
-		width: 8rem;
-	}
-
-
-#two > .inner #trustedheader:before {
-	background-color: rgb(84, 165, 166);
-	content: '';
-	display: block;
-	height: 4px;
-	margin: 1.5rem auto;
-	width: 8rem;
-}
-
-	#two2 > .inner .serviceheader:before {
-		background-color: rgb(84, 165, 166);
-		content: '';
-		display: block;
-		height: 4px;
-		margin: 1.5rem auto;
-		width: 8rem;
-	}
-
-	#seven > .review .contactheader:before {
-		background-color: rgb(84, 165, 166);
-		content: '';
-		display: block;
-		height: 4px;
-		margin: 1.5rem auto;
-		width: 8rem;
-	}
-
-	#seven > .review h1, h3 {
-		text-align: center;
-	}
-
-	.button.primary.cardButton {
-		background-color: #f0f0f0;
-		opacity: 0.9;
-	}
-
-
-	.button.primary.cardButton:hover {
-		background-color: #55534c;
-	}
-
-	.checked {
-		color: rgb(84, 165, 166);
-	}
-
-	.container1 {
-		position: relative;
-		width: 100%;
-	}
-	
-	.image1 {
-		opacity: 1;
-		display: block;
-		width: 100%;
-		height: auto;
-		transition: .5s ease;
-		backface-visibility: hidden;
-	}
-	
-	.middle {
-		transition: .5s ease;
-		opacity: 0;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
-		text-align: center;
-	}
-	
-	.container1:hover .image1 {
-		opacity: 0.3;
-	}
-	
-	.container1:hover .middle {
-		opacity: 1;
-	}
-	
-	.text {
-		background-color: #4CAF50;
-		color: white;
-		font-size: 16px;
-		padding: 16px 32px;
-	}
-
-
-
-	
-
-
-
-
-	/* .fa-bounce {
-    display: inline-block;
-    position: relative;
-    -moz-animation: bounce 1s;
-    -o-animation: bounce 1s;
-    -webkit-animation: bounce 1s;
-		animation: bounce 2s;
-		animation-iteration-count: 2;
-}
-
-@-webkit-keyframes bounce {
-    0% { top: 0; }
-    50% { top: -0.2em; }
-    70% { top: -0.3em; }
-    100% { top: 0; }
-}
-@-moz-keyframes bounce {
-    0% { top: 0; }
-    50% { top: -0.2em; }
-    70% { top: -0.3em; }
-    100% { top: 0; }
-}
-@-o-keyframes bounce {
-    0% { top: 0; }
-    50% { top: -0.2em; }
-    70% { top: -0.3em; }
-    100% { top: 0; }
-}
-@-ms-keyframes bounce {
-    0% { top: 0; }
-    50% { top: -0.2em; }
-    70% { top: -0.3em; }
-    100% { top: 0; }
-}
-@keyframes bounce {
-	0%,
-	25%,
-	50%,
-	75%,
-	100% {
-	transform: translateY(0);
-	}
-	40% {
-	transform: translateY(-20px);
-	}
-	60% {
-	transform: translateY(-12px);
-	}
-	}
-	
-	 */
 
 
 
@@ -4371,11 +3951,11 @@ select {
 					}
 
 					#header nav > ul > li.opener.active a {
-						color: #ffffff;
+						color: rgb(12, 87, 116);
 					}
 
 					#header nav > ul > li:hover a {
-						color: #ffffff;
+						color: rgb(12, 87, 116);
 					}
 
 					#header nav > ul > li > ul {
@@ -4394,7 +3974,7 @@ select {
 					}
 
 						#header nav > ul > li a:hover, #header nav > ul > li a:focus, #header nav > ul > li a.active {
-							color: #ffffff;
+							color: rgb(12, 87, 116);
 						}
 
 						#header nav > ul > li a.active {
@@ -5597,6 +5177,247 @@ select {
 			}
 
 		}
+
+		/* Styles */
+
+.shadow {
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+}
+
+.grow { 
+	transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+	transform: scale(1.1); 
+}
+
+.justify {
+	text-align: justify;
+}
+
+.center {
+	text-align: center;
+}
+
+
+#connectForm {
+	background-image: url("/assets/images/greylicensedlicensed.jpg");
+	background-size: cover;
+	background-position: left;
+	margin-top: 3em;
+
+}
+
+.hero {
+	object-position: top;
+	-o-object-position: top;
+}
+
+
+#showroom {
+	margin: auto;
+}
+
+
+#laptopImg {
+	background-image: url("/assets/images/laptopspiralstairslicensed.jpg");
+	width: 100%;
+	height: 55vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;
+
+}
+
+@media screen and (max-width: 600px) {
+	#laptopImg {
+	height: 40vh;
+	}
+}
+
+
+#imagination {
+	width: 54%; 
+	margin-top: 3em; 
+	text-align: left;
+}
+
+@media only screen and (max-width: 812px) { 
+
+#imagination {
+	width: 60%;
+	margin-top: 0;
+	font-size: 1.3rem;
+	position: relative;
+	bottom: .8em;
+
+}
+}
+
+#newsletter {
+	background-color: #1e2022;
+}
+
+
+#logoimg {
+	position: relative;
+	bottom: 2.2rem;
+}
+
+
+
+input[type="text"],
+input[type="email"],
+select {
+	box-shadow: 1px 1px 3px black inset;
+}
+
+
+.insetboxshadow {
+	box-shadow: 1px 1px 3px solid black;
+}
+
+#imaginationSection {
+	background-image: url("/assets/images/stairslicensed.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 100% 0%;
+	height:65vh;
+}
+
+
+@media screen and (max-width: 900px) {
+	#imaginationSection {
+		background-attachment: scroll;
+		background-position: 100% 5%;
+		height: 40vh;
+		background-size: cover;
+	}
+}
+
+
+@media only screen 
+  and (min-width: 375px) 
+  and (max-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+		#laptopImg {
+			height: 90vh;
+			}
+
+			#imaginationSection {
+				height: 70vh;
+			}
+
+			#imagination {
+				font-size: 1.7rem;
+				margin-top: 1em;
+			}
+}
+
+#footerLogo {
+	display: block;
+	margin: auto;
+	background-color: rgb(179, 177, 177);
+	height: 20vh;
+	
+}
+
+/* Green Underlines */
+
+#trustedheader:before, #serviceheader:before, #connectheader:before, #reviewheader:before  {
+	background-color: rgb(84, 165, 166);
+	content: '';
+	display: block;
+	height: 4px;
+	margin: 1.5rem auto;
+	width: 8rem;
+}
+
+.center {
+	text-align: center;
+}
+
+
+
+	#seven > .review .contactheader:before {
+		background-color: rgb(84, 165, 166);
+		content: '';
+		display: block;
+		height: 4px;
+		margin: 1.5rem auto;
+		width: 8rem;
+	}
+
+	#seven > .review h1, h3 {
+		text-align: center;
+	}
+
+	.button.primary.cardButton {
+		background-color: #f0f0f0;
+		opacity: 0.9;
+	}
+
+
+	.button.primary.cardButton:hover {
+		background-color: #55534c;
+	}
+
+	.checked {
+		color: rgb(84, 165, 166);
+	}
+
+	.container1 {
+		position: relative;
+		width: 100%;
+	}
+	
+	.image1 {
+		opacity: 1;
+		display: block;
+		width: 100%;
+		height: auto;
+		transition: .5s ease;
+		backface-visibility: hidden;
+	}
+	
+	.middle {
+		transition: .5s ease;
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		text-align: center;
+	}
+	
+	.container1:hover .image1 {
+		opacity: 0.3;
+	}
+	
+	.container1:hover .middle {
+		opacity: 1;
+	}
+	
+	.text {
+		background-color: #4CAF50;
+		color: white;
+		font-size: 16px;
+		padding: 16px 32px;
+	}
+
+
+
+	
+
+
+
+
 
 
 		/* #background {
