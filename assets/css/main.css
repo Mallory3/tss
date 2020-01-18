@@ -5475,6 +5475,10 @@ select {
 		height: 40vh;
 		justify-content: center;
 	}
+
+	address {
+		font-size: 1rem;
+	}
 	}
 
 
