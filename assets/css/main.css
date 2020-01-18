@@ -4708,7 +4708,7 @@ input, select, textarea {
 		background-color: #ffffff;
 		color: #c1c5cb;
 		padding: 7rem 0 4.25rem 0 ;
-		background: GREY;
+		background: white;
 	}
 
 		#footer input, #footer select, #footer textarea {
@@ -4716,15 +4716,15 @@ input, select, textarea {
 		}
 
 		#footer a {
-			color: #ffffff;
+			color: black;
 		}
 
 		#footer strong, #footer b {
-			color: #ffffff;
+			color: black;
 		}
 
 		#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
-			color: #ffffff;
+			color: black;
 		}
 
 		#footer blockquote {
@@ -4905,8 +4905,8 @@ input, select, textarea {
 		}
 
 			#footer ul.contact-icons li.icon:before {
-				background: rgb(84, 165, 166);
-				color: #ffffff;
+				background: white;
+				color: red;
 			}
 
 		#footer table tbody tr {
@@ -4962,12 +4962,13 @@ input, select, textarea {
 			color: rgb(84, 165, 166);
 		}
 
+		/* SOCIAL ICON COLORS */
 		#footer a {
-			color: #c1c5cb;
+			color: black;
 		}
 
 			#footer a:hover {
-				color: #ffffff;
+				color: grey;
 			}
 
 		#footer .image {
@@ -5264,7 +5265,7 @@ input, select, textarea {
 
 #logoimg {
 	position: relative;
-	bottom: 2.2rem;
+	top: 0.3em;
 }
 
 
