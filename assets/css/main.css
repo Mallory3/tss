@@ -336,6 +336,7 @@ input, select, textarea {
 
 /* Header */
 
+
 	header.major {
 		margin-bottom: 4.125rem;
 		text-align: center;
@@ -4064,6 +4065,13 @@ input, select, textarea {
 			}
 }
 
+#footerLogo {
+	display: block;
+	margin: auto;
+	background-color: rgb(179, 177, 177);
+	height: 20vh;
+	
+}
 
 #stairs {
 	background-image: url("/assets/images/stairslicensed.jpg");
@@ -4238,6 +4246,15 @@ input, select, textarea {
 		position: relative;
 	}
 
+	#topper {
+		width: 100%;
+		height: 4rem;
+		position: fixed;
+		top:0;
+		background-color: white;
+		
+	}
+
 	#header {
 		-moz-align-items: center;
 		-webkit-align-items: center;
@@ -4259,7 +4276,7 @@ input, select, textarea {
 		line-height: 3.75rem;
 		padding-right: 2.75rem;
 		position: fixed;
-		top: 0;
+		top: 4rem;
 		width: 100%;
 		z-index: 810;
 	}
@@ -5369,8 +5386,8 @@ input, select, textarea {
 
 		#footer .sidebar {
 			margin-left: 4.5rem;
-			min-width: 25rem;
-			width: 25rem;
+			min-width: 20rem;
+			width: 20rem;
 		}
 
 		#footer .content .split {
@@ -5568,16 +5585,16 @@ input, select, textarea {
 		}
 
 
-		#background {
+		/* #background {
 			background-image: url("/assets/images/stairbackground1.jpg");
 			background-size: contain;
 			background-repeat: no-repeat;
 			z-index: 0;
 			width: 100%;
 			height: 50vh;
-		}
+		} */
 
-		#herologo {
+		/* #herologo {
 			z-index: 1000;
 			position: relative;
 			width: 40vw;
@@ -5587,5 +5604,5 @@ input, select, textarea {
 			object-fit: contain;
 
 	
-		}
+		} */
 
