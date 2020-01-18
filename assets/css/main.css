@@ -4708,7 +4708,7 @@ input, select, textarea {
 		background-color: #ffffff;
 		color: #c1c5cb;
 		padding: 7rem 0 4.25rem 0 ;
-		background: white;
+		background: rgb(243, 243, 243);
 	}
 
 		#footer input, #footer select, #footer textarea {
@@ -5051,12 +5051,12 @@ input, select, textarea {
 		}
 
 			#footer .copyright span {
-				border: 1px solid;
 				color: rgba(71, 77, 85, 0.75);
 				display: inline;
 				margin: 0 auto;
 				padding: 1.5rem;
 				text-align: center;
+				margin-top: 3em;
 			}
 
 		@media screen and (max-width: 1280px) {
@@ -5201,6 +5201,21 @@ input, select, textarea {
 
 .center {
 	text-align: center;
+}
+
+.auto {
+	display: block;
+	margin: auto;
+}
+
+.flex {
+	display: flex;
+}
+
+.address {
+	margin-top: 1em;
+	margin-bottom: 2em;
+	justify-content: center;
 }
 
 
@@ -5410,6 +5425,82 @@ select {
 		color: white;
 		font-size: 16px;
 		padding: 16px 32px;
+	}
+
+	#map {
+		background-color: white;
+		padding: 4em;
+	}
+
+	#map strong, #map h2 {
+		color: black;
+
+	}
+
+	#mapP {
+		color: black;
+		font-weight: bold;
+		max-width: 40vw;
+		text-align: center;
+	}
+
+	#mapMarker {
+		width: 50px;
+		height: 50px;
+		display: block;
+	}
+
+	.googleMap {
+		width: 40vw;
+		height: 40vh;
+		margin: 1em;
+	}
+
+	address {
+		font-weight: bold;
+		font-size: 1.2rem;
+		color: black;
+	}
+
+	@media only screen and (max-width: 800px) { 
+		#mapFlex {
+			flex-wrap: wrap;
+		}
+
+		#mapP {
+			text-align: justify;
+			max-width: 90vw;
+		}
+
+	.googleMap {
+		width: 80vw;
+		height: 40vh;
+		justify-content: center;
+	}
+	}
+
+
+	@media only screen and (min-width: 980px) { 
+		#footerlogo {
+			position: relative;
+			bottom: 4em;
+		}
+
+		.socialIcons {
+			position: relative;
+			bottom: 3em;
+		}
+	}
+
+	.social {
+		width: 50px;
+		height: 50px;
+	}
+
+	.socialIcons {
+		max-width: 200px;
+		justify-content: center;
+		margin-bottom: 1em;
 	}
 
 
