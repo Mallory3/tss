@@ -5429,7 +5429,6 @@ select {
 
 	#map {
 		background-color: white;
-		padding: 4em;
 	}
 
 	#map strong, #map h2 {
@@ -5452,7 +5451,7 @@ select {
 	.googleMap {
 		width: 40vw;
 		height: 40vh;
-		margin: 1em;
+		margin-bottom: 3em;
 	}
 
 	address {
@@ -5468,6 +5467,7 @@ select {
 
 		#mapP {
 			width: 100%;
+			margin: 0;
 		}
 
 	.googleMap {
