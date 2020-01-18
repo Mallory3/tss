@@ -4707,7 +4707,7 @@ input, select, textarea {
 	#footer {
 		background-color: #ffffff;
 		color: #c1c5cb;
-		padding: 7rem 0 4.25rem 0 ;
+		padding: 3rem 0 1rem 0 ;
 		background: rgb(243, 243, 243);
 	}
 
@@ -5056,7 +5056,6 @@ input, select, textarea {
 				margin: 0 auto;
 				padding: 1.5rem;
 				text-align: center;
-				margin-top: 3em;
 			}
 
 		@media screen and (max-width: 1280px) {
@@ -5481,7 +5480,7 @@ select {
 	}
 
 
-	@media only screen and (min-width: 980px) { 
+	/* @media only screen and (min-width: 980px) { 
 		#footerlogo {
 			position: relative;
 			bottom: 4em;
@@ -5491,7 +5490,7 @@ select {
 			position: relative;
 			bottom: 3em;
 		}
-	}
+	} */
 
 	.social {
 		width: 50px;
@@ -5501,6 +5500,7 @@ select {
 	.socialIcons {
 		max-width: 200px;
 		justify-content: center;
+		margin-top: 1em;
 	}
 
 
