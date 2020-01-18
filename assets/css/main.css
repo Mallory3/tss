@@ -3973,6 +3973,9 @@ input, select, textarea {
 
 }
 
+#newsletter {
+	background-color: #1e2022;
+}
 
 
 
@@ -4249,9 +4252,11 @@ input, select, textarea {
 	#topper {
 		width: 100%;
 		height: 4rem;
-		position: fixed;
-		top:3.75em;
-		background-color: white;
+		position: absolute;
+		top: 3.75rem;
+		background-color: rgb(12, 87, 116);
+		z-index: 809;
+
 		
 	}
 
@@ -4268,7 +4273,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #1e2022;
+		background: white;
 		color: #c1c5cb;
 		cursor: default;
 		height: 3.75rem;
@@ -4282,7 +4287,7 @@ input, select, textarea {
 	}
 
 		#header .logo {
-			background: rgb(84, 165, 166);
+			background: white;
 			color: #ffffff;
 			display: block;
 			height: 3.75rem;
@@ -4370,13 +4375,14 @@ input, select, textarea {
 					}
 
 					#header nav > ul > li a {
-						color: #c1c5cb;
+						color: #181818;
 						display: block;
 						height: 3.75rem;
 						line-height: 3.75rem;
 						margin-left: 0.5rem;
 						padding: 0 1.5rem;
 						text-decoration: none;
+						font-weight: 800;
 					}
 
 						#header nav > ul > li a:hover, #header nav > ul > li a:focus, #header nav > ul > li a.active {
@@ -5114,7 +5120,7 @@ input, select, textarea {
 		background-color: #ffffff;
 		color: #c1c5cb;
 		padding: 7rem 0 4.25rem 0 ;
-		background: #1e2022;
+		background: GREY;
 	}
 
 		#footer input, #footer select, #footer textarea {
