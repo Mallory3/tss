@@ -3861,7 +3861,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: white;
+		background: rgb(243, 243, 243);
 		color: #c1c5cb;
 		cursor: default;
 		height: 3.75rem;
@@ -3875,7 +3875,7 @@ input, select, textarea {
 	}
 
 		#header .logo {
-			background: white;
+			background: rgb(243, 243, 243);
 			color: #ffffff;
 			display: block;
 			height: 3.75rem;
@@ -3891,7 +3891,7 @@ input, select, textarea {
 
 		#header a[href="#navPanel"] {
 			text-decoration: none;
-			color: #ffffff;
+			color: black;
 			display: none;
 			padding: 0 0 0 1.25rem;
 		}
@@ -4237,7 +4237,7 @@ input, select, textarea {
 		-ms-flex-wrap: no-wrap;
 		flex-wrap: no-wrap;
 		cursor: default;
-		height: 48rem;
+		height: 90vh;
 		position: relative;
 	}
 
@@ -4430,7 +4430,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#banner {
-				height: 40rem;
+				height: 90vh;
 			}
 
 		}
@@ -4446,7 +4446,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#banner {
-				height: 25rem;
+				height: 90vh;
 			}
 
 				#banner > article h1 {
@@ -4462,7 +4462,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			#banner {
-				height: 30rem;
+				height: 90vh;
 			}
 
 		}
