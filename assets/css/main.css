@@ -4708,7 +4708,11 @@ input, select, textarea {
 		background-color: #ffffff;
 		color: #c1c5cb;
 		padding: 3rem 0 1rem 0 ;
-		background: rgb(243, 243, 243);
+		background: white;
+		background-image: url("/assets/images/AdobeStock_71712811_Preview.jpeg");
+		background-repeat: no-repeat;
+		background-position: center;
+		
 	}
 
 		#footer input, #footer select, #footer textarea {
@@ -5402,7 +5406,7 @@ select {
 	
 	.middle {
 		transition: .5s ease;
-		opacity: 0;
+		opacity: .8;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -5420,7 +5424,7 @@ select {
 	}
 	
 	.text {
-		background-color: #4CAF50;
+		background-color: rgb(59, 59, 59);
 		color: white;
 		font-size: 16px;
 		padding: 16px 32px;
