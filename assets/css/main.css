@@ -4708,10 +4708,10 @@ input, select, textarea {
 		background-color: #ffffff;
 		color: #c1c5cb;
 		padding: 3rem 0 1rem 0 ;
-		background: white;
-		background-image: url("/assets/images/AdobeStock_71712811_Preview.jpeg");
+		background: rgb(243, 243, 243);
+		/* background-image: url("/assets/images/AdobeStock_71712811_Preview.jpeg");
 		background-repeat: no-repeat;
-		background-position: center;
+		background-position: center; */
 		
 	}
 
@@ -5406,7 +5406,7 @@ select {
 	
 	.middle {
 		transition: .5s ease;
-		opacity: .8;
+		opacity: 0.8;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -5424,10 +5424,11 @@ select {
 	}
 	
 	.text {
-		background-color: rgb(59, 59, 59);
-		color: white;
+		background-color: white;
+		color: black;
 		font-size: 16px;
 		padding: 16px 32px;
+		font-weight: bold;
 	}
 
 	#map {
