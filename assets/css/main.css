@@ -4462,7 +4462,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			#banner {
-				height: 90vh;
+				height: 80vh;
 			}
 
 		}
