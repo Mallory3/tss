@@ -4237,7 +4237,7 @@ input, select, textarea {
 		-ms-flex-wrap: no-wrap;
 		flex-wrap: no-wrap;
 		cursor: default;
-		height: 90vh;
+		height: 85vh;
 		position: relative;
 	}
 
@@ -4707,7 +4707,7 @@ input, select, textarea {
 	#footer {
 		background-color: #ffffff;
 		color: #c1c5cb;
-		padding: 3rem 0 1rem 0 ;
+		padding: 2rem 0 1rem 0 ;
 		background: rgb(243, 243, 243);
 		/* background-image: url("/assets/images/AdobeStock_71712811_Preview.jpeg");
 		background-repeat: no-repeat;
@@ -5051,7 +5051,7 @@ input, select, textarea {
 
 		#footer .copyright {
 			text-align: center;
-			margin-bottom: 2.75rem;
+			margin-bottom: 1.75rem;
 		}
 
 			#footer .copyright span {
@@ -5065,7 +5065,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#footer {
-				padding: 5rem 0 2.25rem 0 ;
+				padding: 2rem 0 1rem 0 ;
 			}
 
 				#footer .sidebar {
@@ -5078,7 +5078,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#footer {
-				padding: 5rem 0 2.25rem 0 ;
+				padding: 2rem 0 1rem 0 ;
 			}
 
 				#footer section {
@@ -5525,6 +5525,11 @@ textarea {
 	.social {
 		width: 50px;
 		height: 50px;
+		transition: all .2s ease-in-out;
+	}
+
+	.social:hover {
+		transform: scale(1.1);
 	}
 
 	.socialIcons {
