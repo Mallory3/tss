@@ -4304,7 +4304,7 @@ input, select, textarea {
 			-webkit-align-items: center;
 			-ms-align-items: center;
 			align-items: center;
-			background-position: center;
+			background-position: 0% 100%;
 			background-repeat: no-repeat;
 			background-size: cover;
 			height: 100%;
@@ -4313,7 +4313,7 @@ input, select, textarea {
 			padding: 0;
 			position: absolute;
 			text-align: center;
-			top: 0;
+			top: 1em;
 			visibility: hidden;
 			width: 100%;
 			z-index: 800;
@@ -5532,6 +5532,12 @@ textarea {
 		justify-content: center;
 		margin-top: 1em;
 	}
+
+	.hero1 {
+		object-position: 0% 100%;
+	}
+
+
 
 
 
