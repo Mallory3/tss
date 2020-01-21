@@ -306,7 +306,7 @@ input, select, textarea {
 		}
 
 	input, select, textarea {
-		color: #474d55;
+		color: #2c2c2c;
 	}
 
 	a {
@@ -2215,7 +2215,7 @@ input, select, textarea {
 		width: 100%;
 	}
 
-		input[type="text"]:invalid,
+		/* input[type="text"]:invalid,
 		input[type="password"]:invalid,
 		input[type="email"]:invalid,
 		input[type="tel"]:invalid,
@@ -2224,7 +2224,7 @@ input, select, textarea {
 		select:invalid,
 		textarea:invalid {
 			box-shadow: none;
-		}
+		} */
 
 	label {
 		display: block;
@@ -5291,7 +5291,8 @@ input, select, textarea {
 
 input[type="text"],
 input[type="email"],
-select {
+select,
+textarea {
 	box-shadow: 1px 1px 3px black inset;
 }
 
