@@ -5397,16 +5397,31 @@ select {
 	}
 	
 	.image1 {
-		opacity: 1;
+		opacity: 0.9;
 		display: block;
 		width: 100%;
-		min-height: 25vh;
-		max-height: 35vh;
+		height: 30vh;
 		object-fit: cover;
 		object-position: 100% 40%;
-		transition: .5s ease;
+		transition: all .2s ease-in-out;
+		/* transition: box-shadow .3s; */
 		backface-visibility: hidden;
 		border-radius: 5px;
+		/* -webkit-box-shadow: 1px 1px 5px 6px #ccc; 
+		-moz-box-shadow:    3px 3px 5px 6px #ccc; 
+		box-shadow:         1px 1px 4px rgb(26, 26, 26); */
+	}
+
+	.service1 {
+		object-position: 50% 30%;
+	}
+	
+	.service2 {
+		object-position: 50% 93%;
+	}
+
+	.service3 {
+		object-position: 50% 4%;
 	}
 	
 	.middle {
@@ -5421,7 +5436,11 @@ select {
 	}
 	
 	.container1:hover .image1 {
-		opacity: 0.3;
+		-webkit-box-shadow: 1px 1px 5px 6px #ccc; 
+		-moz-box-shadow:    3px 3px 5px 6px #ccc; 
+		box-shadow:         1px 1px 3px rgba(0, 0, 0, 0.7);
+		opacity: 1;
+		transform: scale(1.05);
 	}
 	
 	.container1:hover .middle {
