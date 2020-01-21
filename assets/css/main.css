@@ -5248,6 +5248,7 @@ input, select, textarea {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: right;
+	border-radius: 5px;
 
 }
 
@@ -5399,9 +5400,13 @@ select {
 		opacity: 1;
 		display: block;
 		width: 100%;
-		height: auto;
+		min-height: 25vh;
+		max-height: 35vh;
+		object-fit: cover;
+		object-position: 100% 40%;
 		transition: .5s ease;
 		backface-visibility: hidden;
+		border-radius: 5px;
 	}
 	
 	.middle {
