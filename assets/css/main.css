@@ -5319,9 +5319,14 @@ textarea {
 @media screen and (max-width: 700px) and (orientation: landscape) {
 	#imaginationSection {
 		background-attachment: scroll;
-		background-position: 100% 5%;
+		background-position: right;
 		height: 55vh;
 		background-size: contain;
+	}
+
+	#imagination {
+		font-size: 1.5rem;
+		margin-top: 0em;
 	}
 }
 
