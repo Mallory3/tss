@@ -2030,7 +2030,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-		border-radius: 0;
+		border-radius: 10px;
 		border: 0;
 		cursor: pointer;
 		display: inline-block;
@@ -2052,6 +2052,7 @@ input, select, textarea {
 			height: 2.4375rem;
 			line-height: 2.4375rem;
 			padding: 0 1.25rem;
+			
 		}
 
 		input[type="submit"].large,
@@ -2155,7 +2156,7 @@ input, select, textarea {
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background: rgba(255, 255, 255, 0.85);
+				background: rgb(13, 130, 177);
 			}
 
 		input[type="submit"].primary,
@@ -2174,7 +2175,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: rgba(71, 154, 168, 0.875);
+				background-color: rgb(13, 130, 177);
 				box-shadow: none;
 			}
 
@@ -2183,7 +2184,7 @@ input, select, textarea {
 				input[type="button"].primary:hover:active,
 				button.primary:hover:active,
 				.button.primary:hover:active {
-					background-color: #de624d;
+					background-color: rgb(13, 130, 177);
 				}
 
 /* Form */
@@ -4584,7 +4585,7 @@ input, select, textarea {
 
 .aboutParagraph {
 	text-align: justify;
-	font-size: 20px;
+	font-size: 19px;
 	margin-bottom: 0;
 }
 
@@ -5316,7 +5317,21 @@ textarea {
 	}
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 950px) {
+	#imaginationSection {
+		background-attachment: scroll;
+		background-position: 100% 0%;
+		height: 50vh;
+		background-size: cover;
+	}
+
+	#imagination {
+		font-size: 1.6rem;
+		margin-top: 1em;
+	}
+}
+
+@media screen and (max-width: 650px) {
 	#imaginationSection {
 		background-attachment: scroll;
 		background-position: 100% 0%;
@@ -5355,7 +5370,7 @@ textarea {
 	display: block;
 	margin: auto;
 	background-color: rgb(179, 177, 177);
-	height: 20vh;
+	height: 15vh;
 	
 }
 
@@ -5466,6 +5481,7 @@ textarea {
 		padding: 16px 32px;
 		font-weight: bold;
 		text-decoration: none;
+		border-radius: 5px;
 	}
 
 	.text {
@@ -5590,17 +5606,18 @@ textarea {
 
 
 
-	/* @media only screen and (min-width: 980px) { 
+	@media only screen and (max-width: 980px) { 
 		#footerlogo {
 			position: relative;
-			bottom: 4em;
+			top: 1.5em;
 		}
 
 		.socialIcons {
 			position: relative;
-			bottom: 3em;
+			top: 1.3em;
+			margin-bottom: 0;
 		}
-	} */
+	}
 
 	.social {
 		width: 50px;
