@@ -5320,12 +5320,12 @@ textarea {
 	#imaginationSection {
 		background-attachment: scroll;
 		background-position: right;
-		height: 55vh;
+		height: 45vh;
 		background-size: contain;
 	}
 
 	#imagination {
-		font-size: 1.5rem;
+		font-size: 1.4rem;
 		margin-top: 0em;
 	}
 }
