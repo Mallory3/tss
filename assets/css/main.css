@@ -5331,7 +5331,7 @@ textarea {
 	}
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
 	#imaginationSection {
 		background-attachment: scroll;
 		background-position: 100% 0%;
@@ -5348,7 +5348,7 @@ textarea {
 
 @media only screen 
   and (min-width: 375px) 
-  and (max-width: 667px) 
+  and (max-width: 750px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) { 
 		#laptopImg {
@@ -5545,6 +5545,12 @@ textarea {
 	address {
 		font-size: 1rem;
 	}
+}
+.mailingList input[type="email"] {
+	color: black;
+	opacity: 1;
+	background-color: none;
+
 }
 
 @media (min-width: 736px) {	
