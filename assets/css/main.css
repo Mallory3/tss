@@ -5418,9 +5418,16 @@ textarea {
 		color: rgb(84, 165, 166);
 	}
 
+	#showroomQuote {
+		text-align:center; 
+		font-size: 1.4rem; 
+		margin-top:2em;
+	}
+
 	@media (max-width: 800px) {
 			#showroomQuote {
-				font-size: 0.5rem; 
+				font-size: 1rem; 
+				text-align: justify;
 			}
 	}
 
