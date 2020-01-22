@@ -5319,14 +5319,14 @@ textarea {
 @media screen and (max-width: 700px) {
 	#imaginationSection {
 		background-attachment: scroll;
-		background-position: right;
+		background-position: 100% 0%;
 		height: 45vh;
 		background-size: cover;
 	}
 
 	#imagination {
-		font-size: 1.3rem;
-		margin-top: 0em;
+		font-size: 1.2rem;
+		margin-top: -1em;
 	}
 }
 
