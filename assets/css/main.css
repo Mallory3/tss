@@ -5725,14 +5725,13 @@ textarea {
 
 #filterSelect {
 	width: 25vw;
-	margin: 1em;
 
 }
 
 #filterBox {
 	width: 100%;
-	/* background-color: #1e2022; */
-	height: 10vh;
+	background-color: #1e2022;
+	height: 13vh;
 	padding-top: 2em;
 	z-index: 800;
 }
@@ -5751,8 +5750,8 @@ textarea {
 }
 
 #filterTitle {
-	margin-top: 1.5em;
-	color: Black;
+	margin-right: 1.5em;
+	color: white;
 	font-size: 1.1rem;
 }
 
@@ -5780,6 +5779,7 @@ textarea {
 @media only screen and (max-width: 700px) { 
 	#filterSelect {
 		width: 100%;
+		margin-top: 2em;
 	
 	}
 
@@ -5837,7 +5837,6 @@ textarea {
 	margin-bottom: 3em;
 	grid-column-start: 1;
 	z-index: 0;
-	background-color: #1e2022;
 	}
 
 
