@@ -5747,7 +5747,7 @@ textarea {
 #filterFlex {
 	grid-column-start: 2;
 	display: flex;
-	justify-content: flex-end;
+	/* justify-content: flex-end; */
 }
 
 #filterTitle {
@@ -5779,17 +5779,29 @@ textarea {
 
 @media only screen and (max-width: 700px) { 
 	#filterSelect {
-		width: 70vw;
+		width: 100vw;
+		margin: 0;
+	}
+
+	#filterTitle {
+		display: none;
+	}
+
+	#filterBox {
+		padding: 0;
+		margin: 0;
 	}
 
 	#filterSection {
 		display: grid;
 		grid-template-columns: 1fr;
+		margin: 0;
 	}
 
 	#filterFlex {
 		grid-column-start: 1;
-		justify-content: center;
+		/* justify-content: flex-start; */
+		margin: 0;
 	}
 }
 
