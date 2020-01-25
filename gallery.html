@@ -69,16 +69,75 @@
 			<div class="wrapper">
 					<div class="sliding-background"></div>
       </div>
-
-      <div id="filterBar">
 <!-- 
-          <select>
-              <option value="volvo">Volvo</option>
-              <option value="saab">Saab</option>
-              <option value="mercedes">Mercedes</option>
-              <option  id="filter" value="audi">Audi</option>
-            </select> -->
+      <div id="filterBar">
+
+     
+      </div> -->
+
+      <section id="filterSection"> 
+        <div id="filterFlex"> 
+          <h4 id="filterTitle">Filter</h4>
+      <select id="filterSelect">
+          <option value="All">All</option>
+          <option value="Straight Stairs">Straight Stairs</option>
+          <option value="Circular Stairs">Circular Stairs</option>
+          <option value="Outdoor Stairs">Outdoor Stairs</option>
+          <option value="Spindles, Posts & Rails">Spindles, Posts & Rails</option>
+        </select>
       </div>
+     
+      </section>
+     
+
+      <script>
+        $(document).ready(function(){
+	
+	$(".straight").show();
+  $(".circular").show();
+  $(".outdoor").show();
+	$(".other").show();
+
+	$("#filterSelect").change(function(){
+    if( $(this).val() == "All" ) { 
+			$(".circular").show();
+      $(".straight").show();
+      $(".outdoor").show();
+			$(".other").show();
+        }
+	
+		else if ( $(this).val() == "Straight Stairs" ) { 
+			$(".straight").show();
+      $(".circular").hide();
+      $(".outdoor").hide();
+      $(".other").hide();
+        }
+    else if( $(this).val() == "Circular Stairs" ) { 
+      $(".circular").show();
+      $(".straight").hide();
+      $(".outdoor").hide();
+      $(".other").hide();
+        }
+    else if( $(this).val() == "Outdoor Stairs" ) { 
+      $(".outdoor").show();
+      $(".straight").hide();
+      $(".circular").hide();
+      $(".other").hide();
+        }
+    else if( $(this).val() == "Spindles, Posts & Rails" ) { 
+      $(".other").show();
+      $(".straight").hide();
+      $(".circular").hide();
+      $(".outdoor").hide();
+        }
+     
+    }); 
+	
+});
+      
+      
+      
+      </script>
 
   
 
@@ -86,7 +145,7 @@
       <!-- Gallery -->
 
 
-      <section id="filterList">
+      <!-- <section id="filterList">
           <div>
             <ul>
               <li><a>All</a></li>
@@ -96,7 +155,7 @@
               <li><a>Spindles, Posts & Rails</a></li>
             </ul>
           </div>
-        </section>
+        </section> -->
       
 
 
@@ -111,9 +170,9 @@
           <img class="galleryImg circular" src="/assets/images/card3.png" alt="">
           <img class="galleryImg circular" src="/assets/images/card4.png" alt="">
           <img class="galleryImg circular" src="/assets/images/card1.png" alt="">
-          <img class="galleryImg circular" src="/assets/images/card2.png" alt="">
+          <img class="galleryImg outdoor" src="/assets/images/card2.png" alt="">
           <img class="galleryImg circular" src="/assets/images/card3.png" alt="">
-          <img class="galleryImg circular" src="/assets/images/card4.png" alt="">
+          <img class="galleryImg other" src="/assets/images/card4.png" alt="">
         </div>
       </div>
      
@@ -122,7 +181,7 @@
 
   
 
-        <script>
+        <!-- <script>
             $(document).ready(function(){
                 // Toggles paragraphs display
                 $('"#filter"').click(function(){
@@ -133,7 +192,7 @@
                 
 
             });
-            </script>
+            </script> -->
 
             <!-- <script>
    $(function() {
