@@ -5806,9 +5806,12 @@ textarea {
 	}
 
 	@media only screen and (max-width: 642px) { 
+		#galleryContainer, #filterSection {
+			margin: 1em;
+		}
 
 		.galleryImg {
-			max-width: 50vmax;
+			max-width: 60vmax;
 			max-height: 50vmax;
 		}
 	}
