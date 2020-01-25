@@ -5649,14 +5649,14 @@ textarea {
 
 .sliding-background {
 	background: url("/assets/images/blueinvert.jpg");
-	background-position: 35% 80%;
+	background-position: bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 60vh;
+	height: 65vh;
 	width: 100%;
 }
 
-@media only screen and (min-width: 700px) { 
+@media only screen and (min-width: 499px) { 
 	.sliding-background {
 		background-attachment: fixed;
 	
@@ -5680,13 +5680,21 @@ textarea {
 	}
 } */
 
+
+#galleryTitleDiv {
+	position: relative;
+	top: 10em;
+}
 #galleryTitle {
 	text-align: center;
-	color: white;
+	color: black;
+	font-size: 3rem;
+
+
 	
 
 }
-
+/* 
 @media only screen and (max-width: 1450px) { 
 	#galleryTitle {
 		font-size: 2rem;
@@ -5713,7 +5721,7 @@ textarea {
 		font-size: 1.4rem;
 	
 	}
-}
+} */
 
 #filterSelect {
 	width: 25vw;
@@ -5723,7 +5731,7 @@ textarea {
 
 #filterBox {
 	width: 100%;
-	background-color: #1e2022;
+	/* background-color: #1e2022; */
 	height: 15vh;
 	padding-top: 2em;
 	z-index: 800;
@@ -5744,7 +5752,8 @@ textarea {
 
 #filterTitle {
 	margin-top: 1.5em;
-	color: white;
+	color: Black;
+	font-size: 1.1rem;
 }
 
 @media only screen and (max-width: 1600px) { 
@@ -5807,17 +5816,14 @@ textarea {
 #galleryContainer {
 	display: grid;
 	grid-template-rows: 1fr;
-	margin-left: 6em;
-	margin-right: 6em;
+	margin-left: 5em;
+	margin-right: 5em;
 	margin-top: 3em;
 	margin-bottom: 3em;
 	grid-column-start: 1;
 	z-index: 0;
 	}
 
-	#galleryTitle {
-		color: white;
-	}
 
 
 	
