@@ -5783,6 +5783,7 @@ textarea {
 	
 	}
 
+
 	#filterTitle {
 		display: none;
 	}
@@ -5836,6 +5837,7 @@ textarea {
 	margin-bottom: 3em;
 	grid-column-start: 1;
 	z-index: 0;
+	background-color: #1e2022;
 	}
 
 
