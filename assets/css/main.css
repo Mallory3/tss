@@ -5793,7 +5793,7 @@ textarea {
 		}
 
 		.galleryImg {
-			object-fit: contain;
+			object-fit: cover;
 		}
 	}
 
