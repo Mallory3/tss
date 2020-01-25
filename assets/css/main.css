@@ -5800,8 +5800,16 @@ textarea {
 	@media only screen and (max-width: 800px) { 
 
 		.galleryImg {
-			max-width: 40vmax;
+			max-width: 30vmax;
 			max-height: 40vmax;
+		}
+	}
+
+	@media only screen and (max-width: 642px) { 
+
+		.galleryImg {
+			max-width: 50vmax;
+			max-height: 50vmax;
 		}
 	}
 
