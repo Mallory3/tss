@@ -5648,12 +5648,13 @@ textarea {
 }
 
 .sliding-background {
-	background: url("/assets/images/woodstairlicensed4.jpg");
-	background-position: top;
+	background: url("/assets/images/AdobeStock_76885319_Preview.jpeg");
+	background-position: 40% 30%;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 55vh;
+	height: 50vh;
 	width: 100%;
+	background-attachment: fixed;
 }
 
 /* .sliding-background {
@@ -5713,10 +5714,19 @@ textarea {
 
 }
 
+#filterBox {
+	width: 100%;
+	background-color: black;
+	height: 20vh;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
 #filterSection {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-	margin: 6em;
+	margin-left: 6em;
+	margin-right: 6em;
 }
 
 #filterFlex {
@@ -5833,7 +5843,8 @@ textarea {
 
 	@media only screen and (max-width: 895px) { 
 		#galleryContainer, #filterSection {
-			margin: 2em;
+			margin-left: 2em;
+			margin-right: 2em;
 		}
 
 		.galleryImg {
