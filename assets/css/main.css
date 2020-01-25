@@ -5732,22 +5732,22 @@ textarea {
 #filterBox {
 	width: 100%;
 	/* background-color: #1e2022; */
-	height: 15vh;
+	height: 10vh;
 	padding-top: 2em;
 	z-index: 800;
 }
 
 #filterSection {
-	display: grid;
-	grid-template-columns: 1fr 2fr;
+	/* display: grid;
+	grid-template-columns: 1fr 2fr; */
 	margin-left: 6em;
 	margin-right: 6em;
 }
 
 #filterFlex {
-	grid-column-start: 2;
+	/* grid-column-start: 2; */
 	display: flex;
-	/* justify-content: flex-end; */
+	justify-content: center;
 }
 
 #filterTitle {
@@ -5779,8 +5779,8 @@ textarea {
 
 @media only screen and (max-width: 700px) { 
 	#filterSelect {
-		width: 100vw;
-		margin: 0;
+		width: 100%;
+	
 	}
 
 	#filterTitle {
@@ -5790,16 +5790,18 @@ textarea {
 	#filterBox {
 		padding: 0;
 		margin: 0;
+		width: 100%;
+		background-color: #1e2022;
 	}
 
 	#filterSection {
-		display: grid;
-		grid-template-columns: 1fr;
+		/* display: grid;
+		grid-template-columns: 1fr; */
 		margin: 0;
 	}
 
 	#filterFlex {
-		grid-column-start: 1;
+		/* grid-column-start: 1; */
 		/* justify-content: flex-start; */
 		margin: 0;
 	}
