@@ -5648,11 +5648,11 @@ textarea {
 }
 
 .sliding-background {
-	background: url("/assets/images/blueprint2.png");
-	background-position: center;
+	background: url("/assets/images/blueinvert.jpg");
+	background-position: 35% 80%;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 50vh;
+	height: 60vh;
 	width: 100%;
 	background-attachment: fixed;
 }
