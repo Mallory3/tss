@@ -5358,7 +5358,7 @@ textarea {
 
 /* Green Underlines */
 
-#trustedheader:before, #serviceheader:before, #connectheader:before, #reviewheader:before  {
+#trustedheader:before, #serviceheader:before, #connectheader:before, #reviewheader:before, #galleryheader:before  {
 	background-color: rgb(84, 165, 166);
 	content: '';
 	display: block;
@@ -5648,19 +5648,62 @@ textarea {
 }
 
 .sliding-background {
+	background: url("/assets/images/woodstairlicensed4.jpg");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 55vh;
+	width: 100%;
+}
+
+/* .sliding-background {
 	background: url("/assets/images/blueprint2.png") repeat-x;
 	background-position: center;
 	height: 55vh;
 	width: 5076px;
 	animation: slide 60s linear infinite;
-}
+} */
 
-@keyframes slide{
+/* @keyframes slide{
 	0%{
 		transform: translate3d(0, 0, 0);
 	}
 	100%{
 		transform: translate3d(-1692px, 0, 0);
+	}
+} */
+
+#galleryTitle {
+	text-align: center;
+	
+
+}
+
+@media only screen and (max-width: 1450px) { 
+	#galleryTitle {
+		font-size: 2rem;
+	
+	}
+}
+
+@media only screen and (max-width: 1100px) { 
+	#galleryTitle {
+		font-size: 1.8rem;
+	
+	}
+}
+
+@media only screen and (max-width: 1050px) { 
+	#galleryTitle {
+		font-size: 1.6rem;
+	
+	}
+}
+
+@media only screen and (max-width: 1000px) { 
+	#galleryTitle {
+		font-size: 1.4rem;
+	
 	}
 }
 
@@ -5672,7 +5715,7 @@ textarea {
 
 #filterSection {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 2fr;
 	margin: 6em;
 }
 
@@ -5753,6 +5796,7 @@ textarea {
 
 	
 	#galleryBox {
+		position: relative;
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: row;
@@ -5789,7 +5833,7 @@ textarea {
 
 	@media only screen and (max-width: 895px) { 
 		#galleryContainer, #filterSection {
-			margin: 3em;
+			margin: 2em;
 		}
 
 		.galleryImg {
@@ -5798,9 +5842,7 @@ textarea {
 	}
 
 	@media only screen and (max-width: 800px) { 
-		#galleryContainer, #filterSection {
-			margin: 2em;
-		}
+	
 
 		.galleryImg {
 			max-width: 40vmax;
@@ -5808,7 +5850,16 @@ textarea {
 		}
 	}
 
-	@media only screen and (max-width: 642px) { 
+	@media only screen and (max-width: 767px) { 
+	
+
+		.galleryImg {
+			max-width: 35vmax;
+			max-height: 35vmax;
+		}
+	}
+
+	@media only screen and (max-width: 700px) { 
 
 
 		.galleryImg {

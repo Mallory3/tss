@@ -74,8 +74,12 @@
 
      
       </div> -->
+  
 
       <section id="filterSection"> 
+        <div><h1 id="galleryTitle">Our Gallery</h1>
+        <p id="galleryheader"></p></div>
+        
         <div id="filterFlex"> 
           <h4 id="filterTitle">Filter</h4>
       <select id="filterSelect">
@@ -96,14 +100,16 @@
 	$(".straight").show();
   $(".circular").show();
   $(".outdoor").show();
-	$(".other").show();
+  $(".other").show();
+  $("#galleryTitle").html("Our Gallery")
 
 	$("#filterSelect").change(function(){
     if( $(this).val() == "All" ) { 
 			$(".circular").show();
       $(".straight").show();
       $(".outdoor").show();
-			$(".other").show();
+      $(".other").show();
+      $("#galleryTitle").html("Our Gallery")
         }
 	
 		else if ( $(this).val() == "Straight Stairs" ) { 
@@ -111,24 +117,28 @@
       $(".circular").hide();
       $(".outdoor").hide();
       $(".other").hide();
+      $("#galleryTitle").html("Straight Stairs")
         }
     else if( $(this).val() == "Circular Stairs" ) { 
       $(".circular").show();
       $(".straight").hide();
       $(".outdoor").hide();
       $(".other").hide();
+      $("#galleryTitle").html("Circular Stairs")
         }
     else if( $(this).val() == "Outdoor Stairs" ) { 
       $(".outdoor").show();
       $(".straight").hide();
       $(".circular").hide();
       $(".other").hide();
+      $("#galleryTitle").html("Outdoor Stairs")
         }
     else if( $(this).val() == "Spindles, Posts & Rails" ) { 
       $(".other").show();
       $(".straight").hide();
       $(".circular").hide();
       $(".outdoor").hide();
+      $("#galleryTitle").html("Spindles, Posts & Rails")
         }
      
     }); 
@@ -169,9 +179,12 @@
           <img class="galleryImg circular" src="/assets/images/card2.png" alt="">
           <img class="galleryImg circular" src="/assets/images/card3.png" alt="">
           <img class="galleryImg circular" src="/assets/images/card4.png" alt="">
-          <img class="galleryImg circular" src="/assets/images/card1.png" alt="">
+          <img class="galleryImg other" src="/assets/images/card1.png" alt="">
           <img class="galleryImg outdoor" src="/assets/images/card2.png" alt="">
-          <img class="galleryImg circular" src="/assets/images/card3.png" alt="">
+          <img class="galleryImg other" src="/assets/images/card3.png" alt="">
+          <img class="galleryImg other" src="/assets/images/card4.png" alt="">
+          <img class="galleryImg other" src="/assets/images/card4.png" alt="">
+          <img class="galleryImg other" src="/assets/images/card4.png" alt="">
           <img class="galleryImg other" src="/assets/images/card4.png" alt="">
         </div>
       </div>
