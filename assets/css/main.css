@@ -5797,7 +5797,7 @@ textarea {
 		}
 	}
 
-	@media only screen and (max-width: 798px) and (min-width: 660px) { 
+	@media only screen and (max-width: 798px) { 
 
 		.galleryImg {
 			max-width: 28vmax;
