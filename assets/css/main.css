@@ -5756,6 +5756,7 @@ textarea {
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: row;
+		justify-content: center;
 	}
 	
 	.galleryImg {
@@ -5764,8 +5765,7 @@ textarea {
 		object-fit: cover;
 		border-radius: 5px;
 		margin: 1em;
-		width: 20vmin;
-		width: 20vmax;
+		width: 20vw;
 		height: auto;
 		opacity: .95;
 		flex: 1 1 20em;
@@ -5796,6 +5796,20 @@ textarea {
 			object-fit: cover;
 		}
 	}
+
+	@media only screen and (max-width: 798px) and (min-width: 660px) { 
+
+		.galleryImg {
+			max-width: 28vmax;
+		}
+	}
+
+	/* @media only screen and (max-width: 700px) { 
+
+		.galleryImg {
+			max-width: 20vmax;
+		}
+	} */
 
 	#filterBar {
 		width: 100%;
