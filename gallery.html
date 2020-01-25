@@ -11,105 +11,185 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 	</head>
 	<body class="is-preload">
 
-		<!-- Header -->
-			<header id="header">
+    <!-- Header -->
 
-				<!-- Logo -->
-					<a class="logo" href="index.html"><img id="logoimg" src="/assets/images/logo1.png" alt="logo"></a>
+    <header id="header">
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="index.html" class="active">Home</a></li>
-							<li>
-								<a href="#">Dropdown</a>
-								<ul>
-									<li><a href="#">Magna tempus</a></li>
-									<li><a href="#">Etiam lorem facilis</a></li>
-									<li><a href="#">Veroeros consequat</a></li>
-									<li>
-										<a href="#">Dolore sed magna</a>
-										<ul>
-											<li><a href="#">Magna tempus</a></li>
-											<li><a href="#">Etiam lorem facilis</a></li>
-											<li><a href="#">Veroeros consequat</a></li>
-											<li><a href="#">Dolore sed magna</a></li>
-											<li><a href="#">Nisl sed adipiscing</a></li>
-										</ul>
-									</li>
-									<li><a href="#">Nisl sed adipiscing</a></li>
-								</ul>
-							</li>
-							<li><a href="generic.html">Generic</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-					</nav>
+        <!-- Logo -->
+        <a class="logo" href="index.html"><img id="logoimg" src="/assets/images/TSSlogo.png" alt="logo"></a>
 
-      </header>
+        <!-- Nav -->
+
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html" class="active">About</a></li>
+                <li>
+                    <a href="#">Services</a>
+                    <ul>
+                        <li><a href="#">Straight Stairs</a></li>
+                        <li><a href="#">Circular Stairs</a></li>
+                        <li><a href="#">Deck Stairs</a></li>
+                        <li><a href="#">Spindles, Posts & Rails</a>
+                            <!-- <ul>
+                                <li><a href="#">Magna tempus</a></li>
+                                <li><a href="#">Etiam lorem facilis</a></li>
+                                <li><a href="#">Veroeros consequat</a></li>
+                                <li><a href="#">Dolore sed magna</a></li>
+                            </ul> -->
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Free Quote</a></li>
+                <li><a href="gallery.html">Our Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="topper">
+
+        <ul class="icons">
+            <li>
+                <h3 style="color:white;">Get a Free Quote</h3></li>
+            <li>
+                <h3 style="color:white;" class="icon solid fa-phone">
+											 403.295.2686</h3></li>
+
+        </ul>
+        <ul>
+
+        </ul>
+    </div>
       
       	<!-- <div id="backgroundImage"></div> -->
 			<div class="wrapper">
 					<div class="sliding-background"></div>
       </div>
-      
-      		<!-- Footer -->
-			<section id="footer">
-          <div class="inner with-sidebar">
+
+      <div id="filterBar">
+<!-- 
+          <select>
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="mercedes">Mercedes</option>
+              <option  id="filter" value="audi">Audi</option>
+            </select> -->
+      </div>
+
   
-            <!-- Content -->
-              <div class="content">
-                <section>
-                  <header>
-                    <h3>About Us</h3>
-                  </header>
-                  <p>We are a full service stair shop: designing, manufacturing and installing all types of straight and circular stairs including construction grade, carpet ready and hardwood. As part of our commitment to innovation, we are constantly expanding our product lines and refining our production methods to provide options to fit your budget and timeframe.</p>
-                  <ul class="actions">
-                    <li><a href="#" class="button primary icon solid fa-info-circle">Learn More</a></li>
-                  </ul>
-                </section>
-                <section class="split">
-                  <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.5389692762355!2d-114.04759768419157!3d51.09851534833704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537165af382a9f65%3A0x7fd98216520e1e66!2sThe%20Stair%20Shoppe!5e0!3m2!1sen!2sca!4v1576547017831!5m2!1sen!2sca" width="450" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                  </div>
-                </section>
-              </div>
-  
-            <!-- Sidebar -->
-              <div class="sidebar">
-                <header>
-                  <h3>Contact Us</h3>
-                </header>
-                <section>
-                  <ul class="contact-icons">
-                    <li class="icon solid fa-home">
-                      <address>
-                        Untitled Corp<br />
-                        1234 Fictional Road, #5432<br />
-                        Nashville, TN 00000-0000
-                      </address>
-                    </li>
-                    <li class="icon solid fa-envelope">
-                      <a href="#">info@untitledcorp.tld</a>
-                    </li>
-                    <li class="icon solid fa-phone">
-                      (000) 000-0000
-                    </li>
-                    <li class="icon solid fa-comment">
-                      <a href="#">@untitled-corp</a>
-                    </li>
-                  </ul>
-                </section>
-              </div>
-  
-          </div>
-          <div class="copyright">
-            <span>&copy; Untitled Corp. All rights reserved.</span>
+
+
+      <!-- Gallery -->
+
+
+      <section id="filterList">
+          <div>
+            <ul>
+              <li><a>All</a></li>
+              <li><a>Straight Stairs</a></li> 
+              <li><a>Circular Stairs</a></li>
+              <li><a>Outdoor Stairs</a></li>
+              <li><a>Spindles, Posts & Rails</a></li>
+            </ul>
           </div>
         </section>
+      
+
+
+      <div id="galleryContainer">
+          <div id="galleryBox">
+          <img class="galleryImg straight" src="/assets/images/card1.png" alt="Random Image">
+          <img class="galleryImg straight" src="/assets/images/card2.png" alt="Random Image">
+          <img class="galleryImg straight" src="/assets/images/card3.png" alt="Random Image">
+          <img class="galleryImg straight" src="/assets/images/card4.png" alt="Random Image">
+          <img class="galleryImg straight" src="/assets/images/card1.png" alt="Random Image">
+          <img class="galleryImg circular" src="/assets/images/card2.png" alt="">
+          <img class="galleryImg circular" src="/assets/images/card3.png" alt="">
+          <img class="galleryImg circular" src="/assets/images/card4.png" alt="">
+          <img class="galleryImg circular" src="/assets/images/card1.png" alt="">
+          <img class="galleryImg circular" src="/assets/images/card2.png" alt="">
+          <img class="galleryImg circular" src="/assets/images/card3.png" alt="">
+          <img class="galleryImg circular" src="/assets/images/card4.png" alt="">
+        </div>
+      </div>
+     
+     
+
+
+  
+
+        <script>
+            $(document).ready(function(){
+                // Toggles paragraphs display
+                $('"#filter"').click(function(){
+                    $(".straight").fadeOut();
+                    $(".circular").fadeIn();
+                });
+
+                
+
+            });
+            </script>
+
+            <!-- <script>
+   $(function() {
+    var header = $("#filterBar");
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+    
+        if (scroll >= 341) {
+            header.addClass("fixed");
+        } else {
+            header.removeClass("fixed");
+        }
+    });
+});
+      
+          
+            
+            
+            </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+      
+ 				<!-- Footer -->
+         <section id="footer">
+					
+		
+            <!-- Content -->
+              <div class="auto">
+                <section>
+                  <header class="center">
+                  <img  id="footerlogo" src="/assets/images/newlogo2.png" alt="logo">
+                  </header>
+                  <div class="auto socialIcons flex"><a class="auto" href="https://www.facebook.com/TheStairShoppe/"><img class="social" src="/assets/images/facebook-square-brands.svg" alt="Facebook Logo"></a>
+                      <a class="auto" href="#"><img class="social" src="/assets/images/instagram-brands.svg" alt="Instagram Logo"></a>
+                      <a class="auto" href="https://www.houzz.com/hznb/professionals/specialty-contractors/the-stair-shoppe-pfvwus-pf~1736667684?"><img class="social" src="/assets/images/houzz-brands.svg" alt=""></a></div>
+                </section>
+      
+              </div>
+  
+            
+          
+          <div class="copyright">
+            <span>&copy; The Stair Shoppe. All rights reserved. Designed by Border-Box Inc.</span>
+          </div>
+        </section>
+
   
       <!-- Scripts -->
         <script src="assets/js/jquery.min.js"></script>
