@@ -5797,11 +5797,11 @@ textarea {
 		}
 	}
 
-	@media only screen and (max-width: 798px) { 
+	@media only screen and (max-width: 800px) { 
 
 		.galleryImg {
-			max-width: 25vmax;
-			max-height: 25vmax;
+			max-width: 40vmax;
+			max-height: 40vmax;
 		}
 	}
 
