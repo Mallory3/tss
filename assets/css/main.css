@@ -5926,28 +5926,22 @@ top: 3.75rem;
 	
 
 		.galleryImg {
-			max-width: 40vmax;
-			max-height: 40vmax;
+			max-width: 35vmax;
+			max-height: 35vmax;
 		}
 	}
 
-	@media only screen and (max-width: 767px) { 
+	/* @media only screen and (max-width: 767px) { 
 	
 
 		.galleryImg {
 			max-width: 35vmax;
 			max-height: 35vmax;
 		}
-	}
+	} */
 
-	@media only screen and (max-width: 700px) { 
+	
 
-
-		.galleryImg {
-			max-width: 50vmax;
-			max-height: 50vmax;
-		}
-	}
 
 
 @media (max-width: 767px) and (orientation: landscape) {
@@ -5979,6 +5973,52 @@ top: 3.75rem;
 		transform: rotate(0); /* brings image forward, can rotate with -5deg */
 		opacity: 1;
 		}
+}
+
+
+
+
+@media only screen and (min-width: 737px) and (max-width: 767px) { 
+
+
+	.galleryImg {
+		max-width: 35vmax;
+		max-height: 35vmax;
+	}
+}
+
+
+@media only screen and (max-width: 714px) and (orientation: portrait) { 
+
+
+	.galleryImg {
+		max-width: 34vmax;
+		max-height: 34vmax;
+	}
+}
+
+@media only screen and (max-width: 697px) and (orientation: portrait) { 
+
+	.galleryImg {
+		max-width: 30vmax;
+		max-height: 30vmax;
+	}
+}
+
+@media only screen and (max-width: 631px) and (orientation: portrait) { 
+
+	.galleryImg {
+		max-width: 25vmax;
+		max-height: 25vmax;
+	}
+}
+
+@media only screen and (max-width: 548px) and (orientation: portrait) { 
+
+	.galleryImg {
+		max-width: 50vmax;
+		max-height: 50vmax;
+	}
 }
 
 
