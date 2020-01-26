@@ -5730,13 +5730,14 @@ textarea {
 }
 
 #filterBox {
+	display: none;
 	width: 100%;
 	background-color: #1e2022;
 	height: 13.5vh;
-	/* padding-top: 2em; */
+
 	z-index: 800;
-	/* margin-left: 6em;
-	margin-right: 6em; */
+position: fixed;
+top: 3.75rem;
 }
 
 
@@ -5981,6 +5982,7 @@ textarea {
 
 	.fixed {
 		position: fixed;
+		top: 3.75rem;
 	}
 
 	.absolute {
