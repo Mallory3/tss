@@ -5766,7 +5766,7 @@ top: 3.75rem;
 
 @media only screen and (max-width: 710px) { 
 	#filterSelect {
-		width: 61vw;
+		width: 60vw;
 		margin-left: 1em;
 		margin-right: 1em;
 	}
