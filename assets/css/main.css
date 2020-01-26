@@ -5934,8 +5934,8 @@ textarea {
 
 @media (max-width: 767px) and (orientation: landscape) {
 	.galleryImg {
-		max-width: 35vmax;
-		max-height: 35vmax;
+		max-width: 40vmax;
+		max-height: 40vmax;
 	}
 
 	#galleryTitleDiv {
