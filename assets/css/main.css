@@ -5814,7 +5814,7 @@ textarea {
 
 @media (max-width: 767px) and (orientation: landscape) {
   #filterBox {
-		height: 25vh;
+		height: 23vh;
 	}
 	#filterSelect {
 		margin: 1em;
