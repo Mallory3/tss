@@ -5761,7 +5761,7 @@ top: 3.75rem;
 
 @media only screen and (max-width: 710px) { 
 	#filterSelect {
-		width: 71vw;
+		width: 71.5vw;
 		margin-left: 1em;
 		margin-right: 1em;
 	}
@@ -5937,8 +5937,8 @@ top: 3.75rem;
 
 @media (max-width: 767px) and (orientation: landscape) {
 	.galleryImg {
-		max-width: 40vmax;
-		max-height: 40vmax;
+		max-width: 37vmax;
+		max-height: 37vmax;
 	}
 
 	#galleryTitleDiv {
