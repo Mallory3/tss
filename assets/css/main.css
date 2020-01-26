@@ -5725,23 +5725,20 @@ textarea {
 
 #filterSelect {
 	width: 25vw;
+	margin:2em;
 
 }
 
 #filterBox {
 	width: 100%;
 	background-color: #1e2022;
-	height: 13vh;
-	padding-top: 2em;
+	height: 13.5vh;
+	/* padding-top: 2em; */
 	z-index: 800;
+	/* margin-left: 6em;
+	margin-right: 6em; */
 }
 
-#filterSection {
-	/* display: grid;
-	grid-template-columns: 1fr 2fr; */
-	margin-left: 6em;
-	margin-right: 6em;
-}
 
 #filterFlex {
 	/* grid-column-start: 2; */
@@ -5750,14 +5747,21 @@ textarea {
 }
 
 #filterTitle {
-	margin-right: 1.5em;
 	color: white;
 	font-size: 1.1rem;
+	margin-top: 1.5em;
 }
 
 @media only screen and (max-width: 1600px) { 
 	#filterSelect {
 		width: 30vw;
+	
+	}
+}
+
+@media only screen and (max-width: 1400px) { 
+	#filterSelect {
+		width: 33vw;
 	
 	}
 }
@@ -5776,13 +5780,10 @@ textarea {
 	}
 }
 
-@media only screen and (max-width: 700px) { 
+@media only screen and (max-width: 710px) { 
 	#filterSelect {
 		width: 100%;
-		margin-top: 2em;
-	
 	}
-
 
 	#filterTitle {
 		display: none;
@@ -5795,11 +5796,6 @@ textarea {
 		background-color: #1e2022;
 	}
 
-	#filterSection {
-		/* display: grid;
-		grid-template-columns: 1fr; */
-		margin: 0;
-	}
 
 	#filterFlex {
 		/* grid-column-start: 1; */
