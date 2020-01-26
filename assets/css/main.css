@@ -5652,11 +5652,11 @@ textarea {
 	background-position: bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 65vh;
+	height: 60vh;
 	width: 100%;
 }
 
-@media only screen and (min-width: 499px) { 
+@media only screen and (min-width: 1000px) { 
 	.sliding-background {
 		background-attachment: fixed;
 	
@@ -5779,7 +5779,7 @@ textarea {
 @media only screen and (max-width: 700px) { 
 	#filterSelect {
 		width: 100%;
-		/* margin-top: 2em; */
+		margin-top: 2em;
 	
 	}
 
@@ -5807,6 +5807,15 @@ textarea {
 		margin: 0;
 	}
 }
+
+
+@media only screen and (max-width: 380px) { 
+	#filterSelect {
+		margin-top: 1em;
+	
+	}
+}
+		
 
 
 /* #filterList ul {
