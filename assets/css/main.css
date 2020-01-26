@@ -5724,7 +5724,7 @@ textarea {
 } */
 
 #filterSelect {
-	width: 25vw;
+	width: 450px;
 	margin:2em;
 
 }
@@ -5752,33 +5752,11 @@ textarea {
 	margin-top: 1.5em;
 }
 
-@media only screen and (max-width: 1600px) { 
-	#filterSelect {
-		width: 30vw;
-	
+@media only screen and (max-width: 710px) { 
+	#filterBox {
+		height: 14vh;
 	}
-}
-
-@media only screen and (max-width: 1400px) { 
-	#filterSelect {
-		width: 33vw;
-	
-	}
-}
-
-@media only screen and (max-width: 1100px) { 
-	#filterSelect {
-		width: 35vw;
-	
-	}
-}
-
-@media only screen and (max-width: 900px) { 
-	#filterSelect {
-		width: 40vw;
-	
-	}
-}
+} 
 
 @media only screen and (max-width: 710px) { 
 	#filterSelect {
