@@ -5766,7 +5766,7 @@ top: 3.75rem;
 
 @media only screen and (max-width: 710px) { 
 	#filterSelect {
-		width: 72vw;
+		width: 68vw;
 		margin-left: 1em;
 		margin-right: 1em;
 	}
@@ -5783,15 +5783,19 @@ top: 3.75rem;
 		height: 12.5vh;
 	}
 
-	.sliding-background {
+	/* .sliding-background {
 		height: 62vh;
-	}
+	} */
 
 
 	#filterFlex {
 		/* grid-column-start: 1; */
 		justify-content: center;
 		margin: 0;
+	}
+
+	#galleryTitleDiv {
+		top: 10em;
 	}
 }
 
