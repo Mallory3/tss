@@ -4242,6 +4242,10 @@ input, select, textarea {
 		position: relative;
 	}
 
+	.bannerTitle {
+		text-shadow: 1px 1px 2px black;
+	}
+
 
 
 		#banner input, #banner select, #banner textarea {
@@ -5648,7 +5652,7 @@ textarea {
 }
 
 .sliding-background {
-	background: url("/assets/images/blueinvert.jpg");
+	background: url("/assets/images/blueprintlicensed.jpg");
 	background-position: bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -5686,6 +5690,7 @@ textarea {
 	top: 16em;
 }
 #galleryTitle {
+	text-shadow: 1px 1px 2px white;
 	text-align: center;
 	color: black;
 	font-size: 3rem;
