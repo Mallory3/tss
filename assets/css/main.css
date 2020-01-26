@@ -153,7 +153,7 @@ input, select, textarea {
 
 	body {
 		background-color: #ffffff;
-		color: #474d55;
+		color: #1e2022;
 	}
 
 	body, input, select, textarea {
@@ -314,7 +314,7 @@ input, select, textarea {
 	}
 
 	strong, b {
-		color: #474d55;
+		color: #1e2022;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -2370,7 +2370,7 @@ input, select, textarea {
 	}
 
 	label {
-		color: #474d55;
+		color: #1e2022;
 	}
 
 	input[type="text"],
@@ -2406,13 +2406,13 @@ input, select, textarea {
 	}
 
 		select option {
-			color: #474d55;
+			color: #1e2022;
 			background-color: #ffffff;
 		}
 
 	input[type="checkbox"] + label,
 	input[type="radio"] + label {
-		color: #474d55;
+		color: #1e2022;
 	}
 
 		input[type="checkbox"] + label:before,
@@ -2423,15 +2423,15 @@ input, select, textarea {
 
 	input[type="checkbox"]:checked + label:before,
 	input[type="radio"]:checked + label:before {
-		background-color: #474d55;
-		border-color: #474d55;
+		background-color: #1e2022;
+		border-color: #1e2022;
 		color: #ffffff;
 	}
 
 	input[type="checkbox"]:focus + label:before,
 	input[type="radio"]:focus + label:before {
-		border-color: #474d55;
-		box-shadow: 0 0 0 1px #474d55;
+		border-color: #1e2022;
+		box-shadow: 0 0 0 1px #1e2022;
 	}
 
 	::-webkit-input-placeholder {
@@ -2870,7 +2870,7 @@ input, select, textarea {
 		}
 
 	table th {
-		color: #474d55;
+		color: #1e2022;
 	}
 
 	table thead {
@@ -3220,7 +3220,7 @@ input, select, textarea {
 	}
 
 		.posts-list article a {
-			color: #474d55;
+			color: #1e2022;
 		}
 
 			.posts-list article a:hover {
@@ -6088,8 +6088,8 @@ top: 3.75rem;
 	/* Contact Page */
 
 	#contactPage {
-		padding-top: 7em;
-		background-image: url("/assets/images/contactFormBackground.jpg");
+		padding-top: 6em;
+		background-image: url("/assets/images/contact.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: right;
@@ -6106,7 +6106,9 @@ top: 3.75rem;
 }
 
 	@media only screen and (max-width: 1280px) { 
-
+	#contactPage {
+			background-image: url("/assets/images/greybackground.png");
+	}
 
 .messageLarge {
 	display: none;
@@ -6117,7 +6119,7 @@ top: 3.75rem;
 
 	.contactMap {
 		width: 290px;
-		height: 200px;
+		height: 205px;
 	}
 
 }
