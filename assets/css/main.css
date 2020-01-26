@@ -5816,6 +5816,10 @@ textarea {
   #filterBox {
 		height: 25vh;
 	}
+	#filterSelect {
+		margin:0;
+	
+	}
 }
 		
 
