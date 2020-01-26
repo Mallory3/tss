@@ -5817,7 +5817,7 @@ textarea {
 		height: 25vh;
 	}
 	#filterSelect {
-		margin:0;
+		margin: 1em;
 	
 	}
 }
