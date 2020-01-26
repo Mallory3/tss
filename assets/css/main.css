@@ -5968,6 +5968,16 @@ textarea {
 		margin-left: 0em;
 		margin-right: 0em;
 	}
+
+	.galleryImg {
+		opacity: 1;
+	}
+
+	.galleryImg:hover {
+		transform: scale(0);
+		transform: rotate(0); /* brings image forward, can rotate with -5deg */
+		opacity: 1;
+		}
 }
 
 
