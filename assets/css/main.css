@@ -5761,7 +5761,7 @@ margin-right: 6em;
 
 @media only screen and (max-width: 710px) { 
 	#filterSelect {
-		width: 75vw;
+		width: 70vw;
 	}
 
 	#filterTitle {
@@ -5783,7 +5783,7 @@ margin-right: 6em;
 
 	#filterFlex {
 		/* grid-column-start: 1; */
-		/* justify-content: flex-start; */
+		justify-content: center;
 		margin: 0;
 	}
 }
