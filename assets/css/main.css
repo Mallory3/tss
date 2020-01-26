@@ -5737,7 +5737,7 @@ textarea {
 	z-index: 800;
 position: fixed;
 top: 3.75rem;
-margin-right: 6em;
+/* margin-right: 6em; */
 }
 
 
@@ -5761,11 +5761,11 @@ margin-right: 6em;
 
 @media only screen and (max-width: 710px) { 
 	#filterSelect {
-		width: 70vw;
+		width: 75vw;
 	}
 
 	#filterTitle {
-	
+		margin-left: 1em;
 	}
 
 	#filterBox {
