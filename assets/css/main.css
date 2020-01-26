@@ -5730,7 +5730,6 @@ textarea {
 }
 
 #filterBox {
-	display: none;
 	width: 100%;
 	background-color: #1e2022;
 	height: 13.5vh;
@@ -5738,13 +5737,14 @@ textarea {
 	z-index: 800;
 position: fixed;
 top: 3.75rem;
+margin-right: 6em;
 }
 
 
 #filterFlex {
 	/* grid-column-start: 2; */
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 }
 
 #filterTitle {
@@ -5761,11 +5761,11 @@ top: 3.75rem;
 
 @media only screen and (max-width: 710px) { 
 	#filterSelect {
-		width: 100%;
+		width: 75vw;
 	}
 
 	#filterTitle {
-		display: none;
+	
 	}
 
 	#filterBox {
