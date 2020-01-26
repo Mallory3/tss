@@ -5937,6 +5937,20 @@ textarea {
 		max-width: 35vmax;
 		max-height: 35vmax;
 	}
+
+	#galleryTitleDiv {
+		position: relative;
+		top: 6em;
+	}
+
+	.sliding-background {
+		background-position: center;
+	}
+
+	#galleryContainer {
+		margin-left: 0em;
+		margin-right: 0em;
+	}
 }
 
 
