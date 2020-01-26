@@ -5772,7 +5772,11 @@ textarea {
 		margin: 0;
 		width: 100%;
 		background-color: #1e2022;
-		height: 13.6vh;
+		height: 13vh;
+	}
+
+	.sliding-background {
+		height: 65vh;
 	}
 
 
