@@ -5887,7 +5887,6 @@ top: 3.75rem;
 	margin-right: 5em;
 	margin-top: 3em;
 	margin-bottom: 3em;
-	grid-column-start: 1;
 	z-index: 0;
 	}
 
@@ -5910,7 +5909,7 @@ top: 3.75rem;
 		border-radius: 5px;
 		margin: 1em;
 		width: 20vw;
-		height: auto;
+		/* height: auto; */
 		opacity: 1;
 		flex: 1 1 20em;
 		-webkit-box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.7);
@@ -5926,7 +5925,7 @@ top: 3.75rem;
 		border-radius: 5px;
 		margin: 1.3em;
 		width: 20vw;
-		height: auto;
+		/* height: 20vw; */
 		opacity: .95;
 		flex: 1 1 20em;
 		-webkit-box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.7);
