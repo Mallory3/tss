@@ -5681,6 +5681,10 @@ textarea {
 		object-position: 0% 100%;
 	}
 
+	#quoteBanner {
+		margin-top: 2em;
+	}
+
 
 /* GALLERY */
 
