@@ -4726,7 +4726,7 @@ input, select, textarea {
 		background-color: #ffffff;
 		color: #c1c5cb;
 		padding: 2rem 0 1rem 0 ;
-		background: rgb(243, 243, 243);
+		background: white;
 		/* background-image: url("/assets/images/AdobeStock_71712811_Preview.jpeg");
 		background-repeat: no-repeat;
 		background-position: center; */
@@ -5545,6 +5545,12 @@ textarea {
 		display: block;
 	}
 
+	.titleIcon {
+		width: 40px;
+		height: 40px;
+		display: block;
+	}
+
 	.googleMap {
 		width: 40vw;
 		height: 40vh;
@@ -6089,7 +6095,7 @@ top: 3.75rem;
 
 	#contactPage {
 		padding-top: 6em;
-		background-image: url("/assets/images/contact.jpg");
+		background-image: url("/assets/images/contactPageBackgroundLicensed.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: right;
