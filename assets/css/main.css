@@ -4725,7 +4725,7 @@ input, select, textarea {
 	#footer {
 		background-color: #ffffff;
 		color: #c1c5cb;
-		padding: 2rem 0 1rem 0 ;
+		/* padding: 2rem 0 0 0 ; */
 		background: white;
 		/* background-image: url("/assets/images/AdobeStock_71712811_Preview.jpeg");
 		background-repeat: no-repeat;
@@ -5077,7 +5077,7 @@ input, select, textarea {
 
 			#footer .copyright span {
 				color: rgba(71, 77, 85, 0.75);
-				display: inline;
+				display: block;
 				margin: 0 auto;
 				padding: 1.5rem;
 				text-align: center;
@@ -5086,9 +5086,6 @@ input, select, textarea {
 
 		@media screen and (max-width: 1280px) {
 
-			#footer {
-				padding: 2rem 0 1rem 0 ;
-			}
 
 				#footer .sidebar {
 					min-width: 20rem;
@@ -5099,9 +5096,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 
-			#footer {
-				padding: 2rem 0 1rem 0 ;
-			}
+	
 
 				#footer section {
 					margin-bottom: 4.125rem;
@@ -5120,9 +5115,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			#footer {
-				padding: 2rem 0 0.25rem 0 ;
-			}
+	
 
 				#footer .copyright span {
 					display: block;
