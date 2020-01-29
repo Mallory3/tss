@@ -5205,13 +5205,21 @@ input, select, textarea {
 		}
 
 		#topButton {
-			width: 60px;
-			height: 60px;
+			width: 4rem;
+			height: 4rem;
 			display: block;
 			margin: auto;
 			position: relative;
-			top: 2.4em;
+			top: 2.3em;
 		}
+
+		/* @media screen and (max-width: 480px) {
+			#topButton {
+				width: 80px;
+				height: 80px;
+				top: 2.4em;
+			}
+		} */
 
 		/* Styles */
 
