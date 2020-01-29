@@ -4622,6 +4622,7 @@ input, select, textarea {
 	text-align: justify;
 	font-size: 19px;
 	margin-bottom: 0;
+	font-weight: 500;
 }
 
 @media screen and (max-width: 480px) {
