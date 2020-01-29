@@ -5126,7 +5126,7 @@ input, select, textarea {
 
 				#footer .copyright span {
 					display: block;
-					max-width: calc(100% - 2rem);
+					/* max-width: calc(100% - 2rem); */
 					width: 100%;
 				}
 
