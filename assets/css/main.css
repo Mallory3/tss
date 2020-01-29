@@ -5469,9 +5469,11 @@ textarea {
 		margin-top:2em;
 	}
 
-	@media (max-width: 800px) {
+	@media (max-width: 600px) {
 			#showroomQuote {
-				font-size: 1.1rem; 
+				font-size: 1.4rem;
+				margin-top:1em;
+	
 			}
 	}
 
