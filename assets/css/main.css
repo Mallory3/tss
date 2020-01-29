@@ -4725,11 +4725,13 @@ input, select, textarea {
 	#footer {
 		background-color: #ffffff;
 		color: #c1c5cb;
+		padding-top: 2em;
 		/* padding: 2rem 0 0 0 ; */
-		background: white;
+		background: rgb(242, 242, 243);
 		/* background-image: url("/assets/images/AdobeStock_71712811_Preview.jpeg");
 		background-repeat: no-repeat;
-		background-position: center; */
+		background-position: bottom;
+		background-size: contain; */
 		
 	}
 
@@ -5324,6 +5326,7 @@ input, select, textarea {
 #logoimg {
 	position: relative;
 	top: 0.3em;
+	left: 1em;
 }
 
 
@@ -5412,6 +5415,7 @@ textarea {
 	display: block;
 	margin: auto;
 	height: 13vh;
+	margin-top: 2em;
 	
 }
 
@@ -5672,7 +5676,7 @@ textarea {
 
 
 
-	@media only screen and (max-width: 980px) { 
+	/* @media only screen and (max-width: 980px) { 
 		#footerlogo {
 			position: relative;
 			top: 1.5em;
@@ -5683,7 +5687,7 @@ textarea {
 			top: 1.3em;
 			margin-bottom: 0;
 		}
-	}
+	} */
 
 	.social {
 		width: 50px;
