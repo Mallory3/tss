@@ -5926,14 +5926,93 @@ top: 3.75rem;
 	cursor: pointer;
 } */
 
+
+
+/* NEWWW */
+
+/* .gallery-container {
+	width: 100%;
+	height: auto;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.galleryContainer {
+	width: 100%;
+	max-width: 340px;
+	margin: 0 auto;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center
+}
+
+.galleryBox {
+	
+	
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+
+	width: 100%;
+	height: auto; */
+	
+	
+	/* display: flex;
+	flex-direction: row; */
+	
+
+/* 
+.galleryBox li:not(:last-of-type) {
+	margin-bottom: 40px;
+}
+
+.galleryImg {
+	max-width: 100%;
+}
+
+
+@media screen and (min-width: 769px) {
+	
+	.galleryContainer {
+		max-width: 1240px;
+	}
+	
+	.galleryBox {
+
+		
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+
+	}
+	
+.galleryBox li {
+		padding: 20px;
+	}
+	
+	.galleryImg {
+		min-width: 350px;
+		max-width: 350px;
+	}
+	
+} */
+
+/* ENDDDDD */
+
+
+
 #galleryContainer {
 	display: grid;
-	grid-template-rows: 1fr;
-	margin-left: 5em;
-	margin-right: 5em;
+	grid-template-columns: 1fr;
+	/* margin-left: 5em;
+	margin-right: 5em; */
 	margin-top: 3em;
 	margin-bottom: 3em;
 	z-index: 0;
+	margin: auto;
 	}
 
 
@@ -5945,6 +6024,8 @@ top: 3.75rem;
 		flex-wrap: wrap;
 		flex-direction: row;
 		justify-content: center;
+		padding: 0;
+		margin-top: 8em;
 	}
 
 	.galleryImg {
@@ -5953,8 +6034,9 @@ top: 3.75rem;
 		object-fit: cover;
 		border: 1px solid rgb(206, 206, 206);
 		border-radius: 5px;
-		margin: 1em;
-		width: 20vw;
+		margin: 0.5em;
+    width: 350px;
+    height: 350px;
 		opacity: 1;
 		flex: 1 1 20em;
 		-webkit-box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.7);
@@ -5967,18 +6049,39 @@ top: 3.75rem;
 		display: flex;
 		flex-grow: 1; /* pictures spaced evenly, take up any remaining space */
 		object-fit: cover;
+		object-position: bottom;
 		border-radius: 5px;
-		margin: 1.3em;
-		width: 20vw;
 		opacity: .95;
 		flex: 1 1 20em;
 		-webkit-box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.7);
 		-moz-box-shadow:     1px 1px 3px rgba(0, 0, 0, 0.7);
 		box-shadow:         1px 1px 3px rgba(0, 0, 0, 0.7);
 	}
+
+	@media only screen and (max-width: 759px) { 
+		.galleryImg {
+			width: 300px;
+			height: 300px;
+		}
+	}
+
+	@media only screen and (max-width: 653px) { 
+		.galleryImg {
+			width: 250px;
+			height: 250px;
+		}
+	}
+
+	@media only screen and (max-width: 553px) { 
+		.galleryImg {
+			width: 80vw;
+			height: 80vw;
+			margin: 1em;
+		}
+	}
 	
 	.galleryImg:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 	transform: rotate(1); /* brings image forward, can rotate with -5deg */
 	transition:
 					background-color 1s,
@@ -5991,122 +6094,8 @@ top: 3.75rem;
 	}
 }
 
-@media only screen and (min-width: 800px) { 
-	.galleryImg {
-		max-height: 50vh;
-		object-position: bottom;
-	}
-}
-
-	@media only screen and (max-width: 895px) { 
-		#galleryContainer, #filterSection {
-			margin-left: 2em;
-			margin-right: 2em;
-		}
-
-		.galleryImg {
-			object-fit: cover;
-		}
-	}
-
-	@media only screen and (max-width: 800px) { 
-	
-
-		.galleryImg {
-			max-width: 35vmax;
-			max-height: 35vmax;
-		}
-	}
-
-	/* @media only screen and (max-width: 767px) { 
-	
-
-		.galleryImg {
-			max-width: 35vmax;
-			max-height: 35vmax;
-		}
-	} */
-
-	
 
 
-
-@media (max-width: 820px) and (orientation: landscape) {
-	.galleryImg {
-		max-width: 35vmax;
-		max-height: 35vmax;
-	}
-
-	#galleryTitleDiv {
-		position: relative;
-		top: 6em;
-	}
-
-	.sliding-background {
-		background-position: center;
-	}
-
-	#galleryContainer {
-		margin-left: 0em;
-		margin-right: 0em;
-	}
-
-	.galleryImg {
-		opacity: 1;
-	}
-
-	.galleryImg:hover {
-		transform: scale(0);
-		transform: rotate(0); /* brings image forward, can rotate with -5deg */
-		opacity: 1;
-		}
-}
-
-
-
-
-@media only screen and (min-width: 737px) and (max-width: 767px) { 
-
-
-	.galleryImg {
-		max-width: 35vmax;
-		max-height: 35vmax;
-	}
-}
-
-
-@media only screen and (max-width: 714px) and (orientation: portrait) { 
-
-
-	.galleryImg {
-		max-width: 34vmax;
-		max-height: 34vmax;
-	}
-}
-
-@media only screen and (max-width: 697px) and (orientation: portrait) { 
-
-	.galleryImg {
-		max-width: 30vmax;
-		max-height: 30vmax;
-	}
-}
-
-@media only screen and (max-width: 631px) and (orientation: portrait) { 
-
-	.galleryImg {
-		max-width: 25vmax;
-		max-height: 25vmax;
-	}
-}
-
-@media only screen and (max-width: 548px) and (orientation: portrait) { 
-
-	.galleryImg {
-		max-width: 50vmax;
-		max-height: 50vmax;
-	}
-}
 
 
 	/* @media only screen and (max-width: 700px) { 
