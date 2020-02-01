@@ -5541,7 +5541,6 @@ textarea {
 	
 	.middle {
 		transition: .5s ease;
-		opacity: 0.8;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -5559,17 +5558,30 @@ textarea {
 	}
 	
 	.container1:hover .middle {
-		opacity: 1;
+		background-color: rgba(255, 255, 255, 1);
+	}
+
+	.servicesLink:hover .middle {
+		background-color: rgba(255, 255, 255, 1);
+	}
+
+	.servicesLink .middle:hover {
+		background-color: rgb(146, 198, 68);
+	}
+
+	.servicesLink .middle {
+		font-size: 18px;
 	}
 	
 	.middle {
-		background-color: white;
+		background-color: rgba(255, 255, 255, 0.7);
 		color: black;
 		font-size: 16px;
 		padding: 16px 32px;
 		font-weight: bold;
 		text-decoration: none;
 		border-radius: 5px;
+		cursor: pointer;
 	}
 
 	.text {
@@ -6280,6 +6292,7 @@ bottom: 0;
 
 #quotesDelivered {
 	font-size: 1.8rem;
+	margin-bottom: 2em;
 }
 
 @media only screen and (max-width: 1003px) { 
@@ -6321,6 +6334,8 @@ bottom: 0;
 			font-size: 2rem;
 		}
 } 
+
+
 
 
 
