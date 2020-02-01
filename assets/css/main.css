@@ -5569,9 +5569,9 @@ textarea {
 		background-color: rgb(146, 198, 68);
 	}
 
-	.servicesLink .middle {
+	/* .servicesLink .middle {
 		font-size: 18px;
-	}
+	} */
 	
 	.middle {
 		background-color: rgba(255, 255, 255, 0.7);
