@@ -6265,6 +6265,26 @@ bottom: 0;
 	bottom: 0;
 }
 
+@media only screen and (max-width: 1003px) { 
+	#straightParallax {
+		padding-top: 4em; 
+		font-size: 2rem;
+	}
+	
+	
+	
+	
+	#straightParallaxSection {
+		background-attachment: scroll;
+		background-size: cover;
+		background-position: center;
+		height:65vh;
+	}
+	
+	#straightParallaxOverlay  {
+		height: 65vh;
+	}
+}
 
 /* @media screen and (max-width: 1150px) {
 	#straightParallaxSection {
@@ -6327,6 +6347,14 @@ bottom: 0;
 
 .serviceQuoteBanner {
 	margin-top: 0;
+}
+
+#quotesDeliveredTitle {
+	font-size: 1.5rem;
+}
+
+#quotesDelivered {
+	font-size: 2rem;
 }
 
 
