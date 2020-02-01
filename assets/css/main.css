@@ -6225,7 +6225,7 @@ bottom: 0;
 	margin-top: 4em;
 }
 
-#straightParagraph {
+.straightParagraph {
 	font-size: 130%;
 	font-weight: 500;
 	text-align: left;
@@ -6323,6 +6323,10 @@ bottom: 0;
 
 #straight-main {
 	background-color: rgb(242, 242, 243);
+}
+
+.serviceQuoteBanner {
+	margin-top: 0;
 }
 
 
