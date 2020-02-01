@@ -6265,9 +6265,25 @@ bottom: 0;
 	bottom: 0;
 }
 
+
+#straight-main {
+	background-color: rgb(242, 242, 243);
+}
+
+.serviceQuoteBanner {
+	margin-top: 0;
+}
+
+#quotesDeliveredTitle {
+	font-size: 1.6rem;
+}
+
+#quotesDelivered {
+	font-size: 1.8rem;
+}
+
 @media only screen and (max-width: 1003px) { 
 	#straightParallax {
-		padding-top: 4em; 
 		font-size: 2.2rem;
 	}
 	
@@ -6284,45 +6300,15 @@ bottom: 0;
 	#straightParallaxOverlay  {
 		height: 65vh;
 	}
-}
 
-/* @media screen and (max-width: 1150px) {
-	#straightParallaxSection {
-		background-attachment: scroll;
-		background-position: 100% 5%;
-		height: 55vh;
-		background-size: cover;
-	}
-}
-
-@media screen and (max-width: 950px) {
-	#straightParallaxSection {
-		background-attachment: scroll;
-		background-position: 100% 0%;
-		height: 50vh;
-		background-size: cover;
-	}
-
-	#straightParallax {
-		font-size: 1.6rem;
-		margin-top: 1em;
-	}
-}
-
-@media screen and (max-width: 700px) {
-	#straightParallaxSection {
-		background-attachment: scroll;
-		background-position: 100% 0%;
-		height: 40vh;
-		background-size: cover;
-	}
-
-	#straightParallax {
+	#quotesDeliveredTitle {
 		font-size: 1.2rem;
-		margin-top: -1em;
+	}
+	
+	#quotesDelivered {
+		font-size: 1.6rem;
 	}
 }
-
 
 @media only screen 
   and (min-width: 375px) 
@@ -6330,33 +6316,11 @@ bottom: 0;
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) { 
 
-			#straightParallaxSection {
-				height: 70vh;
-				background-size: cover;
-			}
-
-			#straightParallax {
-				font-size: 1.7rem;
-				margin-top: 1em;
-			}
-} */
-
-#straight-main {
-	background-color: rgb(242, 242, 243);
-}
-
-.serviceQuoteBanner {
-	margin-top: 0;
-}
-
-#quotesDeliveredTitle {
-	font-size: 1.2rem;
-}
-
-#quotesDelivered {
-	font-size: 1.6rem;
-}
-
+		#straightParallax {
+			padding-top: 3em; 
+			font-size: 2rem;
+		}
+} 
 
 
 
