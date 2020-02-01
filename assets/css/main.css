@@ -3919,7 +3919,7 @@ input, select, textarea {
 	.floatingNav {
 		width: calc(100vh - 100px); 
 		border-radius: 2px;
-		box-shadow: 0px 1px 10px rgb(44, 44, 44);
+		box-shadow: 0px 1px 15px rgb(44, 44, 44);
 	}
 
 		#header .logo {
@@ -5438,7 +5438,7 @@ textarea {
 
 /* Green Underlines */
 
-#trustedheader:before, #serviceheader:before, #connectheader:before, #reviewheader:before, #galleryheader:before  {
+#trustedheader:before, #serviceheader:before, #connectheader:before, #reviewheader:before, #galleryheader:before, #straightheader:before  {
 	background-color: rgb(84, 165, 166);
 	content: '';
 	display: block;
@@ -6321,6 +6321,9 @@ bottom: 0;
 			}
 } */
 
+#straight-main {
+	background-color: rgb(242, 242, 243);
+}
 
 
 
