@@ -3874,7 +3874,7 @@ input, select, textarea {
 		height: 4rem;
 		position: absolute;
 		top: 3.75rem;
-		background-color: rgb(12, 87, 116);
+		background-color: rgba(12, 87, 116, 1);
 		z-index: 809;
 
 		
@@ -5730,17 +5730,24 @@ textarea {
 
 /* GALLERY */
 
+
+/* IMPORTANT!!! */
 .wrapper {
 	overflow: hidden;
+
 }
 
+
+
 .sliding-background {
-	background: url("/assets/images/AdobeStock_83805767_Preview.jpeg");
-	background-position: bottom;
+	background: url("/assets/images/galleryHeroLicensed.jpg");
+	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 81vh;
-	width: 100%;
+	height: 88vh;
+	width: 100vw;
+	padding: 0;
+	border-radius: 0;
 }
 
 @media only screen and (min-width: 1000px) { 
@@ -5748,7 +5755,7 @@ textarea {
 		background-attachment: fixed;
 	
 	}
-}
+} 
 
 /* .sliding-background {
 	background: url("/assets/images/blueprint2.png") repeat-x;
@@ -5775,58 +5782,57 @@ textarea {
 #galleryTitle {
 	/* text-shadow: 1px 1px 1px white; */
 	text-align: center;
-	color: rgb(216, 216, 216);
 	font-size: 3rem;
 }
 
 
 #galleryHeroDiv {
 	position: relative;
-	top: 14em;
+	/* top: 18em; */
 	margin: auto;
-	width: 60vw;
-	background-color: rgba(255, 255, 255, 0.589);
-	border-radius: 5px;
+	width: 100%;
+	height: 88vh;
+	background-color: rgba(0, 0, 0, 0.70);
 }
 #galleryHeroTitle {
-	text-shadow: 1px 1px 1px white;
+	text-shadow: 2px 2px 5px rgb(0, 0, 0);
 	text-align: center;
-	color: rgb(17, 17, 17);
-	font-size: 2rem;
-	text-align: center;
-}
-/* 
-@media only screen and (max-width: 1450px) { 
-	#galleryTitle {
-		font-size: 2rem;
-	
-	}
+	color: white;
+	font-size: 4em;
+	margin: auto;
+
 }
 
-@media only screen and (max-width: 1100px) { 
-	#galleryTitle {
-		font-size: 1.8rem;
-	
-	}
+.gallerySocialIcons {
+	justify-content: center;
+	width: 200px;
+	margin: auto;
+	margin-top: 0.2em;
 }
 
-@media only screen and (max-width: 1050px) { 
-	#galleryTitle {
-		font-size: 1.6rem;
-	
-	}
+.gallerySocialIcons .social {
+	height: 70px;
+	width: 70px;
 }
 
-@media only screen and (max-width: 1000px) { 
-	#galleryTitle {
-		font-size: 1.4rem;
-	
-	}
-} */
+#gallerySocialTitle {
+display: flex;
+justify-content: center;
+padding-top: 12em;
+
+
+	/* padding-top: 10em; */
+
+
+}
+
+#galleryBox li {
+	list-style: none;
+}
+
 
 #galleryPage {
-	background-color: #1e2022;
-	padding-bottom: 6em;
+	background-color: rgb(242, 242, 243);
 }
 
 #filterSelect {
@@ -5837,12 +5843,12 @@ textarea {
 
 #filterBox {
 	width: 100%;
-	background-color: #1e2022;
+	background-color: rgba(0, 0, 0, 0.671);
 	height: 13.5vh;
 
 	z-index: 800;
-position: fixed;
-top: 3.75rem;
+position: absolute;
+bottom: 0;
 /* margin-right: 6em; */
 }
 
@@ -5876,17 +5882,13 @@ top: 3.75rem;
 		margin-left: 1em;
 	}
 
-	#filterBox {
+	/* #filterBox {
 		padding: 0;
 		margin: 0;
 		width: 100%;
-		background-color: #1e2022;
 		height: 12.5vh;
-	}
+	} */
 
-	.sliding-background {
-		height: 69vh;
-	}
 
 
 	#filterFlex {
@@ -5895,9 +5897,7 @@ top: 3.75rem;
 		margin: 0;
 	}
 
-	#galleryTitleDiv {
-		top: 10em;
-	}
+	
 }
 
 
@@ -6045,16 +6045,16 @@ top: 3.75rem;
 		display: flex;
 		flex-grow: 1; /* pictures spaced evenly, take up any remaining space */
 		object-fit: cover;
-		border: 1px solid rgb(206, 206, 206);
+		border: 2px solid rgb(255, 254, 254);
 		border-radius: 5px;
 		margin: 0.5em;
     width: 350px;
     height: 350px;
 		opacity: 1;
 		flex: 1 1 20em;
-		-webkit-box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.7);
-		-moz-box-shadow:     1px 1px 3px rgba(0, 0, 0, 0.7);
-		box-shadow:         1px 1px 3px rgba(0, 0, 0, 0.7);
+		-webkit-box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.9);
+		-moz-box-shadow:     1px 1px 3px rgba(0, 0, 0, 0.9);
+		box-shadow:         1px 1px 3px rgba(0, 0, 0, 0.9);
 	}
 	
 	@media only screen and (min-width: 500px) { 
