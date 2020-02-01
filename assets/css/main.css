@@ -6339,6 +6339,66 @@ bottom: 0;
 } 
 
 
+/* Circular Page */
+
+#circularParallax {
+	padding-top: 4em; 
+	text-align: center;
+	color: white;
+	display: block;
+	margin: auto;
+	text-shadow: 2px 2px 5px rgb(0, 0, 0);
+	font-size: 3rem;
+}
+
+#circularParallaxSection {
+	background-image: url("/assets/images/hero1.jpeg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height:65vh;
+	position: relative;
+}
+
+#circularParallaxOverlay  {
+	width: 100%;
+	height: 65vh;
+	background-color: rgba(24, 24, 24, 0.541);
+	position: absolute;
+	bottom: 0;
+}
+
+
+@media only screen and (max-width: 1003px) { 
+	#circularParallax {
+		font-size: 2.2rem;
+	}
+
+	#circularParallaxSection {
+		background-attachment: scroll;
+		background-size: cover;
+		background-position: center;
+		height:65vh;
+	}
+	
+	#circularParallaxOverlay  {
+		height: 65vh;
+	}
+}
+
+@media only screen 
+  and (min-width: 375px) 
+  and (max-width: 850px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+		#circularParallax {
+			padding-top: 3em; 
+			font-size: 2rem;
+		}
+} 
+
 
 
 
