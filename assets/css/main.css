@@ -6238,6 +6238,7 @@ bottom: 0;
 
 #straight-main {
 	margin-top: 4em;
+	background-color: rgb(242, 242, 243);
 }
 
 .serviceParagraph {
@@ -6281,9 +6282,6 @@ bottom: 0;
 }
 
 
-#straight-main {
-	background-color: rgb(242, 242, 243);
-}
 
 .serviceQuoteBanner {
 	margin-top: 0;
@@ -6343,6 +6341,7 @@ bottom: 0;
 
 #circular-main {
 	margin-top: 4em;
+	background-color: rgb(242, 242, 243);
 }
 
 #circularParallax {
@@ -6408,6 +6407,7 @@ bottom: 0;
 
 #deck-main {
 	margin-top: 4em;
+	background-color: rgb(242, 242, 243);
 }
 
 #deckParallax {
