@@ -5438,7 +5438,7 @@ textarea {
 
 /* Green Underlines */
 
-#trustedheader:before, #serviceheader:before, #connectheader:before, #reviewheader:before, #galleryheader:before, #serviceheader:before,  {
+#trustedheader:before, #serviceheader:before, #connectheader:before, #reviewheader:before, #galleryheader:before, .serviceheader:before  {
 	background-color: rgb(84, 165, 166);
 	content: '';
 	display: block;
@@ -6375,9 +6375,8 @@ bottom: 0;
 
 @media only screen and (max-width: 1003px) { 
 	#circularParallax {
-		font-size: 2.2rem;
+		font-size: 2rem;
 	}
-
 	#circularParallaxSection {
 		background-attachment: scroll;
 		background-size: cover;
