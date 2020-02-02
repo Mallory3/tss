@@ -5438,7 +5438,7 @@ textarea {
 
 /* Green Underlines */
 
-#trustedheader:before, #serviceheader:before, #connectheader:before, #reviewheader:before, #galleryheader:before, #straightheader:before  {
+#trustedheader:before, #serviceheader:before, #connectheader:before, #reviewheader:before, #galleryheader:before, #serviceheader:before,  {
 	background-color: rgb(84, 165, 166);
 	content: '';
 	display: block;
@@ -5574,7 +5574,7 @@ textarea {
 	} */
 	
 	.middle {
-		background-color: rgba(255, 255, 255, 0.5);
+		background-color: rgba(255, 255, 255, 0.65);
 		color: black;
 		font-size: 16px;
 		padding: 16px 32px;
@@ -6240,7 +6240,7 @@ bottom: 0;
 	margin-top: 4em;
 }
 
-.straightParagraph {
+.serviceParagraph {
 	font-size: 130%;
 	font-weight: 500;
 	text-align: left;
@@ -6341,6 +6341,10 @@ bottom: 0;
 
 /* Circular Page */
 
+#circular-main {
+	margin-top: 4em;
+}
+
 #circularParallax {
 	padding-top: 4em; 
 	text-align: center;
@@ -6395,9 +6399,75 @@ bottom: 0;
 
 		#circularParallax {
 			padding-top: 3em; 
+			font-size: 2deck
+} 
+	}
+
+
+/* Deck Page */
+
+#deck-main {
+	margin-top: 4em;
+}
+
+#deckParallax {
+	padding-top: 4em; 
+	text-align: center;
+	color: white;
+	display: block;
+	margin: auto;
+	text-shadow: 2px 2px 5px rgb(0, 0, 0);
+	font-size: 3rem;
+}
+
+#deckParallaxSection {
+	background-image: url("/assets/images/deckStairsLicensed.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	height:65vh;
+	position: relative;
+}
+
+#deckParallaxOverlay  {
+	width: 100%;
+	height: 65vh;
+	background-color: rgba(24, 24, 24, 0.541);
+	position: absolute;
+	bottom: 0;
+}
+
+
+@media only screen and (max-width: 1003px) { 
+	#deckParallax {
+		font-size: 2.2rem;
+	}
+
+	#deckParallaxSection {
+		background-attachment: scroll;
+		background-size: cover;
+		background-position: center;
+		height:65vh;
+	}
+	
+	#deckParallaxOverlay  {
+		height: 65vh;
+	}
+}
+
+@media only screen 
+  and (min-width: 375px) 
+  and (max-width: 850px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+		#deckParallax {
+			padding-top: 3em; 
 			font-size: 2rem;
 		}
 } 
+
 
 
 
