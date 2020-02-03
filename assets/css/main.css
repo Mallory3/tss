@@ -5608,7 +5608,7 @@ textarea {
 		color: black;
 		max-width: 42vw;
 		text-align: center;
-		font-size: 1.1rem;
+		font-size: 1rem;
 		font-weight: 600;
 		margin-top: 1em;
 	}
@@ -5776,7 +5776,7 @@ textarea {
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 88vh;
+	height: 70vh;
 	width: 100vw;
 	padding: 0;
 	border-radius: 0;
@@ -5823,34 +5823,34 @@ textarea {
 	/* top: 18em; */
 	margin: auto;
 	width: 100%;
-	height: 88vh;
+	height: 70vh;
 	background-color: rgba(0, 0, 0, 0.70);
 }
 #galleryHeroTitle {
 	text-shadow: 2px 2px 5px rgb(0, 0, 0);
 	text-align: center;
 	color: white;
-	font-size: 4em;
+	font-size: 3.5em;
 	margin: auto;
 
 }
 
 .gallerySocialIcons {
 	justify-content: center;
-	width: 200px;
+	width: 130px;
 	margin: auto;
 	margin-top: 0.2em;
 }
 
 .gallerySocialIcons .social {
-	height: 70px;
-	width: 70px;
+	height: 50px;
+	width: 50px;
 }
 
 #gallerySocialTitle {
 display: flex;
 justify-content: center;
-padding-top: 12em;
+padding-top: 9em;
 
 
 	/* padding-top: 10em; */
@@ -6472,7 +6472,7 @@ bottom: 0;
 
 
 #about-main {
-	margin-top: 5em;
+	background-color: rgb(242, 242, 243);
 }
 
 #promotionParallax {
@@ -6486,7 +6486,7 @@ bottom: 0;
 }
 
 #promotionParallaxSection {
-	background-image: url("/assets/images/guardrailLicensed.jpg");
+	background-image: url("/assets/images/promotionImgLicensed.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -6572,6 +6572,71 @@ bottom: 0;
 	margin-left: 1em;
 	position: relative;
 	bottom: 0.6em;
+}
+
+.sliding-background-about {
+	background: url("/assets/images/galleryHeroLicensed.jpg");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 70vh;
+	width: 100%;
+	padding: 0;
+	border-radius: 0;
+}
+
+@media only screen and (min-width: 1000px) { 
+	.sliding-background-about {
+		background-attachment: fixed;
+	
+	}
+} 
+
+
+
+#aboutTitleDiv {
+	position: relative;
+	top: 3em;
+}
+#aboutTitle {
+	/* text-shadow: 1px 1px 1px white; */
+	text-align: center;
+	font-size: 3rem;
+}
+
+
+#aboutHeroDiv {
+	position: relative;
+	/* top: 18em; */
+	margin: auto;
+	width: 100%;
+	height: 70vh;
+	background-color: rgba(0, 0, 0, 0.70);
+}
+#aboutHeroTitle {
+	text-shadow: 2px 2px 5px rgb(0, 0, 0);
+	text-align: center;
+	color: white;
+	font-size: 3.5em;
+	margin: auto;
+
+}
+
+.aboutSocialIcons {
+	justify-content: center;
+	width: 130px;
+	margin: auto;
+}
+
+.aboutSocialIcons .social {
+	height: 50px;
+	width: 50px;
+}
+
+#aboutSocialTitle {
+display: flex;
+justify-content: center;
+padding-top: 13em;
 }
 
 
