@@ -6522,6 +6522,13 @@ bottom: 0;
 	}
 }
 
+@media only screen and (max-width: 822px) { 
+	#promotionParallax {
+		font-size: 2rem;
+		padding-top:2.5em;
+	}
+}
+
 @media only screen 
   and (min-width: 375px) 
   and (max-width: 850px) 
@@ -6529,17 +6536,12 @@ bottom: 0;
   and (orientation: landscape) { 
 
 		#promotionParallax {
-			padding-top: 1em; 
+			padding-top: 2em; 
 			font-size: 2rem;
 		}
 } 
 
-@media only screen and (max-width: 822px) { 
-	#promotionParallax {
-		font-size: 2rem;
-		padding-top:2.5em;
-	}
-}
+
 
 .aboutP {
 	text-align: left;
