@@ -6529,7 +6529,7 @@ bottom: 0;
   and (orientation: landscape) { 
 
 		#promotionParallax {
-			padding-top: 2.5em; 
+			padding-top: 2em; 
 			font-size: 2rem;
 		}
 
@@ -6538,7 +6538,7 @@ bottom: 0;
 @media only screen and (max-width: 822px) { 
 	#promotionParallax {
 		font-size: 2rem;
-		padding-top:2.5em;
+		padding-top:2em;
 	}
 }
 
