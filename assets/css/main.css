@@ -6136,6 +6136,7 @@ bottom: 0;
 					-moz-box-shadow:     1px 1px 3px rgba(0, 0, 0, 0.7);
 					box-shadow:         1px 1px 3px rgba(0, 0, 0, 0.7);
 	opacity: 1;
+	z-index: 800;
 	}
 }
 
