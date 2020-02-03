@@ -5505,8 +5505,8 @@ textarea {
 	.image1 {
 		opacity: 0.9;
 		display: block;
-		width: 100%;
-		height: 25vh;
+		width: 200px;
+		height: 225px;
 		object-fit: cover;
 		object-position: 100% 40%;
 		transition: all .2s ease-in-out;
@@ -5522,7 +5522,7 @@ textarea {
 		.image1 {
 			opacity: 0.9;
 			display: block;
-			height: 40vh;
+			height: 300px;
 			
 	}
 }
@@ -6237,7 +6237,6 @@ bottom: 0;
 /* STRAIGHT STAIRS */
 
 #straight-main {
-	margin-top: 4em;
 	background-color: rgb(242, 242, 243);
 }
 
@@ -6469,6 +6468,113 @@ bottom: 0;
 			font-size: 2rem;
 		}
 } 
+
+
+/* About Page */
+
+
+#about-main {
+	margin-top: 5em;
+}
+
+#promotionParallax {
+	padding-top: 4.5em; 
+	text-align: center;
+	color: white;
+	display: block;
+	margin: auto;
+	text-shadow: 2px 2px 5px rgb(0, 0, 0);
+	font-size: 2rem;
+}
+
+#promotionParallaxSection {
+	background-image: url("/assets/images/guardrailLicensed.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height:45vh;
+	position: relative;
+	margin-top: 3em;
+}
+
+#promotionParallaxOverlay  {
+	width: 100%;
+	height: 45vh;
+	background-color: rgba(24, 24, 24, 0.8);
+	position: absolute;
+	bottom: 0;
+}
+
+
+@media only screen and (max-width: 1003px) { 
+	#promotionParallax {
+		font-size: 2rem;
+	}
+
+	#promotionParallaxSection {
+		background-attachment: scroll;
+		background-size: cover;
+		background-position: center;
+		height:45vh;
+		margin-top: 3em;
+	}
+	
+	#promotionParallaxOverlay  {
+		height: 45vh;
+	}
+}
+
+@media only screen 
+  and (min-width: 375px) 
+  and (max-width: 850px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+		#promotionParallax {
+			padding-top: 3em; 
+			font-size: 2rem;
+		}
+} 
+
+@media only screen and (max-width: 1003px) { 
+	#promotionParallax {
+		font-size: 2rem;
+		padding-top:3.5em;
+	}
+}
+
+.aboutP {
+	text-align: left;
+	font-size: 1rem;
+}
+
+.aboutIcon {
+	width: 50px;
+	height: 50px;
+	transition: all .2s ease-in-out;
+}
+
+.aboutIcon:hover {
+	transform: scale(1.1);
+}
+
+.aboutIcons .aboutList {
+	margin-bottom: 0.5em;
+}
+
+
+.aboutIcons p {
+	margin-bottom: 0;
+}
+
+.aboutIcons strong {
+	margin-left: 1em;
+	position: relative;
+	bottom: 0.6em;
+}
+
+
+
 
 
 
