@@ -6575,8 +6575,8 @@ bottom: 0;
 }
 
 .sliding-background-about {
-	background: url("/assets/images/galleryHeroLicensed.jpg");
-	background-position: top;
+	background: url("/assets/images/aboutImgLicensed.jpg");
+	background-position: bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 70vh;
@@ -6611,7 +6611,7 @@ bottom: 0;
 	margin: auto;
 	width: 100%;
 	height: 70vh;
-	background-color: rgba(0, 0, 0, 0.70);
+	background-color: rgba(0, 0, 0, 0.50);
 }
 #aboutHeroTitle {
 	text-shadow: 2px 2px 5px rgb(0, 0, 0);
@@ -6636,7 +6636,7 @@ bottom: 0;
 #aboutSocialTitle {
 display: flex;
 justify-content: center;
-padding-top: 13em;
+padding-top: 14.5em;
 }
 
 
