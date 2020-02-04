@@ -218,10 +218,8 @@
 					scrollDirection: 'vertical',
 					effect: 'slideDown',
 					visibleOnly: true,
-				 
-					onError: function(element) {
-							console.log('error loading ' + element.data('src'));
-					}
+					delay: 5000
+				
 				});
 						
 				});
