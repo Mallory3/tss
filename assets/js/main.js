@@ -211,16 +211,16 @@
 			});
 			
 // Gallery
-			$(function() {
+			// $(function() {
                   
-				$('.lazy').lazy({
-					// your configuration goes here
-					scrollDirection: 'vertical',
-					effect: 'fadeIn',
-					visibleOnly: true
-				});
+			// 	$('.lazy').lazy({
+			// 		// your configuration goes here
+			// 		scrollDirection: 'vertical',
+			// 		effect: 'fadeIn',
+			// 		visibleOnly: true
+			// 	});
 						
-				});
+			// 	});
 			
 				$(window).on('load', (function() {
 			
