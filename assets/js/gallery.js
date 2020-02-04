@@ -11,7 +11,8 @@ $(window).on('load', (function() {
     }
   });
       
-  });
+  })
+);
 
   $(window).on('load', (function() {
 
@@ -67,5 +68,6 @@ $("#galleryTitle").html("Spindles, Posts & Rails")
 
 }); 
 
-});
+})
+  );
   
