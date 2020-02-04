@@ -214,10 +214,6 @@
 			$(function() {
                   
 				$('.lazy').lazy({
-					placeholder: "Loading...",
-					scrollDirection: 'vertical',
-					effect: 'fadeIn',
-					visibleOnly: true,
 					combined: true,
 					delay: 5000
 				
