@@ -214,7 +214,7 @@
 			$(function() {
                   
 				$('.lazy').lazy({
-					// your configuration goes here
+					placeholder: "data:image/gif;base64,R0lGODlhEALAPQAPzl5uLr9Nrl8e7...",
 					scrollDirection: 'vertical',
 					effect: 'slideDown',
 					visibleOnly: true,
