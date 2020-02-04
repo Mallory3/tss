@@ -209,14 +209,14 @@
 				resetForms: true,
 				side: 'right'
 			});
-			
+
 // Gallery
 			$(function() {
                   
 				$('.lazy').lazy({
 					// your configuration goes here
 					scrollDirection: 'vertical',
-					effect: 'fadeIn',
+					effect: 'slideDown',
 					visibleOnly: true,
 				 
 					onError: function(element) {
