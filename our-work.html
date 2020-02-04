@@ -64,9 +64,9 @@
       
       	<!-- <div id="backgroundImage"></div> -->
 			<div class="galleryWrapper">
-          <!-- <div class="sliding-background"><div id="galleryHeroDiv"><div id="gallerySocialTitle"><h1 id="galleryHeroTitle">Inspiration Gallery<br>
+          <div class="sliding-background"><div id="galleryHeroDiv"><div id="gallerySocialTitle"><h1 id="galleryHeroTitle">Inspiration Gallery<br>
             <div class="flex gallerySocialIcons"><a class="auto" href="#"><img class="social" src="/assets/images/instagram (1).svg" alt="Instagram Logo"></a><a class="auto" href="https://www.facebook.com/TheStairShoppe/"><img class="social" src="/assets/images/facebook (2).svg" alt="Facebook Logo"></a></div>
-          </h1></div> -->
+          </h1></div>
           <section id="filterBox"> 
   
         
@@ -98,68 +98,7 @@
   
 
       
-     
-
-      <script>
-        $(document).ready(function(){
-	
-	$(".allFilter").show();
-  $(".straightFilter").hide();
-  $(".circularFilter").hide();
-  $(".otherFilter").hide();
-  $(".deckFilter").hide();
-  $("#galleryTitle").html("Our Work")
-
-	$("#filterSelect").change(function(){
-    if( $(this).val() == "All" ) { 
-			$(".allFilter").show();
-      $(".straightFilter").hide();
-      $(".circularFilter").hide();
-      $(".otherFilter").hide();
-      $(".deckFilter").hide()
-      $("#galleryTitle").html("Our Work")
-        }
-	
-		else if ( $(this).val() == "Straight Stairs" ) { 
-			$(".allFilter").hide();
-      $(".straightFilter").show();
-      $(".circularFilter").hide();
-      $(".otherFilter").hide();
-      $(".deckFilter").hide()
-      $("#galleryTitle").html("Straight Stairs")
-        }
-    else if( $(this).val() == "Circular Stairs" ) { 
-    	$(".allFilter").hide();
-      $(".straightFilter").hide();
-      $(".circularFilter").show();
-      $(".otherFilter").hide();
-      $(".deckFilter").hide()
-      $("#galleryTitle").html("Circular Stairs")
-        }
-    else if( $(this).val() == "Outdoor Stairs" ) { 
-    	$(".allFilter").hide();
-      $(".straightFilter").hide();
-      $(".circularFilter").hide();
-      $(".otherFilter").hide();
-      $(".deckFilter").show()
-      $("#galleryTitle").html("Outdoor Stairs")
-        }
-    else if( $(this).val() == "Spindles, Posts & Rails" ) { 
-      $(".allFilter").hide();
-      $(".straightFilter").hide();
-      $(".circularFilter").hide();
-      $(".otherFilter").show();
-      $(".deckFilter").hide()
-      $("#galleryTitle").html("Spindles, Posts & Rails")
-        }
-     
-    }); 
-	
-});
-      
-      
-      
-      </script>
+   
 
   
 
@@ -461,6 +400,62 @@
             });
                 
             });
+
+            $(document).ready(function(){
+	
+	$(".allFilter").show();
+  $(".straightFilter").hide();
+  $(".circularFilter").hide();
+  $(".otherFilter").hide();
+  $(".deckFilter").hide();
+  $("#galleryTitle").html("Our Work")
+
+	$("#filterSelect").change(function(){
+    if( $(this).val() == "All" ) { 
+			$(".allFilter").show();
+      $(".straightFilter").hide();
+      $(".circularFilter").hide();
+      $(".otherFilter").hide();
+      $(".deckFilter").hide()
+      $("#galleryTitle").html("Our Work")
+        }
+	
+		else if ( $(this).val() == "Straight Stairs" ) { 
+			$(".allFilter").hide();
+      $(".straightFilter").show();
+      $(".circularFilter").hide();
+      $(".otherFilter").hide();
+      $(".deckFilter").hide()
+      $("#galleryTitle").html("Straight Stairs")
+        }
+    else if( $(this).val() == "Circular Stairs" ) { 
+    	$(".allFilter").hide();
+      $(".straightFilter").hide();
+      $(".circularFilter").show();
+      $(".otherFilter").hide();
+      $(".deckFilter").hide()
+      $("#galleryTitle").html("Circular Stairs")
+        }
+    else if( $(this).val() == "Outdoor Stairs" ) { 
+    	$(".allFilter").hide();
+      $(".straightFilter").hide();
+      $(".circularFilter").hide();
+      $(".otherFilter").hide();
+      $(".deckFilter").show()
+      $("#galleryTitle").html("Outdoor Stairs")
+        }
+    else if( $(this).val() == "Spindles, Posts & Rails" ) { 
+      $(".allFilter").hide();
+      $(".straightFilter").hide();
+      $(".circularFilter").hide();
+      $(".otherFilter").show();
+      $(".deckFilter").hide()
+      $("#galleryTitle").html("Spindles, Posts & Rails")
+        }
+     
+    }); 
+	
+});
             
             
             
