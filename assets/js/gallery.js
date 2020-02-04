@@ -1,4 +1,4 @@
-$(function() {
+$(window).on('load', (function() {
                   
   $('.lazy').lazy({
     // your configuration goes here
@@ -13,7 +13,7 @@ $(function() {
       
   });
 
-  $(function() {
+  $(window).on('load', (function() {
 
 $(".allFilter").show();
 $(".straightFilter").hide();
