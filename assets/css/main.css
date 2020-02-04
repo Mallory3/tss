@@ -6087,6 +6087,7 @@ bottom: 0;
 		-webkit-box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.9);
 		-moz-box-shadow:     1px 1px 3px rgba(0, 0, 0, 0.9);
 		box-shadow:         1px 1px 3px rgba(0, 0, 0, 0.9);
+		background-color: grey;
 	}
 	
 	@media only screen and (min-width: 500px) { 
