@@ -214,8 +214,6 @@
 			$(function() {
                   
 				$('.lazy').lazy({
-					combined: true,
-					delay: 5000
 				
 				});
 						
