@@ -5542,12 +5542,13 @@ textarea {
 	.middle {
 		transition: .5s ease;
 		position: absolute;
-		top: 50%;
+		top: 45%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		-ms-transform: translate(-50%, -50%);
 		text-align: center;
 	}
+
 	
 	.container1:hover .image1 {
 		-webkit-box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.7);
@@ -6243,7 +6244,7 @@ bottom: 0;
 }
 
 .serviceParagraph {
-	font-size: 130%;
+	font-size: 118%;
 	font-weight: 500;
 	text-align: left;
 }
