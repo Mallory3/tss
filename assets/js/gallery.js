@@ -13,7 +13,7 @@ $(function() {
       
   });
 
-  $(document).ready(function(){
+  $(function() {
 
 $(".allFilter").show();
 $(".straightFilter").hide();
