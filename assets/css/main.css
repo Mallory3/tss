@@ -6375,7 +6375,7 @@ bottom: 0;
 }
 
 
-@media only screen and (max-width: 1003px) { 
+@media only screen and (max-width: 1078px) { 
 	#circularParallax {
 		font-size: 2rem;
 	}
@@ -6509,7 +6509,7 @@ bottom: 0;
 }
 
 
-@media only screen and (max-width: 1003px) { 
+@media only screen and (max-width: 1078px) { 
 	#promotionParallax {
 		font-size: 2rem;
 	}
