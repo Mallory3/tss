@@ -1,4 +1,4 @@
-$(window).on('load', (function() {
+$(function() {
                   
   $('.lazy').lazy({
     // your configuration goes here
@@ -11,8 +11,7 @@ $(window).on('load', (function() {
     }
   });
       
-  })
-);
+  });
 
   $(window).on('load', (function() {
 
