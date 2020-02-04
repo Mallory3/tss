@@ -5772,7 +5772,7 @@ textarea {
 
 
 .sliding-background {
-	background: url("/assets/images/galleryHeroLicensedOpt.jpg");
+	/* background: url("/assets/images/galleryHeroLicensedOpt.jpg"); */
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
