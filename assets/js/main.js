@@ -214,10 +214,11 @@
 			$(function() {
                   
 				$('.lazy').lazy({
-					placeholder: "data:image/gif;base64,R0lGODlhEALAPQAPzl5uLr9Nrl8e7...",
+					placeholder: "Loading...",
 					scrollDirection: 'vertical',
-					effect: 'slideDown',
+					effect: 'fadeIn',
 					visibleOnly: true,
+					combined: true,
 					delay: 5000
 				
 				});
