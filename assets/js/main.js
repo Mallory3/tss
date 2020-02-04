@@ -214,7 +214,6 @@
 			$(function() {
                   
 				$('.lazy').lazy({
-					// your configuration goes here
 					scrollDirection: 'vertical',
 					effect: 'fadeIn',
 					visibleOnly: true
