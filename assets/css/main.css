@@ -2394,7 +2394,7 @@ input, select, textarea {
 		select:focus,
 		textarea:focus {
 			border-color: rgb(84, 165, 166);
-			box-shadow: 0 0 0 1px rgb(84, 165, 166);
+			box-shadow: 0 0 0 1px rgb(0, 0, 0);
 		}
 
 	input[type="search"] {
@@ -6657,6 +6657,179 @@ padding-top: 14.5em;
 	height: 25px;
 }
 
+
+/* TERMINOLOGY PAGE */
+
+#terminologySection {
+	background-image: url("/assets/images/terminology.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 40%;
+	height:55vh;
+	position: relative;
+	margin-top: 4rem;
+	background-color: white;
+}
+
+@media only screen and (max-width: 810px) { 
+	#terminologySection {
+	background-size: contain;
+	margin-top: -.5em;
+}
+}
+
+
+/* Quote Page */
+
+#quoteGrid {
+	margin-top: 6em;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+}
+
+#quoteForm {
+	grid-column-start: 1;
+	grid-row-start: 1;
+}
+
+#stairStyleForm {
+	grid-column-start: 2;
+}
+
+.formImg {
+	width: 200px;
+	height: 200px;
+}
+
+#quoteSection {
+	background-image: url("/assets/images/blueprint.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 40%;
+	height:35vh;
+	position: relative;
+	margin-top: 4rem;
+	background-color: white;
+}
+
+#advancedButton, #balustradeButton, #fileButton, #stairButton {
+	background-color: rgb(146, 198, 68);
+	border: 1px solid white;
+	-webkit-box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow:     1px 1px 3px rgba(0, 0, 0, 0.7);
+	box-shadow:         1px 1px 3px rgba(0, 0, 0, 0.7);
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+	text-align: left;
+}
+
+
+#advancedButton:hover, #balustradeButton:hover, #fileButton:hover, #stairButton:hover {
+	background-color: black;
+}
+
+/* .quoteImg {
+	width: 200px;
+	height: 200px;
+} */
+
+#quoteContainer {
+grid-row-start: 3;
+	margin-top: 6em;
+	margin-bottom: 3em;
+	z-index: 0;
+	margin: auto;
+	}
+
+	#quoteBox {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+		padding: 0;
+		margin-top: 8em;
+		list-style: none;
+		/* margin-left: 6em;
+		margin-right: 6em; */
+	}
+
+	.quoteImg {
+		display: flex;
+		flex-grow: 1; /* pictures spaced evenly, take up any remaining space */
+		object-fit: cover;
+		border: 2px solid rgb(255, 254, 254);
+		border-radius: 5px;
+		margin: 0.5em;
+    width: 200px;
+    height: 200px;
+		opacity: 1;
+		flex: 1 1 20em;
+		-webkit-box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.9);
+		-moz-box-shadow:     1px 1px 3px rgba(0, 0, 0, 0.9);
+		box-shadow:         1px 1px 3px rgba(0, 0, 0, 0.9);
+		/* background-color: black; */
+	}
+	
+	@media only screen and (min-width: 500px) { 
+	.quoteImg {
+		display: flex;
+		flex-grow: 1; /* pictures spaced evenly, take up any remaining space */
+		object-fit: cover;
+		object-position: bottom;
+		border-radius: 5px;
+		opacity: .95;
+		flex: 1 1 20em;
+		-webkit-box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.7);
+		-moz-box-shadow:     1px 1px 3px rgba(0, 0, 0, 0.7);
+		box-shadow:         1px 1px 3px rgba(0, 0, 0, 0.7);
+	}
+
+
+
+/* 
+	@media only screen and (min-width: 1100px){ 
+		#quoteBox {
+			margin-left: 20vw;
+			margin-right: 20vw;
+		}
+	} */
+/*
+	@media only screen and (max-width: 900px) { 
+		.quoteImg {
+			width: 300px;
+			height: 300px;
+		}
+	}
+
+	@media only screen and (max-width: 653px) { 
+		.quoteImg {
+			width: 250px;
+			height: 250px;
+		}
+	}
+
+	@media only screen and (max-width: 553px) { 
+		.quoteImg {
+			width: 80vw;
+			height: 80vw;
+			margin: 1em;
+		}
+	} */
+	
+	.quoteImg:hover {
+	transform: scale(1.05);
+	transform: rotate(1); /* brings image forward, can rotate with -5deg */
+	transition:
+					background-color 1s,
+					box-shadow 1s,
+					transform .5s; /* changes speed it flips */
+					-webkit-box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.7);
+					-moz-box-shadow:     1px 1px 3px rgba(0, 0, 0, 0.7);
+					box-shadow:         1px 1px 3px rgba(0, 0, 0, 0.7);
+	opacity: 1;
+	z-index: 800;
+	}
+}
 
 
 
