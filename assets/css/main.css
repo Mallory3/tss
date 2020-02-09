@@ -6679,7 +6679,225 @@ padding-top: 14.5em;
 }
 
 
-/* Quote Page */
+/* Quote Page1 */
+
+#step1 {
+	margin-top: 1em;
+}
+
+#quoteHeaderMain {
+	background-image: url("/assets/images/heroblueprintlicenseddark.jpg");
+	background-position: center;
+	width: 100%;
+	height: 30vh;
+	color: white;
+}
+
+#quoteHeaderMainOverlay {
+	width: 100%;
+	height: 30vh;
+	background-color: rgba(0, 0, 3, 0.658);
+}
+
+#quoteHeaderMain h1 {
+	color: white;
+	text-align: center;
+	padding-top: 2em;
+	text-shadow: 1px 1px 1px black;
+}
+
+#quoteContainer {
+	grid-row-start: 3;
+	margin-left: 6em;
+	margin-right: 6em;
+	margin-top: 2em;
+		z-index: 0;
+		}
+	
+	
+	
+		#quoteBox {
+			display: grid;
+			grid-template-columns:  1fr 1fr 1fr 1fr;
+			padding: 0;
+			list-style: none;
+		}
+	
+		.straightQuote {
+			grid-column: 1/2;
+			margin: auto;
+		}
+	
+	
+		.customQuote {
+			grid-column: 2/3;
+			margin: auto;
+		}
+	
+	
+		.constructionQuote {
+			grid-column: 3/4;
+			margin: auto;
+		}
+	
+	
+		.outdoorQuote {
+			grid-column: 4/5;
+			margin: auto;
+		}
+	
+	
+	.quoteImg {
+			display: block;
+			margin: auto;
+			width: 250px;
+			height: 250px;
+			margin-bottom: 2em;
+		}
+	
+		.quoteButton {
+			margin-top: 2em;
+			background-color: rgb(146, 198, 68);
+			color: white;
+			border: 1px solid white;
+			border-radius: 5px;
+			width: 250px;
+			height: 50px;
+			-webkit-box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.7);
+			-moz-box-shadow:     1px 1px 3px rgba(0, 0, 0, 0.7);
+			box-shadow:         1px 1px 3px rgba(0, 0, 0, 0.7);
+			display: block;
+			margin: auto;
+		}
+	
+		.quoteImg:hover {
+			transform: scale(1.05);
+			transform: rotate(1); /* brings image forward, can rotate with -5deg */
+			transition:
+							background-color 1s,
+							box-shadow 1s,
+							transform .5s; /* changes speed it flips */
+			opacity: 1;
+			z-index: 800;
+			}
+	
+		@media only screen and (max-width: 1200px){
+			
+			.quoteImg {
+				margin: 2em;
+			}
+	
+			#quoteBox {
+				display: grid;
+				grid-template-columns:  1fr 1fr;
+				grid-template-rows: 1fr 1fr;
+		}
+	
+		.straightQuote {
+			grid-column: 1/2;
+			grid-row: 1/2;
+			margin: auto;
+		}
+	
+		.customQuote {
+			grid-column: 2/3;
+			grid-row: 1/2;
+			margin: auto;
+		}
+	
+		.constructionQuote {
+			grid-column: 1/2;
+			grid-row: 2/3;
+			margin: auto;
+		}
+	
+		.outdoorQuote {
+			grid-column: 2/3;
+			grid-row: 2/3;
+			margin: auto;
+		}
+	
+	} 
+	
+	
+	@media only screen and (max-width: 780px){
+			
+	
+		#quoteBox {
+			display: grid;
+			grid-template-columns:  1fr;
+			grid-template-rows: 1fr 1fr 1fr 1fr;
+	}
+	
+	.straightQuote {
+		grid-column: 1/2;
+		grid-row: 1/2;
+		margin: auto;
+	}
+	
+	.customQuote {
+		grid-column: 1/2;
+		grid-row: 2/3;
+		margin: auto;
+	}
+	
+	.constructionQuote {
+		grid-column: 1/2;
+		grid-row: 3/4;
+		margin: auto;
+	}
+	
+	.outdoorQuote {
+		grid-column: 1/2;
+		grid-row: 4/5;
+		margin: auto;
+	}
+	
+	} 
+
+
+	/* Step 2: Select your Style */
+
+	#step2 {
+		margin-top: 1em;
+	}
+
+	#back1 {
+		margin-bottom: 3em;
+		margin-top: -2em;
+	}
+
+
+	@media only screen and (min-width: 1200px){
+		.optionImg {
+			width: 250px;
+			height: 250px;
+			object-fit: contain;
+		}
+		
+		}
+		
+		.optionImg:hover {
+			transform: scale(1.1);
+			transform: rotate(1); /* brings image forward, can rotate with -5deg */
+			transition:
+							background-color 1s,
+							box-shadow 1s,
+							transform .5s; /* changes speed it flips */
+			opacity: 1;
+			z-index: 800;
+			}
+
+
+
+
+
+/* Quote Form */
+
+#quoteForm {
+	max-width: 400px;
+}
+
 
 .formImg {
 	width: 200px;
@@ -6697,7 +6915,7 @@ padding-top: 14.5em;
 	background-color: white;
 }
 
-#advancedButton, #balustradeButton, #fileButton, #stairButton {
+#advancedButton, #balustradeButton, #fileButton, #stairButton, #submitButton {
 	background-color: rgb(146, 198, 68);
 	border: 1px solid white;
 	-webkit-box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.7);
@@ -6705,11 +6923,16 @@ padding-top: 14.5em;
 	box-shadow:         1px 1px 3px rgba(0, 0, 0, 0.7);
 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 	text-align: left;
+	color: #474d55;
+}
+
+#submitButton {
+	text-align: center;
 }
 
 
-#advancedButton:hover, #balustradeButton:hover, #fileButton:hover, #stairButton:hover {
-	background-color: black;
+#advancedButton:hover, #balustradeButton:hover, #fileButton:hover, #stairButton:hover, #submitButton:hover {
+	background-color: rgba(71, 77, 85, 0.1);
 }
 
 .questionMark {
@@ -6738,30 +6961,12 @@ padding-top: 14.5em;
 }
 
 
-#quoteHeaderMain {
-	background-image: url("/assets/images/heroblueprintlicenseddark.jpg");
-	background-position: center;
-	width: 100%;
-	height: 30vh;
-	color: white;
-}
+
 
 #step {
 	margin-top: 1em;
 }
 
-#quoteHeaderMainOverlay {
-	width: 100%;
-	height: 30vh;
-	background-color: rgba(0, 0, 3, 0.658);
-}
-
-#quoteHeaderMain h1 {
-	color: white;
-	text-align: center;
-	padding-top: 2em;
-	text-shadow: 1px 1px 1px black;
-}
 
 #quoteMain {
 	padding: 0;
@@ -6772,177 +6977,13 @@ padding-top: 14.5em;
 	grid-template-columns: 1fr 1fr 1fr;
 }
 
-@media only screen and (min-width: 1200px){
-.optionImg {
-	width: 250px;
-	height: 250px;
-	object-fit: contain;
-}
-
-}
-
-.optionImg:hover {
-	transform: scale(1.05);
-	transform: rotate(1); /* brings image forward, can rotate with -5deg */
-	transition:
-					background-color 1s,
-					box-shadow 1s,
-					transform .5s; /* changes speed it flips */
-	opacity: 1;
-	z-index: 800;
-	}
 
 
 
 
-#quoteContainer {
-grid-row-start: 3;
-margin-left: 6em;
-margin-right: 6em;
-margin-top: 2em;
-	z-index: 0;
-	}
 
 
 
-	#quoteBox {
-		display: grid;
-		grid-template-columns:  1fr 1fr 1fr 1fr;
-		padding: 0;
-		list-style: none;
-	}
-
-	.straightQuote {
-		grid-column: 1/2;
-		margin: auto;
-	}
-
-
-	.customQuote {
-		grid-column: 2/3;
-		margin: auto;
-	}
-
-
-	.constructionQuote {
-		grid-column: 3/4;
-		margin: auto;
-	}
-
-
-	.outdoorQuote {
-		grid-column: 4/5;
-		margin: auto;
-	}
-
-
-.quoteImg {
-		display: block;
-		margin: auto;
-		width: 250px;
-		height: 250px;
-		margin-bottom: 2em;
-	}
-
-	.quoteButton {
-		margin-top: 2em;
-		background-color: rgb(146, 198, 68);
-		color: white;
-		border: 1px solid white;
-		border-radius: 5px;
-		width: 250px;
-		height: 50px;
-		-webkit-box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.7);
-		-moz-box-shadow:     1px 1px 3px rgba(0, 0, 0, 0.7);
-		box-shadow:         1px 1px 3px rgba(0, 0, 0, 0.7);
-		display: block;
-		margin: auto;
-	}
-
-	.quoteImg:hover {
-		transform: scale(1.05);
-		transform: rotate(1); /* brings image forward, can rotate with -5deg */
-		transition:
-						background-color 1s,
-						box-shadow 1s,
-						transform .5s; /* changes speed it flips */
-		opacity: 1;
-		z-index: 800;
-		}
-
-	@media only screen and (max-width: 1200px){
-		
-		.quoteImg {
-			margin: 2em;
-		}
-
-		#quoteBox {
-			display: grid;
-			grid-template-columns:  1fr 1fr;
-			grid-template-rows: 1fr 1fr;
-	}
-
-	.straightQuote {
-		grid-column: 1/2;
-		grid-row: 1/2;
-		margin: auto;
-	}
-
-	.customQuote {
-		grid-column: 2/3;
-		grid-row: 1/2;
-		margin: auto;
-	}
-
-	.constructionQuote {
-		grid-column: 1/2;
-		grid-row: 2/3;
-		margin: auto;
-	}
-
-	.outdoorQuote {
-		grid-column: 2/3;
-		grid-row: 2/3;
-		margin: auto;
-	}
-
-} 
-
-
-@media only screen and (max-width: 780px){
-		
-
-	#quoteBox {
-		display: grid;
-		grid-template-columns:  1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-
-.straightQuote {
-	grid-column: 1/2;
-	grid-row: 1/2;
-	margin: auto;
-}
-
-.customQuote {
-	grid-column: 1/2;
-	grid-row: 2/3;
-	margin: auto;
-}
-
-.constructionQuote {
-	grid-column: 1/2;
-	grid-row: 3/4;
-	margin: auto;
-}
-
-.outdoorQuote {
-	grid-column: 1/2;
-	grid-row: 4/5;
-	margin: auto;
-}
-
-} 
 
 
 

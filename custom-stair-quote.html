@@ -54,40 +54,64 @@
     </header>
 
     <div id="quoteHeaderMain"><div id="quoteHeaderMainOverlay"><h1>Get a Quick Quote Today</h1></div></div>
-    <h3 id="step1">Step 1: Choose Your Stairs</h3>
-  
+    <h3 id="step2">Step 2: Fill out the form below</h3>
 
-    <!-- <section id="quoteSection" class="wrapper style2">
-        
 
-       
-      </div>
-    </section> -->
-    <div id="quoteContainer">
-      <ul id="quoteBox">
+    <section id="quoteMain" class="wrapper">
+      <div class="inner">
+        <div id="quoteGrid">
+          <div id="stairStyleForm">
 
-      <div class="straightQuote"> <li><img class="quoteImg quoteImg" src="/assets/images/AdobeStock_115267194_Preview.jpg" alt="Straight Stair Quote"></li>
-      <span class="actions special">
-        <a id="straightStairButton" href="straight-stair-quote.html" class="button icon fa-check-square quoteButton">Straight Stairs</a>
-      </span></div>
-     
-      <div class="customQuote"> <li ><img class="quoteImg quoteImg" src="/assets/images/AdobeStock_115267763_Preview.jpg" alt="Custom/Circular Stair Quote"></li>
-      <span class="actions special">
-        <a id="customStairButton" href="custom-stair-quote.html" class="button icon fa-check-square quoteButton">Custom/Circular Stairs</a>
-      </span></div>
-     
-      <div class="constructionQuote">  <li ><img class="quoteImg quoteImg" src="/assets/images/AdobeStock_118920388_Preview.jpg" alt="Outdoor Stair Quote"></li>
-      <span class="actions special">
-        <a id="outdoorStairButton" href="outdoor-stair-quote.html" class="button icon fa-check-square quoteButton">Outdoor Stairs</a>
-      </span></div>
+
+            <!-- Form -->
+            <form id="quoteForm" method="post" action="#">
+          
+              <div class="row gtr-uniform">
+                <div class="formflex"> 
+                <label>Name<input type="text" name="name" value="" placeholder="" /></label>
+                <label>Email<input type="text" name="email" value="" placeholder="" /></label>
+                <div class="flex"> <label>Phone Number<input type="text" name="Phone" value="" placeholder="" /></label>
+                <label>Postal Code<input type="text" name="Postal Code" value="" placeholder="" /></label></div>
+               
     
-      <div class="outdoorQuote"><li ><img class="quoteImg quoteImg" src="/assets/images/AdobeStock_119011154_Preview.jpg" alt="Construction Grade Quote"></li>
-      <span class="actions special">
-        <a id="constructionStairButton" href="construction-grade-stair-quote.html" class="button icon fa-check-square quoteButton">Construction-Grade</a>
-      </span></div>
-      
-    </ul>
-  </div>
+    
+    
+            <ul class="actions fit">
+              <li><a id="fileButton" href="#fileButton" class="button primary fit icon fa-check-square">Share a Blueprint / Photo</a></li>
+            </ul>
+    
+            <div id="file"><label>Do you have a file or image to share with us?<input type="file" name="fileToUpload" id="fileToUpload"></label></div>
+    
+                
+                 
+                    
+            
+                
+               
+                
+                <!-- Break -->
+                <div>
+                  <textarea name="textarea" id="textarea" placeholder="Tell us more about your stair project..." rows="6"></textarea>
+                </div>
+                
+                
+                <!-- Break -->
+                <div>
+                  <label>Quotes provided within 24 hours. Stairs delivered within 4 - 7 days.</label>
+                  <ul class="actions fit">
+                    <li><input id="submitButton" type="submit" value="Submit Form" class="button primary fit icon fa-check-square" /></li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+          </div>
+          </div>
+          </div>
+        </section>
+    
+
+
+  
 
 
 
@@ -121,7 +145,8 @@
       <script src="assets/js/breakpoints.min.js"></script>
       <script src="assets/js/util.js"></script>
       <script src="assets/js/main.js"></script>
-      <script src="assets/js/header.js"></script>  
+      <script src="assets/js/header.js"></script> 
+      <script src="assets/js/customForm.js"></script>  
   </body>
   
   </html>
