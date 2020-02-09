@@ -52,20 +52,10 @@
             </ul>
         </nav>
     </header>
-    <div id="topper">
 
-        <ul class="icons">
-            <li>
-                <h3 style="color:white;">Get a Free Quote</h3></li>
-            <li>
-                <h3 style="color:white;" class="icon solid fa-phone">
-											 403.295.2686</h3></li>
-
-        </ul>
-        <ul>
-
-        </ul>
-    </div>
+    <div id="quoteHeaderMain"><div id="quoteHeaderMainOverlay"><h1>Get a Quick Quote Today</h1></div></div>
+    <h3 id="step"></h3>
+  
 
     <!-- <section id="quoteSection" class="wrapper style2">
         
@@ -73,7 +63,32 @@
        
       </div>
     </section> -->
+    <div id="quoteContainer">
+      <ul id="quoteBox">
 
+      <div class="straightQuote"> <li><img class="quoteImg quoteImg" src="/assets/images/AdobeStock_115267194_Preview.jpg" alt="Deck And Stairs Image"></li>
+      <span class="actions special">
+        <a id="straightStairButton" href="#" class="button icon fa-check-square quoteButton">Straight Stairs</a>
+      </span></div>
+     
+      <div class="customQuote"> <li ><img class="quoteImg quoteImg" src="/assets/images/AdobeStock_115267763_Preview.jpg" alt="Deck And Stairs Image"></li>
+      <span class="actions special">
+        <a id="customStairButton" href="#" class="button icon fa-check-square quoteButton">Custom/Circular Stairs</a>
+      </span></div>
+     
+      <div class="constructionQuote">  <li ><img class="quoteImg quoteImg" src="/assets/images/AdobeStock_118920388_Preview.jpg" alt="Decks And Stairs Image"></li>
+      <span class="actions special">
+        <a id="outdoorStairButton" href="#" class="button icon fa-check-square quoteButton">Outdoor Stairs</a>
+      </span></div>
+    
+      <div class="outdoorQuote"><li ><img class="quoteImg quoteImg" src="/assets/images/AdobeStock_119011154_Preview.jpg" alt="Decks And Stairs Image"></li>
+      <span class="actions special">
+        <a id="constructionStairButton" href="#" class="button icon fa-check-square quoteButton">Construction-Grade</a>
+      </span></div>
+      
+    
+    </ul>
+  </div>
 
 
 
@@ -81,42 +96,35 @@
     <section id="quoteMain" class="wrapper">
       <div class="inner">
         <div id="quoteGrid">
-          <div id="quoteContainer">
-          
-            <ul id="quoteBox">
-            <li><img class="quoteImg quoteImg" src="/assets/images/gallery/deckStair-1.jpg" alt="Deck And Stairs Image"></li>
-            <li><img class="quoteImg quoteImg" src="/assets/images/gallery/deckStair-2.jpg" alt="Deck And Stairs Image"></li>
-            <li><img class="quoteImg quoteImg" src="/assets/images/gallery/deckStair-3.jpg" alt="Decks And Stairs Image"></li>
-            <li><img class="quoteImg quoteImg" src="/assets/images/gallery/deckStair-4.jpg" alt="Decks And Stairs Image"></li>
-          </ul>
-        </div>
 
           <div id="stairStyleForm">
 
             <div class="box alt">
-              <div class="row gtr-50 gtr-uniform">
-                <div class="col-4"><span class="image fit"><img src="/assets/images/AdobeStock_115267194_Preview.jpg" alt="" /></span></div>
-                <div class="col-4"><span class="image fit"><img src="/assets/images/AdobeStock_115267763_Preview.jpg" alt="" /></span></div>
-                <div class="col-4"><span class="image fit"><img src="/assets/images/AdobeStock_118920388_Preview.jpg" alt="" /></span></div>
+              <div class="stairStyleOptions">
+                <div class="col-4"><span class="image fit"><img class="optionImg" src="/assets/images/straight_01.png" alt="" /></span></div>
+                <div class="col-4"><span class="image fit"><img class="optionImg" src="/assets/images/turn_left_01.png" alt="" /></span></div>
+                <div class="col-4"><span class="image fit"><img class="optionImg" src="/assets/images/turn_right_01.png" alt="" /></span></div>
                 <!-- Break -->
-                <div class="col-4"><span class="image fit"><img src="/assets/images/AdobeStock_119011154_Preview.jpg" alt="" /></span></div>
-                <div class="col-4"><span class="image fit"><img src="/assets/images/AdobeStock_115267194_Preview.jpg" alt="" /></span></div>
-                <div class="col-4"><span class="image fit"><img src="/assets/images/AdobeStock_115267763_Preview.jpg" alt="" /></span></div>
-                <div class="col-4"><span class="image fit"><img src="/assets/images/AdobeStock_118920388_Preview.jpg" alt="" /></span></div>
+                <div class="col-4"><span class="image fit"><img class="optionImg" src="/assets/images/turn_left_then_left_01.png" alt="" /></span></div>
+                <div class="col-4"><span class="image fit"><img class="optionImg" src="/assets/images/turn_right_then_right_01.png" alt="" /></span></div>
+                <div class="col-4"><span class="image fit"><img class="optionImg" src="/assets/images/turn_left_then_right_01.png" alt="" /></span></div>
+                <div class="col-4"><span class="image fit"><img class="optionImg" src="/assets/images/turn_right_then_left_01.png" alt="" /></span></div>
                 <!-- Break -->
-                <div class="col-4"><span class="image fit"><img src="/assets/images/AdobeStock_119011154_Preview.jpg" alt="" /></span></div>
-                <div class="col-4"><span class="image fit"><img src="/assets/images/AdobeStock_115267194_Preview.jpg" alt="" /></span></div>
+                <div class="col-4"><span class="image fit"><img class="optionImg" src="/assets/images/turn_right_01.png" alt="" /></span></div>
+                <div class="col-4"><span class="image fit"><img class="optionImg" src="/assets/images/turn_left_01.png" alt="" /></span></div>
               </div>
             </div>
 
-
+            <span class="actions special">
+              <a id="back1" href="#" class="button icon fa-check-square quoteButton">Back to Main Options</a>
+            </span>
 
 
           </div>
 
         <!-- Form -->
-
         <form id="quoteForm" method="post" action="#">
+          
           <div class="row gtr-uniform">
             <div class="formflex"> 
             <label>Name<input type="text" name="name" value="" placeholder="" /></label>
@@ -130,51 +138,116 @@
               <li><a id="stairButton" href="#stairButton" class="button primary fit icon fa-check-square">Stair Measurments</a></li>
             </ul>
 
-             <div id="stairMeasurements"><label>A) Total Height from Floor to Floor<input type="text" name="TOTAL-HEIGHT-FROM-FLOOR-TO-FLOOR" value="" placeholder="" /></label>
+            <div id="stairMeasurements">
+
+            <div id="landing">            
+              <div>
+              <label>Do You Have a Landing Already in Place? <img class="questionMark" id="questionStringer" src="assets/images/question.svg"></label>
+              <input type="radio" id="radio-western" name="radio">
+              <label for="radio-western">Yes</label>
+
+              <input type="radio" id="radio-eastern" name="radio">
+              <label for="radio-eastern">No</label>
+              </div>
+            </div>
+          
+
+             <label>A) Total Height from Floor to Floor <img class="questionMark" id="questionA" src="assets/images/question.svg"><div id="answerA" class="answer"></div><input type="text" name="TOTAL-HEIGHT-FROM-FLOOR-TO-FLOOR" value="" placeholder="" /></label>
            
 
-              <label>B) Total Run of Stair<input type="text" name="TOTAL-RUN-OF-STAIR" value="" placeholder="" /></label>
+              <label>B) Total Run of Stair <img class="questionMark" id="questionB" src="assets/images/question.svg"><div id="answerB" class="answer"></div><input type="text" name="TOTAL-RUN-OF-STAIR" value="" placeholder="" /></label>
 
-              <label>C) Width of Stair<input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label></div>
+              <label>C) Width of Bottom Stair Riser <img class="questionMark" id="questionC" src="assets/images/question.svg"><div id="answerC" class="answer"></div><input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>
+
+              <label>C2) Width of Top Stair Riser <img class="questionMark" id="questionC1" src="assets/images/question.svg"><div id="answerC1" class="answer"></div><input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>
+
+              <label>D) Landing Dimensions <img class="questionMark" id="questionD" src="assets/images/question.svg"><div id="answerD" class="answer"></div><input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /> By <input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>
+
+              <div id="landing">            
+                <div>
+                <label>Do the Stairs Go Under a Joist? <img class="questionMark" id="questionStringer" src="assets/images/question.svg"></label>
+                <input type="radio" id="radio-western" name="radio">
+                <label for="radio-western">Yes</label>
+  
+                <input type="radio" id="radio-eastern" name="radio">
+                <label for="radio-eastern">No</label>
+                </div>
+              </div>
+
+
+              <label>E) Joist Sytem Used <img class="questionMark" id="questionE" src="assets/images/question.svg"><div id="answerE" class="answer"></div><input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>
+
+              <label>F) Height from Underside of Joist to Floor <img class="questionMark" id="questionF" src="assets/images/question.svg"><div id="answerF" class="answer"></div><input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label></div>
+
+
               
-
-              <ul class="actions fit">
+              
+                <ul class="actions fit">
                 <li><a id="advancedButton" href="#advancedButton" class="button primary fit icon fa-check-square">Advanced Measurments</a></li>
               </ul>
 
+            
+
               <div id="advanced">
-              <label>A1) Total Height of First Stair<input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>
 
-              <label>B1) Total Run of First Stair<input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>
+              <label>A) Total Height of Second Stair Riser <img class="questionMark" id="questionA" src="assets/images/question.svg"><div id="answerA" class="answer"></div><input type="text" name="TOTAL-HEIGHT-FROM-FLOOR-TO-FLOOR" value="" placeholder="" /></label>
 
-              <label>B1) Total Run of First Stair<input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>
+      
+                <label>A1) Total Height of First Stair Riser <img class="questionMark" id="questionA1" src="assets/images/question.svg"><div id="answerA1" class="answer"></div><input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>
+           
 
-              <label>C1) Total Width of First Stair<input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>
+              <label>B) Total Run of Stair <img class="questionMark" id="questionB" src="assets/images/question.svg"><div id="answerB" class="answer"></div><input type="text" name="TOTAL-RUN-OF-STAIR" value="" placeholder="" /></label>
 
-              <label>D) Landing Dimensions<input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /> By <input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>
+              <label>B1) Total Run of First Stair <img class="questionMark" id="questionB1" src="assets/images/question.svg"><div id="answerB1" class="answer"></div><input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>
+              
+              <label>C) Width of Bottom Stair Riser <img class="questionMark" id="questionC" src="assets/images/question.svg"><div id="answerC" class="answer"></div><input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>
 
-              <label>E) Joist Sytem Used<input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>
+              <label>C2) Width of Top Stair Riser <img class="questionMark" id="questionC1" src="assets/images/question.svg"><div id="answerC1" class="answer"></div><input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>
 
-              <label>E) Height from Underside of Joist to Floor<input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>
+              <label>D) Landing Dimensions <img class="questionMark" id="questionD" src="assets/images/question.svg"><div id="answerD" class="answer"></div><input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /> By <input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>
+
+              <div id="landing">            
+                <div>
+                <label>Do the Stairs Go Under a Joist? <img class="questionMark" id="questionStringer" src="assets/images/question.svg"></label>
+                <input type="radio" id="radio-western" name="radio">
+                <label for="radio-western">Yes</label>
+  
+                <input type="radio" id="radio-eastern" name="radio">
+                <label for="radio-eastern">No</label>
+                </div>
               </div>
 
-            
-              
+
+              <label>E) Joist Sytem Used <img class="questionMark" id="questionE" src="assets/images/question.svg"><div id="answerE" class="answer"></div><input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>
+
+              <label>F) Height from Underside of Joist to Floor <img class="questionMark" id="questionF" src="assets/images/question.svg"><div id="answerF" class="answer"></div><input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>
 
               
+              
+              <div id="landing">            
+                <div>
+                <label>Do the Stairs Go Under a Joist? <img class="questionMark" id="questionStringer" src="assets/images/question.svg"></label>
+                <input type="radio" id="radio-western" name="radio">
+                <label for="radio-western">Yes</label>
+  
+                <input type="radio" id="radio-eastern" name="radio">
+                <label for="radio-eastern">No</label>
+                </div>
+              </div>
 
-          
 
-             
-           
-          
+              <label>E) Joist Sytem Used <img class="questionMark" id="questionE" src="assets/images/question.svg"><div id="answerE" class="answer"></div><input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>
+
+              <label>F) Height from Underside of Joist to Floor <img class="questionMark" id="questionF" src="assets/images/question.svg"><div id="answerF" class="answer"></div><input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>
+              </div>
+
               <ul class="actions fit">
                 <li><a id="balustradeButton" href="#balustradeButton" class="button primary fit icon fa-check-square">Stair Design / Balustrade</a></li>
               </ul>
 
             <div id="balustrade">            
               <div>
-              <label>Stringer Style</label>
+              <label>Stringer Style <img class="questionMark" id="questionStringer" src="assets/images/question.svg"></label>
               <div class="flex">    
                 <div class="formImg"><span class="image fit"><img src="/assets/images/AdobeStock_118920388_Preview.jpg" alt="" /></span></div>
               <!-- Break -->
@@ -188,7 +261,7 @@
           
 
            <div>
-            <label>Riser Style</label>
+            <label>Riser Style <img class="questionMark" id="questionRiser" src="assets/images/question.svg"></label>
             <div class="flex">    
               <div class="formImg"><span class="image fit"><img src="/assets/images/AdobeStock_118920388_Preview.jpg" alt="" /></span></div>
             <!-- Break -->
@@ -228,7 +301,7 @@
         </div></div>
 
         <ul class="actions fit">
-          <li><a id="fileButton" href="#fileButton" class="button primary fit icon fa-check-square">Share a File / Photo</a></li>
+          <li><a id="fileButton" href="#fileButton" class="button primary fit icon fa-check-square">Share a Blueprint / Photo</a></li>
         </ul>
 
         <div id="file"><label>Do you have a file or image to share with us?<input type="file" name="fileToUpload" id="fileToUpload"></label></div>

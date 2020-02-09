@@ -6681,22 +6681,6 @@ padding-top: 14.5em;
 
 /* Quote Page */
 
-#quoteGrid {
-	margin-top: 6em;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-
-}
-
-#quoteForm {
-	grid-column-start: 1;
-	grid-row-start: 1;
-}
-
-#stairStyleForm {
-	grid-column-start: 2;
-}
-
 .formImg {
 	width: 200px;
 	height: 200px;
@@ -6728,108 +6712,239 @@ padding-top: 14.5em;
 	background-color: black;
 }
 
-/* .quoteImg {
-	width: 200px;
-	height: 200px;
-} */
+.questionMark {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	margin-left: 0.2em;
+}
 
-#quoteContainer {
-grid-row-start: 3;
-	margin-top: 6em;
-	margin-bottom: 3em;
-	z-index: 0;
-	margin: auto;
-	}
+.answer {
+	max-width: 497px;
+	font-weight: 100;
+}
 
-	#quoteBox {
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: row;
-		justify-content: center;
-		padding: 0;
-		margin-top: 8em;
-		list-style: none;
-		/* margin-left: 6em;
-		margin-right: 6em; */
-	}
-
-	.quoteImg {
-		display: flex;
-		flex-grow: 1; /* pictures spaced evenly, take up any remaining space */
-		object-fit: cover;
-		border: 2px solid rgb(255, 254, 254);
-		border-radius: 5px;
-		margin: 0.5em;
-    width: 200px;
-    height: 200px;
+@media only screen and (min-width: 900px) {
+	#questionMark:hover {
+		transform: scale(1.2);
+		transform: rotate(1); /* brings image forward, can rotate with -5deg */
+		transition:
+						background-color 1s,
+						box-shadow 1s,
+						transform .5s; /* changes speed it flips */
 		opacity: 1;
-		flex: 1 1 20em;
-		-webkit-box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.9);
-		-moz-box-shadow:     1px 1px 3px rgba(0, 0, 0, 0.9);
-		box-shadow:         1px 1px 3px rgba(0, 0, 0, 0.9);
-		/* background-color: black; */
+		z-index: 800;
 	}
-	
-	@media only screen and (min-width: 500px) { 
-	.quoteImg {
-		display: flex;
-		flex-grow: 1; /* pictures spaced evenly, take up any remaining space */
-		object-fit: cover;
-		object-position: bottom;
-		border-radius: 5px;
-		opacity: .95;
-		flex: 1 1 20em;
-		-webkit-box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.7);
-		-moz-box-shadow:     1px 1px 3px rgba(0, 0, 0, 0.7);
-		box-shadow:         1px 1px 3px rgba(0, 0, 0, 0.7);
-	}
+}
 
 
+#quoteHeaderMain {
+	background-image: url("/assets/images/heroblueprintlicenseddark.jpg");
+	background-position: center;
+	width: 100%;
+	height: 30vh;
+	color: white;
+}
 
-/* 
-	@media only screen and (min-width: 1100px){ 
-		#quoteBox {
-			margin-left: 20vw;
-			margin-right: 20vw;
-		}
-	} */
-/*
-	@media only screen and (max-width: 900px) { 
-		.quoteImg {
-			width: 300px;
-			height: 300px;
-		}
-	}
+#step {
+	margin-top: 1em;
+}
 
-	@media only screen and (max-width: 653px) { 
-		.quoteImg {
-			width: 250px;
-			height: 250px;
-		}
-	}
+#quoteHeaderMainOverlay {
+	width: 100%;
+	height: 30vh;
+	background-color: rgba(0, 0, 3, 0.658);
+}
 
-	@media only screen and (max-width: 553px) { 
-		.quoteImg {
-			width: 80vw;
-			height: 80vw;
-			margin: 1em;
-		}
-	} */
-	
-	.quoteImg:hover {
+#quoteHeaderMain h1 {
+	color: white;
+	text-align: center;
+	padding-top: 2em;
+	text-shadow: 1px 1px 1px black;
+}
+
+#quoteMain {
+	padding: 0;
+}
+
+.stairStyleOptions {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media only screen and (min-width: 1200px){
+.optionImg {
+	width: 250px;
+	height: 250px;
+	object-fit: contain;
+}
+
+}
+
+.optionImg:hover {
 	transform: scale(1.05);
 	transform: rotate(1); /* brings image forward, can rotate with -5deg */
 	transition:
 					background-color 1s,
 					box-shadow 1s,
 					transform .5s; /* changes speed it flips */
-					-webkit-box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.7);
-					-moz-box-shadow:     1px 1px 3px rgba(0, 0, 0, 0.7);
-					box-shadow:         1px 1px 3px rgba(0, 0, 0, 0.7);
 	opacity: 1;
 	z-index: 800;
 	}
+
+
+
+
+#quoteContainer {
+grid-row-start: 3;
+margin-left: 6em;
+margin-right: 6em;
+margin-top: 2em;
+	z-index: 0;
+	}
+
+
+
+	#quoteBox {
+		display: grid;
+		grid-template-columns:  1fr 1fr 1fr 1fr;
+		padding: 0;
+		list-style: none;
+	}
+
+	.straightQuote {
+		grid-column: 1/2;
+		margin: auto;
+	}
+
+
+	.customQuote {
+		grid-column: 2/3;
+		margin: auto;
+	}
+
+
+	.constructionQuote {
+		grid-column: 3/4;
+		margin: auto;
+	}
+
+
+	.outdoorQuote {
+		grid-column: 4/5;
+		margin: auto;
+	}
+
+
+.quoteImg {
+		display: block;
+		margin: auto;
+		width: 250px;
+		height: 250px;
+		margin-bottom: 2em;
+	}
+
+	.quoteButton {
+		margin-top: 2em;
+		background-color: rgb(146, 198, 68);
+		color: white;
+		border: 1px solid white;
+		border-radius: 5px;
+		width: 250px;
+		height: 50px;
+		-webkit-box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.7);
+		-moz-box-shadow:     1px 1px 3px rgba(0, 0, 0, 0.7);
+		box-shadow:         1px 1px 3px rgba(0, 0, 0, 0.7);
+		display: block;
+		margin: auto;
+	}
+
+	.quoteImg:hover {
+		transform: scale(1.05);
+		transform: rotate(1); /* brings image forward, can rotate with -5deg */
+		transition:
+						background-color 1s,
+						box-shadow 1s,
+						transform .5s; /* changes speed it flips */
+		opacity: 1;
+		z-index: 800;
+		}
+
+	@media only screen and (max-width: 1200px){
+		
+		.quoteImg {
+			margin: 2em;
+		}
+
+		#quoteBox {
+			display: grid;
+			grid-template-columns:  1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+	}
+
+	.straightQuote {
+		grid-column: 1/2;
+		grid-row: 1/2;
+		margin: auto;
+	}
+
+	.customQuote {
+		grid-column: 2/3;
+		grid-row: 1/2;
+		margin: auto;
+	}
+
+	.constructionQuote {
+		grid-column: 1/2;
+		grid-row: 2/3;
+		margin: auto;
+	}
+
+	.outdoorQuote {
+		grid-column: 2/3;
+		grid-row: 2/3;
+		margin: auto;
+	}
+
+} 
+
+
+@media only screen and (max-width: 780px){
+		
+
+	#quoteBox {
+		display: grid;
+		grid-template-columns:  1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
 }
+
+.straightQuote {
+	grid-column: 1/2;
+	grid-row: 1/2;
+	margin: auto;
+}
+
+.customQuote {
+	grid-column: 1/2;
+	grid-row: 2/3;
+	margin: auto;
+}
+
+.constructionQuote {
+	grid-column: 1/2;
+	grid-row: 3/4;
+	margin: auto;
+}
+
+.outdoorQuote {
+	grid-column: 1/2;
+	grid-row: 4/5;
+	margin: auto;
+}
+
+} 
+
+
 
 
 
