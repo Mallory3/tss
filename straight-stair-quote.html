@@ -111,7 +111,7 @@
             
             <!-- QUOTE FORM -->
                     
-                    <form id="quoteForm" method="post" action="https://formspree.io/xkngyzaw">
+                    <form id="quoteForm" method="post" action="https://formspree.io/xkngyzaw" enctype="multipart/form-data">
 
                         <div class="row gtr-uniform">
                             <div class="formflex">
@@ -134,15 +134,145 @@
 
                                 <div id="stairMeasurements">
                                     <label id="straightStyle">You Chose:<input type="text" name="Straight Stair - Straight Style" value="" placeholder="Straight Stair - Straight Style" readonly /></input></label>
-                                   
-                                    <label id="turnLeftStyle">You Chose:<input type="text" name="Straight Stair - Turn Left" value="" placeholder="Straight Stair - Turn Left"/></label>
-                                    
+
+                                <div id="addLandingQuestion"></div>
+                                <div id="addStairMeasurments"></div>
+                                <div id="addLandingYes"></div>
+                                <div id="addLandingNo"></div>
+                                <div id="joist">
+                                  <div>
+                                      <label>Do the Stairs Go Under a Joist? <img class="questionMark" id="questionJoist" src="assets/images/question.svg">
+                                          <div id="answerJoist" class="answer"></div>
+                                      </label>
+                                      <input type="radio" id="radio-joist-Yes" name="radio-joist" value="Yes">
+                                      <label for="radio-joist-Yes" value="Yes">Yes</label>
+                                
+                                      <input type="radio" id="radio-joist-No" name="radio-joist" value="No">
+                                      <label for="radio-joist-No" value="No">No</label>
+                                  </div>
+                                  <div id="addJoistYes"></div>
+
+                                </div>
+
+                                <!-- Baulestrade -->
+                                
+                                  <ul class="actions fit">
+                                      <li><a id="balustradeButton" href="#balustradeButton" class="button primary fit icon fa-check-square">Stair Design / Balustrade</a></li>
+                                  </ul>
+
+                                  <div id="balustrade">
+                                      <div>
+                                          <label>Stringer Style <img class="questionMark" id="questionStringer" src="assets/images/question.svg">
+                                              <div id="answerStringer" class="answer"></div>
+                                          </label>
+                                          <div class="flex">
+                                              <div class="formImg"><span class="image fit"><img src="/assets/images/AdobeStock_118920388_Preview.jpg" alt="" /></span></div>
+                                              <!-- Break -->
+                                              <div class="formImg"><span class="image fit"><img src="/assets/images/AdobeStock_119011154_Preview.jpg" alt="" /></span></div>
+                                          </div>
+                                          <input type="radio" id="radio-western" name="radio">
+                                          <label for="radio-western">Western Stringer</label>
+
+                                          <input type="radio" id="radio-eastern" name="radio">
+                                          <label for="radio-eastern">Eastern Stringer</label>
+                                      </div>
+
+                                      <div>
+                                          <label>Riser Style <img class="questionMark" id="questionRiser" src="assets/images/question.svg">
+                                              <div id="answerRiser" class="answer"></div>
+                                          </label>
+                                          <div class="flex">
+                                              <div class="formImg"><span class="image fit"><img src="/assets/images/AdobeStock_118920388_Preview.jpg" alt="" /></span></div>
+                                              <!-- Break -->
+                                              <div class="formImg"><span class="image fit"><img src="/assets/images/AdobeStock_119011154_Preview.jpg" alt="" /></span></div>
+                                          </div>
+
+                                          <input type="radio" id="radio-yes" name="radio"></input>
+                                          <label for="radio-yes">Closed Riser</label>
+
+                                          <input type="radio" id="radio-no" name="radio">
+                                          <label for="radio-no">Open Riser</label>
+                                      </div>
+
+                                      <div>
+                                          <label for="">Balustrade</label>
+                                          <input type="checkbox" id="checkbox-alpha" name="checkbox">
+                                          <label for="checkbox-alpha">Railing</label>
+                                      </div>
+                                      <div class="col-6 col-12-small">
+                                          <input type="checkbox" id="checkbox-beta" name="checkbox">
+                                          <label for="checkbox-beta">Posts</label>
+                                      </div>
+                                      <div class="col-6 col-12-small">
+                                          <input type="checkbox" id="checkbox-beta" name="checkbox">
+                                          <label for="checkbox-beta">Wood Spindles</label>
+                                      </div>
+                                      <div class="col-6 col-12-small">
+                                          <input type="checkbox" id="checkbox-beta" name="checkbox">
+                                          <label for="checkbox-beta">Iron Spindles</label>
+                                      </div>
+                                      <div class="col-6 col-12-small">
+                                          <input type="checkbox" id="checkbox-beta" name="checkbox">
+                                          <label for="checkbox-beta">Glass Pannels</label>
+                                      </div>
+                                      <div class="col-6 col-12-small">
+                                          <input type="checkbox" id="checkbox-beta" name="checkbox">
+                                          <label for="checkbox-beta">Other</label>
+                                      </div>
+                                  </div>
+                             
+
+
+                              <!-- Share a file -->
+                             
+                              <ul class="actions fit">
+                                  <li><a id="fileButton" href="#fileButton" class="button primary fit icon fa-check-square">Share a Blueprint / Photo</a></li>
+                              </ul>
+
+                              <div id="file">
+                                  <label>Do you have a file or image to share with us?
+                                      <input type="file" name="fileToUpload" id="fileToUpload">
+                                  </label>
+                              </div>
+                             
+
+                              <!-- Break -->
+                            
+                              <div>
+                                  <textarea name="textarea" id="textarea" placeholder="Tell us more about your stair project..." rows="6"></textarea>
+                              </div>
+
+                              <!-- Break -->
+                              <div>
+                                  <label>Quotes provided within 24 hours. Stairs delivered within 4 - 7 days.</label>
+                                  <ul class="actions fit">
+                                      <li>
+                                          <input id="submitButton" type="submit" value="Submit Form" class="button primary fit icon fa-check-square" />
+                                      </li>
+                                  </ul>
+                              </div>
+                  </form>
+                                                                       
                               
 
 
 
-                                    <!-- Straight Stair Measurements -->
-                                    <div class="straightStairMeasurements">
+                                    
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <!-- Straight Stair Measurements -->
+                                    <!-- <div class="straightStairMeasurements">
                                     <label>A) Total Height from Floor to Floor <img class="questionMark" class="questionA" src="assets/images/question.svg">
                                         <div class="answerA" class="answer"></div>
                                         <input type="text" name="TOTAL-HEIGHT-FROM-FLOOR-TO-FLOOR" value="" placeholder="" />
@@ -157,12 +287,26 @@
                                         <div class="answerC" class="answer"></div>
                                         <input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" />
                                     </label>
-                                    </div>
+
+                                    <div id="joist">
+                                      <div>
+                                          <label>Do the Stairs Go Under a Joist? <img class="questionMark" id="questionJoist" src="assets/images/question.svg">
+                                              <div id="answerJoist" class="answer"></div>
+                                          </label>
+                                          <input type="radio" id="radio-joist-Yes" name="radio-joist" value="Yes">
+                                          <label for="radio-joist-Yes" value="Yes">Yes</label>
+
+                                          <input type="radio" id="radio-joist-No" name="radio-joist" value="No">
+                                          <label for="radio-joist-No" value="No">No</label>
+                                      </div>
+                                  </div>
+                                  <div id="addJoistYes"></div>
+                                  </div> -->
 
 
                                     <!-- Landing Question -->
 
-                                    <div id="landing">            
+                                    <!-- <div id="landing">            
                                       <div>
                                       <label>Do You Have a Landing Already in Place? <img class="questionMark" id="questionStringer" src="assets/images/question.svg"></label>
                                       <input type="radio" id="radio-landing-Yes" name="radio-landing" value="Yes">
@@ -171,9 +315,9 @@
                                       <input type="radio" id="radio-landing-No" name="radio-landing" value="No">
                                       <label for="radio-landing-No" value="No">No</label>
                                       </div>
-                                    </div>
+                                    </div> -->
 
-                                    <div id="landingYes">
+                                    <!-- <div id="landingYes">
 
                                       <label>A) Total Height of Second Stair Riser <img class="questionMark" class="questionA" src="assets/images/question.svg"><div class="answerA" class="answer"></div><input type="text" name="TOTAL-HEIGHT-FROM-FLOOR-TO-FLOOR" value="" placeholder="" /></label>
 
@@ -190,11 +334,11 @@
                                     <label>C2) Width of Top Stair Riser <img class="questionMark" class="questionC1" src="assets/images/question.svg"><div class="answerC1" class="answer"></div><input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>
                       
                                     <label>D) Landing Dimensions <img class="questionMark" class="questionD" src="assets/images/question.svg"><div class="answerD" class="answer"></div><input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /> By <input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>
-                      
-                                    </div>
+
+                                  </div> -->
 
 
-                                    <div id="landingNo">
+                                    <!-- <div id="landingNo">
 
                                       <label>A) Total Height from Floor to Floor <img class="questionMark" class="questionA" src="assets/images/question.svg"><div class="answerA" class="answer"></div><input type="text" name="TOTAL-HEIGHT-FROM-FLOOR-TO-FLOOR" value="" placeholder="" /></label>
            
@@ -206,40 +350,14 @@
                                       <label>C2) Width of Top Stair Riser <img class="questionMark" class="questionC1" src="assets/images/question.svg"><div class="answerC1" class="answer"></div><input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>
                         
                                       <label>D) Landing Dimensions <img class="questionMark" class="questionD" src="assets/images/question.svg"><div class="answerD" class="answer"></div><input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /> By <input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>
-                        
 
-
-
-                                    </div>
+                                    <div id="addJoistYes"></div>
+                                    </div> -->
 
                                     
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <div class="all">
-                                        <div id="joist">
-                                            <div>
-                                                <label>Do the Stairs Go Under a Joist? <img class="questionMark" id="questionJoist" src="assets/images/question.svg">
-                                                    <div id="answerJoist" class="answer"></div>
-                                                </label>
-                                                <input type="radio" id="radio-joist-Yes" name="radio-joist" value="Yes">
-                                                <label for="radio-joist-Yes" value="Yes">Yes</label>
-
-                                                <input type="radio" id="radio-joist-No" name="radio-joist" value="No">
-                                                <label for="radio-joist-No" value="No">No</label>
-                                            </div>
-                                        </div>
+                                                                        
+<!--                                     
+                                    <div class="joistYes">
 
                                         <div id="joistOptions">
                                             <label>E) Joist Sytem Used <img class="questionMark" id="questionE" src="assets/images/question.svg">
@@ -257,8 +375,8 @@
                                                 <input type="text" name="LENGTH-FROM-UNDERSIDE-OF-JOIST-TO-FLOOR" value="" placeholder="" />
                                             </label>
                                         </div>
-                                    </div>
-                                </div>
+                                    </div> -->
+                                
 
                                 <!-- Baulestrade -->
                                 <div class="all">
