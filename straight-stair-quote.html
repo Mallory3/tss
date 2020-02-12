@@ -70,7 +70,7 @@
                   <div class="stairSylesStep">
                     <div class="box alt">
                         <div class="stairStyleOptions">
-                          <a class="style1" href="#">
+                          <a class="style1" href="#" id="hi" name="Straight Stair - Straight Style">
                             <div class="col-4"><span class="image fit"><img class="optionImg" src="/assets/images/straight_01.png" alt="" /></span></div>
                         </a>
                         <a class="style2" href="#">
@@ -122,20 +122,35 @@
                                     <input type="text" name="EMAIL" value="" placeholder="" />
                                 </label>
                                 <label>Phone Number
-                                    <input type="text" name="PHONE-NUMBER" value="" placeholder="" />
+                                    <input type="text" name="PHONE NUMBER" value="" placeholder="" />
                                 </label>
                                 <label>Postal Code
                                     <input type="text" name="POSTAL-CODE" value="" placeholder="" />
                                 </label>
+
+                            
 
                                 <ul class="actions fit">
                                     <li><a id="stairButton" href="#stairButton" class="button primary fit icon fa-check-square">Stair Measurments</a></li>
                                 </ul>
 
                                 <div id="stairMeasurements">
-                                    <label id="straightStyle">You Chose:<input type="text" name="Straight Stair - Straight Style" value="" placeholder="Straight Stair - Straight Style" readonly /></input></label>
 
-                                <div id="addLandingQuestion"></div>
+                                  <div id="landing">            
+                                    <div>
+                                    <label>Do You Have a Landing Already in Place? <img class="questionMark" id="questionStringer" src="assets/images/question.svg"></label>
+                                    <input type="radio" id="radio-landing-Yes" name="radio-landing" value="Yes">
+                                    <label for="radio-landing-Yes" value="Yes">Yes</label>
+  
+                                    <input type="radio" id="radio-landing-No" name="radio-landing" value="No">
+                                    <label for="radio-landing-No" value="No">No</label>
+                                    </div>
+                                  </div>
+
+                      
+                            
+
+                                
                                 <div id="addStairMeasurments"></div>
                                 <div id="addLandingYes"></div>
                                 <div id="addLandingNo"></div>
@@ -153,6 +168,8 @@
                                   <div id="addJoistYes"></div>
 
                                 </div>
+                                </div>
+
 
                                 <!-- Baulestrade -->
                                 
@@ -379,104 +396,6 @@
                                 
 
                                 <!-- Baulestrade -->
-                                <div class="all">
-                                    <ul class="actions fit">
-                                        <li><a id="balustradeButton" href="#balustradeButton" class="button primary fit icon fa-check-square">Stair Design / Balustrade</a></li>
-                                    </ul>
-
-                                    <div id="balustrade">
-                                        <div>
-                                            <label>Stringer Style <img class="questionMark" id="questionStringer" src="assets/images/question.svg">
-                                                <div id="answerStringer" class="answer"></div>
-                                            </label>
-                                            <div class="flex">
-                                                <div class="formImg"><span class="image fit"><img src="/assets/images/AdobeStock_118920388_Preview.jpg" alt="" /></span></div>
-                                                <!-- Break -->
-                                                <div class="formImg"><span class="image fit"><img src="/assets/images/AdobeStock_119011154_Preview.jpg" alt="" /></span></div>
-                                            </div>
-                                            <input type="radio" id="radio-western" name="radio">
-                                            <label for="radio-western">Western Stringer</label>
-
-                                            <input type="radio" id="radio-eastern" name="radio">
-                                            <label for="radio-eastern">Eastern Stringer</label>
-                                        </div>
-
-                                        <div>
-                                            <label>Riser Style <img class="questionMark" id="questionRiser" src="assets/images/question.svg">
-                                                <div id="answerRiser" class="answer"></div>
-                                            </label>
-                                            <div class="flex">
-                                                <div class="formImg"><span class="image fit"><img src="/assets/images/AdobeStock_118920388_Preview.jpg" alt="" /></span></div>
-                                                <!-- Break -->
-                                                <div class="formImg"><span class="image fit"><img src="/assets/images/AdobeStock_119011154_Preview.jpg" alt="" /></span></div>
-                                            </div>
-
-                                            <input type="radio" id="radio-yes" name="radio"></input>
-                                            <label for="radio-yes">Closed Riser</label>
-
-                                            <input type="radio" id="radio-no" name="radio">
-                                            <label for="radio-no">Open Riser</label>
-                                        </div>
-
-                                        <div>
-                                            <label for="">Balustrade</label>
-                                            <input type="checkbox" id="checkbox-alpha" name="checkbox">
-                                            <label for="checkbox-alpha">Railing</label>
-                                        </div>
-                                        <div class="col-6 col-12-small">
-                                            <input type="checkbox" id="checkbox-beta" name="checkbox">
-                                            <label for="checkbox-beta">Posts</label>
-                                        </div>
-                                        <div class="col-6 col-12-small">
-                                            <input type="checkbox" id="checkbox-beta" name="checkbox">
-                                            <label for="checkbox-beta">Wood Spindles</label>
-                                        </div>
-                                        <div class="col-6 col-12-small">
-                                            <input type="checkbox" id="checkbox-beta" name="checkbox">
-                                            <label for="checkbox-beta">Iron Spindles</label>
-                                        </div>
-                                        <div class="col-6 col-12-small">
-                                            <input type="checkbox" id="checkbox-beta" name="checkbox">
-                                            <label for="checkbox-beta">Glass Pannels</label>
-                                        </div>
-                                        <div class="col-6 col-12-small">
-                                            <input type="checkbox" id="checkbox-beta" name="checkbox">
-                                            <label for="checkbox-beta">Other</label>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <!-- Share a file -->
-                                <div class="all">
-                                <ul class="actions fit">
-                                    <li><a id="fileButton" href="#fileButton" class="button primary fit icon fa-check-square">Share a Blueprint / Photo</a></li>
-                                </ul>
-
-                                <div id="file">
-                                    <label>Do you have a file or image to share with us?
-                                        <input type="file" name="fileToUpload" id="fileToUpload">
-                                    </label>
-                                </div>
-                                </div>
-
-                                <!-- Break -->
-                                <div class="all">
-                                <div>
-                                    <textarea name="textarea" id="textarea" placeholder="Tell us more about your stair project..." rows="6"></textarea>
-                                </div>
-
-                                <!-- Break -->
-                                <div>
-                                    <label>Quotes provided within 24 hours. Stairs delivered within 4 - 7 days.</label>
-                                    <ul class="actions fit">
-                                        <li>
-                                            <input id="submitButton" type="submit" value="Submit Form" class="button primary fit icon fa-check-square" />
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                    </form>
                     </div>
 
                     </div>
@@ -516,7 +435,7 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/header.js"></script>
-    <script src="assets/js/quote.js"></script>
+    <script src="assets/js/quotes.js"></script>
 
 </body>
 
