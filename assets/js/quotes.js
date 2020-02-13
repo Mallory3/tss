@@ -9,68 +9,24 @@ $(window).on('load', (function() {
 
 
 
-
-var landingQuestionYes = '<div id="landingYes">' +
-
-'<label>A) Total Height of Second Stair Riser <img class="questionMark" class="questionA" src="assets/images/question.svg"><div class="answerA" class="answer"></div><input type="text" name="TOTAL-HEIGHT-FROM-FLOOR-TO-FLOOR" value="" placeholder="" /></label>' +
-
-
-'<label>A1) Total Height of First Stair Riser <img class="questionMark" id="questionA1" src="assets/images/question.svg"><div id="answerA1" class="answer"></div><input class="hidelandingY" type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
-
-
-'<label>B) Total Run of Stair <img class="questionMark" class="questionB" src="assets/images/question.svg"><div class="answerB" class="answer"></div><input type="text" class="hidelandingY" name="TOTAL-RUN-OF-STAIR" value="" placeholder="" /></label>' +
-
-'<label>B1) Total Run of First Stair <img class="questionMark" id="questionB1" src="assets/images/question.svg"><div id="answerB1" class="answer"></div><input type="text" class="hidelandingY" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
-
-'<label>C) Width of Bottom Stair Riser <img class="questionMark" class="questionC" src="assets/images/question.svg"><div class="answerC" class="answer"></div><input class="hidelandingY" type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
-
-'<label>C2) Width of Top Stair Riser <img class="questionMark" class="questionC1" src="assets/images/question.svg"><div class="answerC1" class="answer"></div><input class="hidelandingY" type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
-
-'<label>D) Landing Dimensions <img class="questionMark" class="questionD" src="assets/images/question.svg"><div class="answerD" class="answer"></div><input type="text" class="hidelandingY" name="WIDTH-OF-STAIR" value="" placeholder="" /> By <input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
-
-'</div>'
-
-var landingQuestionNo = '<div id="landingNo">' +
-
-'<label>A) Total Height from Floor to Floor <img class="questionMark" class="questionA" src="assets/images/question.svg"><div class="answerA" class="answer"></div><input class="hidelandingN" type="text" name="TOTAL-HEIGHT-FROM-FLOOR-TO-FLOOR" value="" placeholder="" /></label>' +
-
-
-'<label>B) Total Run of Stair <img class="questionMark" class="questionB" src="assets/images/question.svg"><div class="answerB" class="answer"></div><input type="text" class="hidelandingN" name="TOTAL-RUN-OF-STAIR" value="" placeholder="" /></label>' +
-
-'<label>C) Width of Bottom Stair Riser <img class="questionMark" class="questionC" src="assets/images/question.svg"><div class="answerC" class="answer"></div><input class="hidelandingN" type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
-
-'<label>C2) Width of Top Stair Riser <img class="questionMark" class="questionC1" src="assets/images/question.svg"><div class="answerC1" class="answer"></div><input class="hidelandingN" type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
-
-'<label>D) Landing Dimensions <img class="questionMark" class="questionD" src="assets/images/question.svg"><div class="answerD" class="answer"></div><input type="text" class="hidelandingN" name="WIDTH-OF-STAIR" value="" placeholder="" /> By <input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
-
-'</div>'
-
-
-
-
 // Standard Form Logic
 
 
 function stairLogic() {
 
-$("#advancedButton").click(function(){
-  $("#advanced").toggle();
-
-});
-
 
 $("#balustradeButton").click(function(){
-  $("#balustrade").toggle();
+  $("#balustrade").slideToggle(1000);
 
 });
 
 $("#fileButton").click(function(){
-  $("#file").toggle();
+  $("#file").slideToggle(500);
 
 });
 
 $("#stairButton").click(function(){
-  $("#stairMeasurements").toggle();
+  $("#stairMeasurements").slideToggle(500);
 
 });
 
@@ -108,22 +64,22 @@ $(".questionC").click(function(){
   $(".answerC").html('This is the total width of the stair. Please include if the measurement is O.S.M (Outside Stringer Measurement) or R.O. (Rough Opening).')
 });
 
-$("#questionD").click(function(){
-  $("#answerD").html('The horizontal distance from where you start to walk down the stairs to the point where you could hit your head.')
+$(".questionD").click(function(){
+  $(".answerD").html('The horizontal distance from where you start to walk down the stairs to the point where you could hit your head.')
 });
 
 
 
-$("#questionE").click(function(){
-  $("#answerE").html('Joists are typically constructed from wood, concrete or steel.')
+$(".questionE").click(function(){
+  $(".answerE").html('Joists are typically constructed from wood, concrete or steel.')
 });
 
-$("#questionF").click(function(){
-  $("#answerF").html('This is the height at the point where you could hit your head and is usually measured from the underside of the joist.')
+$(".questionF").click(function(){
+  $(".answerF").html('This is the height at the point where you could hit your head and is usually measured from the underside of the joist.')
 });
 
-$("#questionG").click(function(){
-  $("#answerG").html('The horizontal distance from where you start to walk down the stair to the point where you could hit your head.')
+$(".questionG").click(function(){
+  $(".answerG").html('The horizontal distance from where you start to walk down the stair to the point where you could hit your head.')
 });
 
 
@@ -199,43 +155,100 @@ function joistLogic() {
 
 // add landing Logic to functions
 
-function landingQuestionY() {
-  $('#addLandingYes').html(landingQuestionYes);
-}
 
-function landingQuestionN() {
-  $('#addLandingNo').html(landingQuestionNo);
-}
+var landingQuestionYes = '<div id="landingYes">' +
+
+'<div id="showThisStairStyle"></div>' +
+
+'<label>A) Total Height of Second Stair Riser <img class="questionMark questionA" src="assets/images/question.svg"><div class="answerA answer"></div><input type="text" name="TOTAL-HEIGHT-FROM-FLOOR-TO-FLOOR" value="" placeholder="" /></label>' +
 
 
-function landingLogic() {
-  $("input[name=radio-landing]").click(function() {
+'<label>A1) Total Height of First Stair Riser <img class="questionMark questionA1" src="assets/images/question.svg"><div class="answer answerA1"></div><input class="hidelandingY" type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
 
-    var landing = $(this).val();
-    console.log(landing)
+
+'<label>B) Total Run of Stair <img class="questionMark questionB" src="assets/images/question.svg"><div class="answerB answer"></div><input type="text" class="hidelandingY" name="TOTAL-RUN-OF-STAIR" value="" placeholder="" /></label>' +
+
+'<label>B1) Total Run of First Stair <img class="questionMark questionB1" src="assets/images/question.svg"><div class="answer answerB1"></div><input type="text" class="hidelandingY" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
+
+'<label>C) Width of Bottom Stair Riser <img class="questionMark questionC"  src="assets/images/question.svg"><div class="answerC answer"></div><input class="hidelandingY" type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
+
+'<label>C2) Width of Top Stair Riser <img class="questionMark questionC1" src="assets/images/question.svg"><div class="answerC1 answer"></div><input class="hidelandingY" type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
+
+'<label>D) Landing Dimensions <img class="questionMark questionD" src="assets/images/question.svg"><div class="answerD answer"></div><input type="text" class="hidelandingY" name="WIDTH-OF-STAIR" value="" placeholder="" /> By <input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
+
+'</div>'
+
+var landingQuestionNo = '<div id="landingNo">' +
+'<div id="showThisStairStyle"></div>' +
+
+'<label>A) Total Height from Floor to Floor <img class="questionMark questionA" src="assets/images/question.svg"><div class="answerA answer"></div><input class="hidelandingN" type="text" name="TOTAL-HEIGHT-FROM-FLOOR-TO-FLOOR" value="" placeholder="" /></label>' +
+
+
+'<label>B) Total Run of Stair <img class="questionMark questionB" src="assets/images/question.svg"><div class="answerB answer" ></div><input type="text" class="hidelandingN" name="TOTAL-RUN-OF-STAIR" value="" placeholder="" /></label>' +
+
+'<label>C) Width of Bottom Stair Riser <img class="questionMark questionC" src="assets/images/question.svg"><div class="answerC answer"></div><input class="hidelandingN" type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
+
+'<label>C2) Width of Top Stair Riser <img class="questionMark questionC1" src="assets/images/question.svg"><div class="answerC1 answer"></div><input class="hidelandingN" type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
+
+'<label>D) Landing Dimensions <img class="questionMark questionD" src="assets/images/question.svg"><div class="answerD answer"></div><input type="text" class="hidelandingN" name="WIDTH-OF-STAIR" value="" placeholder="" /> By <input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
+
+'</div>'
+
+// See why A B C wont work, rename names, Test!!! Add this.name for style 2..repeat for other styles
+// function landingQuestionY() {
+//   $('#addLandingYes').html(landingQuestionYes);
+// }
+
+// function landingQuestionN() {
+//   $('#addLandingNo').html(landingQuestionNo);
+// }
+
+
+// function landingLogic() {
+//   $("input[name=radio-landing]").click(function() {
+
+//     var landing = $(this).val();
+//     console.log(landing)
    
-    if (landing == 'Yes') {
-    landingQuestionY()
-    $('#landingNo').hide()
-    $('.hidelandingY').attr("disabled",true);
+//     if (landing == 'Yes') {
+//     $('#addLandingYes').html(landingQuestionYes);
+//     $('#landingNo').hide()
+//     $('.hidelandingY').attr("disabled",true);
+//     $(".questionA").click(function(){
+//       $(".answerA").html('This is the total height from top of floor to top of floor.')
+//     });
+    
+//     $(".questionB").click(function(){
+//       $(".answerB").html('This is the total length of the stair from where it starts to where you want it to end on the floor below.')
+//     });
+    
+    
+//     $(".questionC").click(function(){
+//       $(".answerC").html('This is the total width of the stair. Please include if the measurement is O.S.M (Outside Stringer Measurement) or R.O. (Rough Opening).')
+//     });
      
-  }
+//   }
 
-  if (landing == 'No') {
-    landingQuestionN()
-    $('#landingYes').hide()
-    $('.hidelandingN').attr("disabled",true);
-     
-  }
-
-  }
-  )
-   
-};
-
-
-
-
+//   if (landing == 'No') {
+//     $('#addLandingNo').html(landingQuestionNo);
+//     $('#landingYes').hide()
+//     $('.hidelandingN').attr("disabled",true);
+//     $(".questionA").click(function(){
+//       $(".answerA").html('This is the total height from top of floor to top of floor.')
+//     });
+    
+//     $(".questionB").click(function(){
+//       $(".answerB").html('This is the total length of the stair from where it starts to where you want it to end on the floor below.')
+//     });
+    
+    
+//     $(".questionC").click(function(){
+//       $(".answerC").html('This is the total width of the stair. Please include if the measurement is O.S.M (Outside Stringer Measurement) or R.O. (Rough Opening).')
+//     });
+//   }
+//   }
+//   )
+// };
 
 
 // Stair Styles
@@ -262,9 +275,10 @@ $(".style1").click(function(){
   showStairForm()
   joistLogic()
   stairLogic()
+  $('#quoteHeaderMain').hide();
+  $('#step2').hide();
   $('#landing').hide()
   $('#landing').attr("disabled",true);
-  // showStairType()
   $('#addStairMeasurments').html(straightStair);
   $(".questionA").click(function(){
     $(".answerA").html('This is the total height from top of floor to top of floor.')
@@ -281,26 +295,108 @@ $(".style1").click(function(){
 
 
 
-$(".style2").click(function(){
+$(".style2, .style3").click(function(){
 
   showStairForm()
   joistLogic()
   stairLogic()
-  landingLogic()
-  // showStairType()
-  $('#addLandingQuestion').html(landingQuestion);
+  $('#quoteHeaderMain').hide();
+  $('#step2').hide();
+
+var landingQuestionYes = '<div id="landingYes">' +
+
+'<label>You Chose:<input type="text" name="Stair Type" value="' + $(this).attr("name") + '" placeholder="' + $(this).attr("name") +'" readonly /></input></label>' +
+
+'<label>A) Total Height of Second Stair Riser <img class="questionMark questionA" src="assets/images/question.svg"><div class="answerA answer"></div><input type="text" name="TOTAL-HEIGHT-FROM-FLOOR-TO-FLOOR" value="" placeholder="" /></label>' +
+
+
+'<label>A1) Total Height of First Stair Riser <img class="questionMark questionA1" src="assets/images/question.svg"><div class="answer answerA1"></div><input class="hidelandingY" type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
+
+
+'<label>B) Total Run of Stair <img class="questionMark questionB" src="assets/images/question.svg"><div class="answerB answer"></div><input type="text" class="hidelandingY" name="TOTAL-RUN-OF-STAIR" value="" placeholder="" /></label>' +
+
+'<label>B1) Total Run of First Stair <img class="questionMark questionB1" src="assets/images/question.svg"><div class="answer answerB1"></div><input type="text" class="hidelandingY" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
+
+'<label>C) Width of Bottom Stair Riser <img class="questionMark questionC"  src="assets/images/question.svg"><div class="answerC answer"></div><input class="hidelandingY" type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
+
+'<label>C2) Width of Top Stair Riser <img class="questionMark questionC1" src="assets/images/question.svg"><div class="answerC1 answer"></div><input class="hidelandingY" type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
+
+'<label>D) Landing Dimensions <img class="questionMark questionD" src="assets/images/question.svg"><div class="answerD answer"></div><input type="text" class="hidelandingY" name="WIDTH-OF-STAIR" value="" placeholder="" /> By <input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
+
+'</div>'
+
+var landingQuestionNo = '<div id="landingNo">' +
+'<label>You Chose:<input type="text" name="Stair Type" value="' + $(this).attr("name") + '" placeholder="' + $(this).attr("name") +'" readonly /></input></label>' +
+
+'<label>A) Total Height from Floor to Floor <img class="questionMark questionA" src="assets/images/question.svg"><div class="answerA answer"></div><input class="hidelandingN" type="text" name="TOTAL-HEIGHT-FROM-FLOOR-TO-FLOOR" value="" placeholder="" /></label>' +
+
+
+'<label>B) Total Run of Stair <img class="questionMark questionB" src="assets/images/question.svg"><div class="answerB answer" ></div><input type="text" class="hidelandingN" name="TOTAL-RUN-OF-STAIR" value="" placeholder="" /></label>' +
+
+'<label>C) Width of Bottom Stair Riser <img class="questionMark questionC" src="assets/images/question.svg"><div class="answerC answer"></div><input class="hidelandingN" type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
+
+'<label>C2) Width of Top Stair Riser <img class="questionMark questionC1" src="assets/images/question.svg"><div class="answerC1 answer"></div><input class="hidelandingN" type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
+
+'<label>D) Landing Dimensions <img class="questionMark questionD" src="assets/images/question.svg"><div class="answerD answer"></div><input type="text" class="hidelandingN" name="WIDTH-OF-STAIR" value="" placeholder="" /> By <input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
+
+'</div>'
+
+$("input[name=radio-landing]").click(function() {
+
+  var landing = $(this).val();
+  console.log(landing)
+ 
+  if (landing == 'Yes') {
+  $('#addLandingYes').html(landingQuestionYes);
+  $('#landingNo').hide()
+  $('.hidelandingN').attr("disabled",true);
   $(".questionA").click(function(){
     $(".answerA").html('This is the total height from top of floor to top of floor.')
   });
+  
   $(".questionB").click(function(){
     $(".answerB").html('This is the total length of the stair from where it starts to where you want it to end on the floor below.')
   });
+  
+  
   $(".questionC").click(function(){
     $(".answerC").html('This is the total width of the stair. Please include if the measurement is O.S.M (Outside Stringer Measurement) or R.O. (Rough Opening).')
   });
-  var stairTypeDiv = $(this)
-  console.log($(this).attr("name"))
+   
+}
+
+if (landing == 'No') {
+  $('#addLandingNo').html(landingQuestionNo);
+  $('#landingYes').hide()
+  $('.hidelandingY').attr("disabled",true);
+  $(".questionA").click(function(){
+    $(".answerA").html('This is the total height from top of floor to top of floor.')
+  });
+  
+  $(".questionB").click(function(){
+    $(".answerB").html('This is the total length of the stair from where it starts to where you want it to end on the floor below.')
+  });
+  
+  
+  $(".questionC").click(function(){
+    $(".answerC").html('This is the total width of the stair. Please include if the measurement is O.S.M (Outside Stringer Measurement) or R.O. (Rough Opening).')
+  });
+}
+}
+)
+
+
+
+
+
+
+
+
+
+
+ 
+  // landingLogic()
+  
+
 });
 
-
-// See why A B C wont work, rename names, Test!!! Add this.name for style 2..repeat for other styles
