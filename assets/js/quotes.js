@@ -1,6 +1,7 @@
 $(window).on('load', (function() {
 
   $("#quoteForm").hide();
+  $("#quoteInfo").hide();
   
   }));
 
@@ -17,6 +18,7 @@ function stairLogic() {
 
 $("#balustradeButton").click(function(){
   $("#balustrade").slideToggle(1000);
+  $("#stairMeasurements").hide('slow')
 
 });
 
@@ -25,9 +27,16 @@ $("#fileButton").click(function(){
 
 });
 
+$("#infoButton").click(function(){
+  $("#quoteInfo").slideToggle(1000);
+
+});
+
 $("#stairButton").click(function(){
   $("#stairMeasurements").slideToggle(1000);
-  $("#quoteInfo").hide(1000);
+  $("#quoteInfo").hide('slow');
+
+
 
 });
 
