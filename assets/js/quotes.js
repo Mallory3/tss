@@ -26,7 +26,8 @@ $("#fileButton").click(function(){
 });
 
 $("#stairButton").click(function(){
-  $("#stairMeasurements").slideToggle(500);
+  $("#stairMeasurements").slideToggle(1000);
+  $("#quoteInfo").hide(1000);
 
 });
 

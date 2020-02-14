@@ -106,6 +106,13 @@
               <a id="back1" href="quote.html" class="button icon fa-check-square quoteButton">Back to Main Options</a>
             </span>
                   </div>
+                </section>
+
+            
+            
+            <section id="quoteGrid">
+            
+              <div id="quotePicture"></div>
 
                     
             
@@ -115,7 +122,8 @@
 
                         <div class="row gtr-uniform">
                             <div class="formflex">
-                                <label>Name
+                            <div id="quoteInfo">       
+                              <label>Name
                                     <input type="text" name="NAME" value="" placeholder="" />
                                 </label>
                                 <label>Email
@@ -124,14 +132,17 @@
                                 <label>Phone Number
                                     <input type="text" name="PHONE NUMBER" value="" placeholder="" />
                                 </label>
-                                <label>Postal Code
+                                <label id="postalCode">Postal Code
                                     <input type="text" name="POSTAL-CODE" value="" placeholder="" />
-                                </label>
-
+                                </label></div>
+                         
+                                <ul class="actions fit">
+                                  <li><div id="infoButton" class="button primary fit icon fa-check-square quoteButton">Contact Information</div></li>
+                              </ul>
                             
 
                                 <ul class="actions fit">
-                                    <li><div id="stairButton" class="button primary fit icon fa-check-square">Stair Measurments</div></li>
+                                    <li><div id="stairButton" class="button primary fit icon fa-check-square quoteButton">Stair Measurments</div></li>
                                 </ul>
 
                                 <div id="stairMeasurements">
@@ -155,7 +166,7 @@
                                 <div id="addLandingYes"></div>
                                 <div id="addLandingNo"></div>
                                 <div id="joist">
-                                  <div>
+                                  <div id="joistQuestion">
                                       <label>Do the Stairs Go Under a Joist? <img class="questionMark" id="questionJoist" src="assets/images/question.svg">
                                           <div id="answerJoist" class="answer"></div>
                                       </label>
@@ -174,7 +185,7 @@
                                 <!-- Baulestrade -->
                                 
                                   <ul class="actions fit">
-                                      <li><div id="balustradeButton" class="button primary fit icon fa-check-square">Stair Design / Balustrade</div></li>
+                                      <li><div id="balustradeButton" class="button primary fit icon fa-check-square quoteButton">Stair Design / Balustrade</div></li>
                                   </ul>
 
                                   <div id="balustrade">
@@ -243,7 +254,7 @@
                               <!-- Share a file -->
                              
                               <ul class="actions fit">
-                                  <li><div id="fileButton" class="button primary fit icon fa-check-square">Share a Blueprint / Photo</div></li>
+                                  <li><div id="fileButton" class="button primary fit icon fa-check-square quoteButton">Share a Blueprint / Photo</div></li>
                               </ul>
 
                               <div id="file">
@@ -269,7 +280,8 @@
                                   </ul>
                               </div>
                   </form>
-                                                                       
+                                
+                </div>
                               
 
 

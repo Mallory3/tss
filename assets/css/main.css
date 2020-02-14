@@ -2353,7 +2353,7 @@ input, select, textarea {
 		}
 
 	input[type="checkbox"] + label:before {
-		border-radius: 0;
+		border-radius: 5px;;
 	}
 
 	input[type="radio"] + label:before {
@@ -6901,8 +6901,13 @@ padding-top: 14.5em;
 
 /* Quote Form */
 
+form {
+	margin-left: 6em;
+	max-width: 450px;
+}
+
 #quoteForm {
-	max-width: 400px;
+	background-attachment: fixed;
 	margin-top: 2em;
 	padding: 20px;
 	border-radius: 25px;
@@ -6994,9 +6999,76 @@ padding-top: 14.5em;
 	padding: 0;
 }
 
+/* #quoteGrid {
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+#quotePicture {
+	grid-column: 2/3;
+	background-image: url("/assets/images/AdobeStock_115267194_Preview.jpg");
+	width: 50vw;
+	height: 100%;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	grid-row-start: 1;
+	margin-top: 10em;
+	/* background-attachment: fixed; */
+	
+
+
+
+
+#form {
+	grid-column: 1/2;
+	grid-row-start: 1;
+}
+
 .stairStyleOptions {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.quoteButton {
+margin-top: 1em;
+}
+
+#fileButton {
+	margin-top: -2em;
+
+}
+
+#balustradeButton {
+ margin-top: -2em;
+}
+
+#addJoistYes {
+	margin-bottom: 3em;
+}
+
+#balustrade {
+	margin-bottom: 3em;
+	margin-top: -1em;
+}
+
+#joistQuestion {
+margin-top: 0.5em;
+}
+
+#file {
+	margin-bottom: 1em;
+	margin-top: -2em;
+}
+
+
+#addLandingYes, #addLandingNo {
+	margin-top: -1em;
+}
+
+#postalCode {
+	margin-bottom: 1.5em;
 }
 
 
