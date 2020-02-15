@@ -7006,32 +7006,29 @@ form {
 	padding: 0;
 }
 
-/* #quoteGrid {
-	padding: 0;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+
+#quoteBackground {
+	background-color: grey;
+	padding-bottom: 1em;
+	padding-top: 1em;
 }
 
-#quotePicture {
-	grid-column: 2/3;
-	background-image: url("/assets/images/AdobeStock_115267194_Preview.jpg");
-	width: 50vw;
-	height: 100%;
-	background-size: contain;
-	background-position: center;
+@media only screen and (min-width: 1300px) {	
+#quoteBackground {
+	background-image: url("/assets/images/3dstair.png");
+	background-color: rgb(227, 227, 227);
 	background-repeat: no-repeat;
-	grid-row-start: 1;
-	margin-top: 10em;
-	/* background-attachment: fixed; */
-	
-
-
-
-
-#form {
-	grid-column: 1/2;
-	grid-row-start: 1;
+	background-size: contain;
+	background-position: right;
+	width: 100%;
+	background-attachment: fixed;
+	padding-bottom: 1em;
+	padding-top: 1em;
 }
+}
+
+
+
 
 .stairStyleOptions {
 	display: grid;
