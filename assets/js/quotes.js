@@ -2,6 +2,8 @@ $(window).on('load', (function() {
 
   $("#quoteForm").hide();
   $("#quoteInfo").hide();
+  $('#anotherFile2').hide();
+  $('#maximum').hide();
   
   }));
 
@@ -14,6 +16,24 @@ $(window).on('load', (function() {
 
 
 function stairLogic() {
+
+$("#anotherFile").click(function(){
+  var createFile = '<input type="file" name="Upload File-2" id="fileToUpload"></input>'
+
+  $('#addFile').append(createFile);
+  $('#anotherFile').hide();
+  $('#anotherFile2').show();
+
+})
+
+$("#anotherFile2").click(function(){
+  var createFile = '<input type="file" name="Upload File-3" id="fileToUpload"></input>'
+
+  $('#addFile2').append(createFile);
+  $('#anotherFile2').hide();
+  $('#maximum').show();
+
+})
 
 
 $("#balustradeButton").click(function(){
@@ -114,17 +134,17 @@ var joistQuestionYes = '<div class="joistYes">' +
     '<div id="joistOptions">' +
         '<label>E) Joist Sytem Used <img class="questionMark" id="questionE" src="assets/images/question.svg">' +
             '<div id="answerE" class="answer"></div>' +
-            '<input class="hideJoist" type="text" name="JOIST-SYSTEM-USED" value="" placeholder="" />' +
+            '<input class="hideJoist" type="text" name="E)JOIST SYSTEM USED" value="" placeholder="" />' +
         '</label>' +
 
         '<label>F) Height from Underside of Joist to Floor <img class="questionMark" id="questionF" src="assets/images/question.svg">' +
             '<div id="answerF" class="answer"></div>' +
-            '<input class="hideJoist" type="text" name="HEIGHT-FROM-UNDERSIDE-OF-JOIST-TO-FLOOR" value="" placeholder="" />' +
+            '<input class="hideJoist" type="number" name="F)HEIGHT FROM UNDERSIDE OF JOIST TO FLOOR" value="" placeholder="0.00 inches" />' +
         '</label>' +
 
         '<label>G) Length of Stairwell to Headroom <img class="questionMark" id="questionG" src="assets/images/question.svg">' +
             '<div id="answerG" class="answer"></div>' +
-            '<input class="hideJoist" type="text" name="LENGTH-FROM-UNDERSIDE-OF-JOIST-TO-FLOOR" value="" placeholder="" />' +
+            '<input class="hideJoist" type="number" name="G)LENGTH FROM UNDERSIDE OF JOIST TO FLOOR" value="0.00 inches" placeholder="0.00 inches" />' +
         '</label>' +
     '</div>' +
 '</div>'
@@ -163,102 +183,7 @@ function joistLogic() {
 };
 
 
-// add landing Logic to functions
 
-
-var landingQuestionYes = '<div id="landingYes">' +
-
-'<div id="showThisStairStyle"></div>' +
-
-'<label>A) Total Height of Second Stair Riser <img class="questionMark questionA" src="assets/images/question.svg"><div class="answerA answer"></div><input type="text" name="TOTAL-HEIGHT-FROM-FLOOR-TO-FLOOR" value="" placeholder="" /></label>' +
-
-
-'<label>A1) Total Height of First Stair Riser <img class="questionMark questionA1" src="assets/images/question.svg"><div class="answer answerA1"></div><input class="hidelandingY" type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
-
-
-'<label>B) Total Run of Stair <img class="questionMark questionB" src="assets/images/question.svg"><div class="answerB answer"></div><input type="text" class="hidelandingY" name="TOTAL-RUN-OF-STAIR" value="" placeholder="" /></label>' +
-
-'<label>B1) Total Run of First Stair <img class="questionMark questionB1" src="assets/images/question.svg"><div class="answer answerB1"></div><input type="text" class="hidelandingY" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
-
-'<label>C) Width of Bottom Stair Riser <img class="questionMark questionC"  src="assets/images/question.svg"><div class="answerC answer"></div><input class="hidelandingY" type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
-
-'<label>C2) Width of Top Stair Riser <img class="questionMark questionC1" src="assets/images/question.svg"><div class="answerC1 answer"></div><input class="hidelandingY" type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
-
-'<label>D) Landing Dimensions <img class="questionMark questionD" src="assets/images/question.svg"><div class="answerD answer"></div><input type="text" class="hidelandingY" name="WIDTH-OF-STAIR" value="" placeholder="" /> By <input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
-
-'</div>'
-
-var landingQuestionNo = '<div id="landingNo">' +
-'<div id="showThisStairStyle"></div>' +
-
-'<label>A) Total Height from Floor to Floor <img class="questionMark questionA" src="assets/images/question.svg"><div class="answerA answer"></div><input class="hidelandingN" type="text" name="TOTAL-HEIGHT-FROM-FLOOR-TO-FLOOR" value="" placeholder="" /></label>' +
-
-
-'<label>B) Total Run of Stair <img class="questionMark questionB" src="assets/images/question.svg"><div class="answerB answer" ></div><input type="text" class="hidelandingN" name="TOTAL-RUN-OF-STAIR" value="" placeholder="" /></label>' +
-
-'<label>C) Width of Bottom Stair Riser <img class="questionMark questionC" src="assets/images/question.svg"><div class="answerC answer"></div><input class="hidelandingN" type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
-
-'<label>C2) Width of Top Stair Riser <img class="questionMark questionC1" src="assets/images/question.svg"><div class="answerC1 answer"></div><input class="hidelandingN" type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
-
-'<label>D) Landing Dimensions <img class="questionMark questionD" src="assets/images/question.svg"><div class="answerD answer"></div><input type="text" class="hidelandingN" name="WIDTH-OF-STAIR" value="" placeholder="" /> By <input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
-
-'</div>'
-
-// See why A B C wont work, rename names, Test!!! Add this.name for style 2..repeat for other styles
-// function landingQuestionY() {
-//   $('#addLandingYes').html(landingQuestionYes);
-// }
-
-// function landingQuestionN() {
-//   $('#addLandingNo').html(landingQuestionNo);
-// }
-
-
-// function landingLogic() {
-//   $("input[name=radio-landing]").click(function() {
-
-//     var landing = $(this).val();
-//     console.log(landing)
-   
-//     if (landing == 'Yes') {
-//     $('#addLandingYes').html(landingQuestionYes);
-//     $('#landingNo').hide()
-//     $('.hidelandingY').attr("disabled",true);
-//     $(".questionA").click(function(){
-//       $(".answerA").html('This is the total height from top of floor to top of floor.')
-//     });
-    
-//     $(".questionB").click(function(){
-//       $(".answerB").html('This is the total length of the stair from where it starts to where you want it to end on the floor below.')
-//     });
-    
-    
-//     $(".questionC").click(function(){
-//       $(".answerC").html('This is the total width of the stair. Please include if the measurement is O.S.M (Outside Stringer Measurement) or R.O. (Rough Opening).')
-//     });
-     
-//   }
-
-//   if (landing == 'No') {
-//     $('#addLandingNo').html(landingQuestionNo);
-//     $('#landingYes').hide()
-//     $('.hidelandingN').attr("disabled",true);
-//     $(".questionA").click(function(){
-//       $(".answerA").html('This is the total height from top of floor to top of floor.')
-//     });
-    
-//     $(".questionB").click(function(){
-//       $(".answerB").html('This is the total length of the stair from where it starts to where you want it to end on the floor below.')
-//     });
-    
-    
-//     $(".questionC").click(function(){
-//       $(".answerC").html('This is the total width of the stair. Please include if the measurement is O.S.M (Outside Stringer Measurement) or R.O. (Rough Opening).')
-//     });
-//   }
-//   }
-//   )
-// };
 
 
 // Stair Styles
@@ -268,17 +193,23 @@ $(".style1").click(function(){
 '<label>You Chose:<input type="text" name="Stair Type" value="' + $(this).attr("name") + '" placeholder="' + $(this).attr("name") +'" readonly /></input></label>' +
 '<label>A) Total Height from Floor to Floor <img class="questionMark questionA" src="assets/images/question.svg">' +
     '<div class="answerA answer"></div>' +
-    '<input type="text" name="TOTAL-HEIGHT-FROM-FLOOR-TO-FLOOR" value="" placeholder="" />' +
+    '<input type="number" name="A)TOTAL HEIGHT FROM FLOOR TO FLOOR" value="" placeholder="0.00 inches" />' +
 '</label>' +
 
 '<label>B) Total Run of Stair<img class="questionMark questionB" src="assets/images/question.svg">' +
     '<div class="answerB answer"></div>' +
-    '<input type="text" name="TOTAL-RUN-OF-STAIR" value="" placeholder="" />' +
+    '<input type="number" name="B)TOTAL RUN OF STAIR" value="0.00 inches" placeholder="" />' +
 '</label>' +
 
 '<label>C) Width of Stair Riser (R.O or O.S.M) <img class="questionMark questionC" src="assets/images/question.svg">' +
     '<div class="answerC answer"></div>' +
-    '<input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" />' +
+    '<div class="flex">' +
+    '<input class="dimension1" type="number" name="C)WIDTH-OF-STAIR" value="0.00 inches" placeholder="0.00 inches" />' +
+    '<select class="dimension2" name="R.O or O.S.M:">' +
+          '<option value="R.O">R.O</option>' +
+          '<option value="O.S.M">O.S.M</option>' +
+      '</select>' +
+      '</div>' +
 '</label>' +
 '</div>'
 
@@ -315,39 +246,63 @@ $(".style2, .style3").click(function(){
 
 var landingQuestionYes = '<div id="landingYes">' +
 
-'<label>You Chose:<input type="text" name="Stair Type" value="' + $(this).attr("name") + '" placeholder="' + $(this).attr("name") +'" readonly /></input></label>' +
+'<label>You Chose:<input class="hidelandingY" type="text" name="Stair Type" value="' + $(this).attr("name") + '" placeholder="' + $(this).attr("name") +'" readonly /></input></label>' +
 
-'<label>A) Total Height of Second Stair Riser <img class="questionMark questionA" src="assets/images/question.svg"><div class="answerA answer"></div><input type="text" name="TOTAL-HEIGHT-FROM-FLOOR-TO-FLOOR" value="" placeholder="" /></label>' +
-
-
-'<label>A1) Total Height of First Stair Riser <img class="questionMark questionA1" src="assets/images/question.svg"><div class="answer answerA1"></div><input class="hidelandingY" type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
+'<label>A1) Total Height from Floor to Floor<img class="questionMark questionA" src="assets/images/question.svg"><div class="answerA answer"></div><input type="number" class="hidelandingY" name="A1)TOTAL HEIGHT FROM FLOOR TO FLOOR" value="" placeholder="0.00 inches" /></label>' +
 
 
-'<label>B) Total Run of Stair <img class="questionMark questionB" src="assets/images/question.svg"><div class="answerB answer"></div><input type="text" class="hidelandingY" name="TOTAL-RUN-OF-STAIR" value="" placeholder="" /></label>' +
+'<label>A2) Total Height of Bottom Stair<img class="questionMark questionA1" src="assets/images/question.svg"><div class="answer answerA1"></div><input type="number" class="hidelandingY" name="A2)TOTAL HEIGHT OF BOTTOM STAIR" value="" placeholder="0.00 inches" /></label>' +
 
-'<label>B1) Total Run of First Stair <img class="questionMark questionB1" src="assets/images/question.svg"><div class="answer answerB1"></div><input type="text" class="hidelandingY" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
 
-'<label>C) Width of Bottom Stair Riser <img class="questionMark questionC"  src="assets/images/question.svg"><div class="answerC answer"></div><input class="hidelandingY" type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
+'<label>B1) Total Run of Top Stair <img class="questionMark questionB" src="assets/images/question.svg"><div class="answerB answer"></div><input type="number" class="hidelandingY" name="B1)TOTAL RUN OF TOP STAIR" value="" placeholder="0.00 inches" /></label>' +
 
-'<label>C2) Width of Top Stair Riser <img class="questionMark questionC1" src="assets/images/question.svg"><div class="answerC1 answer"></div><input class="hidelandingY" type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
+'<label>B2) Total Run of Bottom Stair <img class="questionMark questionB1" src="assets/images/question.svg"><div class="answer answerB1"></div><input type="number" class="hidelandingY" name="B2)TOTAL RUN OF BOTTOM STAIR" value="" placeholder="0.00 inches" /></label>' +
 
-'<label>D) Landing Dimensions <img class="questionMark questionD" src="assets/images/question.svg"><div class="answerD answer"></div><input type="text" class="hidelandingY" name="WIDTH-OF-STAIR" value="" placeholder="" /> By <input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
+'<label>C1) Width of Bottom Stair (R.O or O.S.M) <img class="questionMark questionC"  src="assets/images/question.svg"><div class="answerC answer"></div><div class="flex"><input class="hidelandingY width1" type="number" name="C1)WIDTH OF BOTTOM STAIR" value="" placeholder="0.00 inches" />' +
+'<select class="width2 hidelandingY" name="C1)R.O or O.S.M:">' +
+'<option value="R.O">R.O</option>' +
+'<option value="O.S.M">O.S.M</option>' +
+'</select>' +
+'</div>' + 
+'</label>' +
+
+'<label>C2) Width of Top Stair (R.O or O.S.M) <img class="questionMark questionC1" src="assets/images/question.svg"><div class="answerC1 answer"></div><div class="flex"><input class="hidelandingY width1" type="number" name="C2)WIDTH OF TOP STAIR" value="" placeholder="0.00 inches" />' +
+'<select class="width2 hidelandingY" name="C2)R.O or O.S.M:">' +
+'<option value="R.O">R.O</option>' +
+'<option value="O.S.M">O.S.M</option>' +
+'</select>' +
+'</div>' + 
+'</label>' +
+
+'<label>D) Landing Dimensions <img class="questionMark questionD" src="assets/images/question.svg"><div class="answerD answer"></div><div class="flex"><input class="dimension1 hidelandingY" type="number" name="D1)LANDING DIMENSION" value="" placeholder="0.00 inches" /> By <input class="dimension2 hidelandingY" type="number" name="D2)LANDING DIMENSION" value="" placeholder="0.00 inches" /></div></label>' +
 
 '</div>'
 
 var landingQuestionNo = '<div id="landingNo">' +
-'<label>You Chose:<input type="text" name="Stair Type" value="' + $(this).attr("name") + '" placeholder="' + $(this).attr("name") +'" readonly /></input></label>' +
+'<label>You Chose:<input type="text"class="hidelandingN"  name="Stair Type" value="' + $(this).attr("name") + '" placeholder="' + $(this).attr("name") +'" readonly /></input></label>' +
 
-'<label>A) Total Height from Floor to Floor <img class="questionMark questionA" src="assets/images/question.svg"><div class="answerA answer"></div><input class="hidelandingN" type="text" name="TOTAL-HEIGHT-FROM-FLOOR-TO-FLOOR" value="" placeholder="" /></label>' +
+'<label>A) Total Height from Floor to Floor <img class="questionMark questionA" src="assets/images/question.svg"><div class="answerA answer"></div><input class="hidelandingN" type="number" name="A)TOTAL HEIGHT FROM FLOOR TO FLOOR" value="" placeholder="0.00 inches" /></label>' +
 
 
-'<label>B) Total Run of Stair <img class="questionMark questionB" src="assets/images/question.svg"><div class="answerB answer" ></div><input type="text" class="hidelandingN" name="TOTAL-RUN-OF-STAIR" value="" placeholder="" /></label>' +
+'<label>B) Total Run of Stair <img class="questionMark questionB" src="assets/images/question.svg"><div class="answerB answer" ></div><input type="number" class="hidelandingN" name="B)TOTAL RUN OF STAIR" value="" placeholder="0.00 inches" /></label>' +
 
-'<label>C) Width of Bottom Stair Riser <img class="questionMark questionC" src="assets/images/question.svg"><div class="answerC answer"></div><input class="hidelandingN" type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
+'<label>C1) Width of Bottom Stair <img class="questionMark questionC" src="assets/images/question.svg"><div class="answerC answer"></div><div class="flex"><input class="hidelandingN" type="number" name="C1)WIDTH OF BOTTOM STAIR" value="" placeholder="0.00 inches" />' +
+'<select class="width2 hidelandingN" name="C2)R.O or O.S.M:">' +
+'<option value="R.O">R.O</option>' +
+'<option value="O.S.M">O.S.M</option>' +
+'</select>' +
+'</div>' + 
+'</label>' +
 
-'<label>C2) Width of Top Stair Riser <img class="questionMark questionC1" src="assets/images/question.svg"><div class="answerC1 answer"></div><input class="hidelandingN" type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
+'<label>C2) Width of Top Stair <img class="questionMark questionC1" src="assets/images/question.svg"><div class="answerC1 answer"></div><div class="flex"><input class="hidelandingN" type="number" name="C2)WIDTH OF TOP STAIR" value="" placeholder="0.00 inches" />' +
+'<select class="width2 hidelandingN" name="C2)R.O or O.S.M:">' +
+'<option value="R.O">R.O</option>' +
+'<option value="O.S.M">O.S.M</option>' +
+'</select>' +
+'</div>' + 
+'</label>' +
 
-'<label>D) Landing Dimensions <img class="questionMark questionD" src="assets/images/question.svg"><div class="answerD answer"></div><input type="text" class="hidelandingN" name="WIDTH-OF-STAIR" value="" placeholder="" /> By <input type="text" name="WIDTH-OF-STAIR" value="" placeholder="" /></label>' +
+'<label>D) Landing Dimensions <img class="questionMark questionD" src="assets/images/question.svg"><div class="answerD answer"></div><div class="flex"><input class="dimension1 hidelandingN" type="number" name="D1)LANDING DIMENSION" value="" placeholder="0.00 inches" /> By <input type="number" class="dimension2 hidelandingN" name="D2)LANDING DIMENSION" value="" placeholder="0.00 inches" /></label></div>' +
 
 '</div>'
 

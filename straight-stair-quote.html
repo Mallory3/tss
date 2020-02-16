@@ -119,6 +119,9 @@
             <!-- QUOTE FORM -->
                     
                     <form id="quoteForm" method="post" action="https://formspree.io/xkngyzaw" enctype="multipart/form-data">
+                      <fieldset>
+                        <h3>Request a Quote Today!</h3>
+                      </fieldset>
 
                         <div class="row gtr-uniform">
                             <div class="formflex">
@@ -256,14 +259,21 @@
                               <!-- Share a file -->
                              
                               <ul class="actions fit">
-                                  <li><div id="fileButton" class="button primary fit icon fa-check-square quoteButton">Share a Blueprint / Photo</div></li>
+                                  <li><div id="fileButton" class="button primary fit icon fa-check-square quoteButton">Share a Blueprint / Photo / File</div></li>
                               </ul>
 
                               <div id="file">
-                                  <label>Do you have a file or image to share with us?
-                                      <input type="file" name="fileToUpload" id="fileToUpload">
+                                  <label>Do you have a Blueprint / Photo / File to share with us?
+                                      <input type="file" name="Upload File-3" id="fileToUpload">
+                                      <div id="addFile"></div>
+                                      <div id="addFile2"></div>
                                   </label>
+                                  <a id="anotherFile">&#10010; Add Another File</a>
+                                  <a id="anotherFile2">&#10010; Add Another File</a>
+                                  <div id="maximum">*Maximum of 3 Files Reached</div>
                               </div>
+
+                              
                              
 
                               <!-- Break -->
@@ -274,12 +284,13 @@
 
                               <!-- Break -->
                               <div>
-                                  <label>Quotes provided within 24 hours. Stairs delivered within 4 - 7 days.</label>
                                   <ul class="actions fit">
                                       <li>
                                           <input id="submitButton" type="submit" value="Submit Form" class="button primary fit icon fa-check-square" />
                                       </li>
                                   </ul>
+                                  <h2>*Quotes Provided Within 24 Hours. Stairs Delivered Within 4 - 7 Days.</h2>
+
                               </div>
                   </form>
                                 
