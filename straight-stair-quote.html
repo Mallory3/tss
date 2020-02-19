@@ -131,13 +131,13 @@
                             </ul>   
                             <div id="quoteInfo">    
                               <label>Name
-                                    <input type="text" name="NAME" value="" placeholder="" />
+                                    <input type="text" name="NAME" value="" placeholder="" required />
                                 </label>
                                 <label>Email
-                                    <input type="text" name="EMAIL" value="" placeholder="" />
+                                    <input type="text" name="EMAIL" value="" placeholder="" required/>
                                 </label>
                                 <label>Phone Number
-                                    <input type="text" name="PHONE NUMBER" value="" placeholder="" />
+                                    <input type="text" name="PHONE NUMBER" value="" placeholder="" required/>
                                 </label>
                                 <label id="postalCode">Postal Code
                                     <input type="text" name="POSTAL-CODE" value="" placeholder="" />
@@ -203,11 +203,11 @@
                                               <!-- Break -->
                                               <div class="formImg"><span class="image fit"><img src="/assets/images/AdobeStock_119011154_Preview.jpg" alt="" /></span></div>
                                           </div>
-                                          <input type="radio" id="radio-western" name="radio">
-                                          <label for="radio-western">Western Stringer</label>
+                                          <input type="radio" id="western" name="Stringer">
+                                          <label for="western">Western Stringer</label>
 
-                                          <input type="radio" id="radio-eastern" name="radio">
-                                          <label for="radio-eastern">Eastern Stringer</label>
+                                          <input type="radio" id="eastern" name="Stringer">
+                                          <label for="eastern">Eastern Stringer</label>
                                       </div>
 
                                       <div>
@@ -220,11 +220,11 @@
                                               <div class="formImg"><span class="image fit"><img src="/assets/images/AdobeStock_119011154_Preview.jpg" alt="" /></span></div>
                                           </div>
 
-                                          <input type="radio" id="radio-yes" name="radio"></input>
-                                          <label for="radio-yes">Closed Riser</label>
+                                          <input type="radio" id="closed" name="Riser"></input>
+                                          <label for="closed">Closed Riser</label>
 
-                                          <input type="radio" id="radio-no" name="radio">
-                                          <label for="radio-no">Open Riser</label>
+                                          <input type="radio" id="open" name="Riser">
+                                          <label for="open">Open Riser</label>
                                       </div>
 
                                       <div>
@@ -248,10 +248,6 @@
                                           <input type="checkbox" id="checkbox-beta" name="checkbox">
                                           <label for="checkbox-beta">Glass Pannels</label>
                                       </div>
-                                      <div class="col-6 col-12-small">
-                                          <input type="checkbox" id="checkbox-beta" name="checkbox">
-                                          <label for="checkbox-beta">Other</label>
-                                      </div>
                                   </div>
                              
 
@@ -263,7 +259,7 @@
                               </ul>
 
                               <div id="file">
-                                  <label>Do you have a Blueprint / Photo / File to share with us?
+                                  <label>Share a Blueprint / Photo / File With Us
                                       <input type="file" name="Upload File-3" id="fileToUpload">
                                       <div id="addFile"></div>
                                       <div id="addFile2"></div>
