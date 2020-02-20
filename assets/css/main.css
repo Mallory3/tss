@@ -2814,84 +2814,20 @@ input, select, textarea {
 	}
 
 	table {
-		margin: 0 0 2.75rem 0;
+		margin-left: 5em;
 		width: 100%;
 	}
 
-		table tbody tr {
-			border: solid 1px;
-			border-left: 0;
-			border-right: 0;
-		}
+	
 
 		table td {
 			padding: 0.75rem 0.75rem;
+			
 		}
 
-		table th {
-			font-size: 0.9rem;
-			font-weight: 700;
-			padding: 0 0.75rem 0.75rem 0.75rem;
-			text-align: left;
-		}
 
-		table thead {
-			border-bottom: solid 2px;
-		}
 
-		table tfoot {
-			border-top: solid 2px;
-		}
 
-		table.alt {
-			border-collapse: separate;
-		}
-
-			table.alt tbody tr td {
-				border: solid 1px;
-				border-left-width: 0;
-				border-top-width: 0;
-			}
-
-				table.alt tbody tr td:first-child {
-					border-left-width: 1px;
-				}
-
-			table.alt tbody tr:first-child td {
-				border-top-width: 1px;
-			}
-
-			table.alt thead {
-				border-bottom: 0;
-			}
-
-			table.alt tfoot {
-				border-top: 0;
-			}
-
-	table tbody tr {
-		border-color: rgba(0, 0, 0, 0.15);
-	}
-
-		table tbody tr:nth-child(2n + 1) {
-			background-color: rgba(144, 144, 144, 0.075);
-		}
-
-	table th {
-		color: #1e2022;
-	}
-
-	table thead {
-		border-bottom-color: rgba(0, 0, 0, 0.15);
-	}
-
-	table tfoot {
-		border-top-color: rgba(0, 0, 0, 0.15);
-	}
-
-	table.alt tbody tr td {
-		border-color: rgba(0, 0, 0, 0.15);
-	}
 
 /* Contact Icons */
 
@@ -5784,7 +5720,7 @@ input[type="number"] {
 	}
 
 	.hero1 {
-		object-position: 0% 100%;
+		object-position: top;
 	}
 
 	#quoteBanner {
@@ -6796,7 +6732,7 @@ a {
 			display: none;
 		}
 		
-		@media only screen and (min-width: 1000px){
+	@media only screen and (min-width: 1200px){
 
 			#quoteContainer {
 				display:none;
@@ -6862,9 +6798,12 @@ a {
 	background: linear-gradient(to right, rgba(209,209,209,1) 0%, rgba(209,209,209,1) 4%, rgba(254,254,254,1) 34%, rgba(226,226,226,1) 100%);
   transform: rotateY(180deg);
 }
-	
+
+.flipImg {
+	border-radius: 5px;
+}
+
 		.quoteButton {
-			margin-top: 2em;
 			background-color: rgb(146, 198, 68);
 			color: white;
 			border: 1px solid white;
@@ -6876,6 +6815,7 @@ a {
 			box-shadow:         1px 1px 3px rgba(0, 0, 0, 0.7);
 			display: block;
 			margin: auto;
+			margin-top: 2em;
 		}
 	
 		.quoteImg:hover {
@@ -6897,30 +6837,30 @@ a {
 	
 			#quoteBox {
 				display: grid;
-				grid-template-columns:  1fr 1fr;
+				grid-template-columns:  3fr 1fr 1fr 3fr;
 				grid-template-rows: 1fr 1fr;
 		}
 	
 		.straightQuote {
-			grid-column: 1/2;
+			grid-column: 2/3;
 			grid-row: 1/2;
 			margin: auto;
 		}
 	
 		.customQuote {
-			grid-column: 2/3;
+			grid-column: 3/4;
 			grid-row: 1/2;
 			margin: auto;
 		}
 	
 		.constructionQuote {
-			grid-column: 1/2;
+			grid-column: 2/3;
 			grid-row: 2/3;
 			margin: auto;
 		}
 	
 		.outdoorQuote {
-			grid-column: 2/3;
+			grid-column: 3/4;
 			grid-row: 2/3;
 			margin: auto;
 		}
@@ -6928,7 +6868,7 @@ a {
 	} 
 	
 	
-	@media only screen and (max-width: 780px){
+	@media only screen and (max-width: 700px){
 			
 	
 		#quoteBox {
@@ -7141,9 +7081,6 @@ a {
 	grid-template-columns: 1fr 1fr 1fr;
 }
 
-.quoteButton {
-margin-top: 1em;
-}
 
 #fileButton {
 	margin-top: -2em;
@@ -7218,6 +7155,11 @@ margin-top: 2em;
 	width: 100%;
 	text-shadow: 1px 1px 3px rgb(255, 255, 255);
 
+}
+
+.checkIcon {
+	width: 40px;
+	height: 40px;
 }
 
 
