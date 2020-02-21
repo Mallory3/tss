@@ -90,7 +90,7 @@
     </div>
 
 
-    <section id="m" class="wrapper" style="margin-top:6em;">
+    <section id="" class="wrapper" style="margin-top:6em;">
         <div class="review with-sidebar">
 
             <!-- Content -->
@@ -107,7 +107,7 @@
                 <p style="color: #171718; margin-left: 4em; margin-right:4em; text-align:left; font-weight: 500; ">We are a full service stair shop: designing, manufacturing and installing all types of straight and circular stairs including construction grade, carpet ready and hardwood.</p>
                 <br>
                 <br>
-                <img src="assets/images/3dstairsLicensed.jpg"
+                <img id="dstairs" src="assets/images/3dstairsLicensed.jpg">
 
                
 
@@ -163,6 +163,8 @@
         </div>
     </section>
 
+
+
     
 
     
@@ -174,26 +176,32 @@
     
     
        
-
+    <section id="homeQuoteSection">
+        <div id="quoteOverlay">
+    <header id="quoteHeader">  
+        <h1>Get a Quick Quote Today!</h1>
+        <h3>Step 1: Choose Your Stair Type</h3>
+    </header>
+      
     <div id="quoteContainer" class="homeQuote">
         <ul id="quoteBox">
   
-        <div class="straightQuote"> <li><img class="quoteImg quoteImg" src="/assets/images/gallery/straightStair-17.jpg" alt="Straight Stair Quote"></li>
+        <div class="straightQuote"> <li><img class="quoteImg" src="/assets/images/gallery/straightStair-17.jpg" alt="Straight Stair Quote"></li>
         <span class="actions special">
           <a id="straightStairButton" href="straight-stair-quote.html" class="button icon fa-check-square quoteButton">Straight Stairs</a>
         </span></div>
        
-        <div class="customQuote"> <li ><img class="quoteImg quoteImg" src="/assets/images/gallery/card2.png" alt="Custom/Circular Stair Quote"></li>
+        <div class="customQuote"> <li ><img class="quoteImg" src="/assets/images/gallery/card2.png" alt="Custom/Circular Stair Quote"></li>
         <span class="actions special">
           <a id="customStairButton" href="custom-stair-quote.html" class="button icon fa-check-square quoteButton">Custom/Circular Stairs</a>
         </span></div>
        
-        <div class="constructionQuote">  <li ><img class="quoteImg quoteImg" src="/assets/images/gallery/deckStair-5.jpg" alt="Outdoor Stair Quote"></li>
+        <div class="constructionQuote">  <li ><img class="quoteImg" src="/assets/images/gallery/deckStair-5.jpg" alt="Outdoor Stair Quote"></li>
         <span class="actions special">
           <a id="outdoorStairButton" href="outdoor-stair-quote.html" class="button icon fa-check-square quoteButton">Outdoor Stairs</a>
         </span></div>
       
-        <div class="outdoorQuote"><li ><img class="quoteImg quoteImg" src="/assets/images/constructionLicensed.jpg" alt="Construction Grade Quote"></li>
+        <div class="outdoorQuote"><li ><img class="quoteImg" src="/assets/images/constructionLicensed.jpg" alt="Construction Grade Quote"></li>
         <span class="actions special">
           <a id="constructionStairButton" href="construction-grade-stair-quote.html" class="button icon fa-check-square quoteButton">Construction-Grade</a>
         </span></div>
@@ -202,7 +210,7 @@
     </div>
   
   
-    <div id="quoteContainerLarge">
+    <div id="quoteContainerLarge" class="homeQuote">
       <ul id="quoteBox">
   
       <div class="straightQuote"> 
@@ -270,7 +278,8 @@
       
     </ul>
   </div>
-
+</div>
+</section>
 <!-- 
   <section id="quoteBanner" class="wrapper style1" style="margin-top:0">
     <div class="inner">
@@ -381,27 +390,34 @@
 
 
 
-		<section id="map" class="wrapper style1">
-			<div id="mapFlex" class="auto flex"> 
+        <section id="" class="wrapper" style="padding-bottom: 0;">
+            <div class="inner">
 				<div class="auto">
 
-						<h2 class="center">VISIT OUR SHOWROOM</h2>
-						<div class="address flex auto center">	<img id="mapMarker" src="/assets/images/placeholder.svg" alt="">		
-							<address><a style="color: black" href="https://goo.gl/maps/cdFSNg66rgHonriE7">115 Skyline Crescent NE<br>
-							Calgary, Alberta T2K 5X2</a></address>
-						</div>
-						<p id="mapP">Our onsite showroom provides homebuilders, contractors and do-it-yourselfers the opportunity to have one-on-one consultations with our experts.</p>
+                    <div class="address flex auto center">	<img id="mapMarker" src="/assets/images/placeholder.svg" alt="">		
+                         <h2><a href="https://goo.gl/maps/cdFSNg66rgHonriE7"> &nbsp;VISIT OUR SHOWROOM</a></h2>
+                    </div>
+                        <h4 class="mapP center">Our onsite showroom provides homebuilders, contractors and do-it-yourselfers the opportunity to have one-on-one consultations with our experts.</h4>
+                        
+                        <div class="address flex auto center">		
+                            <h3><a href="https://goo.gl/maps/cdFSNg66rgHonriE7"> &nbsp;Open Monday - Thursday 8:00am - 3:30pm</a></h3>
+                       </div>
 
-				</div>
-				<div class="auto">
+                       <div class="address flex auto center">	
+                        <4 class="mapP center"><a href="https://goo.gl/maps/cdFSNg66rgHonriE7"> &nbsp;We understand you may work the same hours as us. Call us to make an appointment for an after hours consultation.</a></h4>
+                   </div>
+				
+
+                </div>
+            </div>
+				<div>
 
             
                         <iframe class="auto googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.5391518425354!2d-114.0476030485743!3d51.09851197946969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537165af48204f6d%3A0xa10390a247678e02!2s115%20Skyline%20Crescent%20NE%2C%20Calgary%2C%20AB%20T2K%205X2!5e0!3m2!1sen!2sca!4v1582085481694!5m2!1sen!2sca" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
 				</div>
             </div>
-            
-
+        </section>
 
 
 
@@ -439,7 +455,7 @@
 
 
        
-        </section>
+       
         
         <section id="imaginationSection" class="wrapper style2">
 
