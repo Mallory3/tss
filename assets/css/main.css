@@ -5597,12 +5597,16 @@ input[type="number"] {
 		margin:0;
 	}
 
+	.grey {
+		color: darkgray;
+	}
+
 	@media only screen and (min-width: 1200px) { 
 		.googleMap {
-			width: 55vw;
+			width: 45vw;
 			height: 40vh;
 			margin: auto;
-			margin-top: 3em;
+			margin-top: -2em;
 			margin-bottom: 3em;
 		}
 	}
