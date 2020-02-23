@@ -6,6 +6,7 @@
 
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700,700i");
+@import url('https://fonts.googleapis.com/css?family=Kanit:300,900|Raleway:600&display=swap');
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -3129,8 +3130,8 @@ input, select, textarea {
 
 	.posts-list article {
 		border-bottom: 1px solid;
-		margin-bottom: 1.375rem;
-		padding-bottom: 1.375rem;
+		margin-bottom: 0.5rem;
+		padding-bottom: 0.5rem;
 	}
 
 		.posts-list article:last-of-type {
@@ -5218,7 +5219,7 @@ input, select, textarea {
 
 .address {
 	margin-top: 1em;
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 	justify-content: center;
 }
 
@@ -5530,11 +5531,14 @@ input[type="number"] {
 	}
 
 	.servicesLink:hover .middle {
-		background-color: rgba(255, 255, 255, 1);
+		background-color: rgba(0, 0, 0, 0.5);
+		opacity: 1;
 	}
 
 	.servicesLink .middle:hover {
-		background-color: rgb(146, 198, 68);
+		background-color: rgba(0, 0, 0, 0.8);
+		color: white;
+		opacity: 1;
 	}
 
 	/* .servicesLink .middle {
@@ -5542,8 +5546,9 @@ input[type="number"] {
 	} */
 	
 	.middle {
-		background-color: rgba(255, 255, 255, 0.65);
-		color: black;
+		background-color: transparent;
+		color: white;
+		opacity: 0;
 		font-size: 16px;
 		padding: 16px 32px;
 		font-weight: bold;
@@ -5554,13 +5559,14 @@ input[type="number"] {
 
 	.text {
 		text-decoration: none;
-		color: black;
+		color: white;
 	}
 
 	.reviewHeader {
 		line-height: 1.6;
 		margin-bottom: 0.8em;
-		font-size: 110%;
+		font-size: 100%;
+		font-weight: 600;
 	}
 
 
@@ -5576,7 +5582,7 @@ input[type="number"] {
 		max-width: 55vw;
 		margin: auto;
 		font-size: 1.3rem;
-		margin-top: -2em;
+		text-shadow: 0px 0px 1px rgb(247, 245, 245);
 	}
 
 	#mapMarker {
@@ -5591,10 +5597,66 @@ input[type="number"] {
 		display: block;
 	}
 
+	#mapgrid {
+		display: grid;
+		grid-template-rows: 1fr;
+		grid-template-columns: 3fr 1fr;
+		margin-top: 3em;
+		margin-bottom: 3em;
+		max-width: 80vw;
+	}
+
+	#googleMapGrid {
+		grid-column: 2/3;
+		grid-row-start: 1;
+	}
+
+	#mapInfo {
+		grid-column: 1/2;
+		grid-row-start: 1;
+		max-width: 40vw;
+		margin: auto;
+		background-color: rgba(255, 255, 255, 0.65);
+		padding: 0.9em;
+		border-radius: 5px;
+	}
+
+	#mapHours {
+		margin: 1em;
+		text-shadow: 0px 0px 1px rgb(247, 247, 247);
+	}
+
+	.mapPhone {
+		font-size: 2rem;
+		margin-top: 1em;
+		text-shadow: 0px 0px 1px rgb(255, 255, 255);
+	}
+	
+	#map {
+		background-image: url("/assets/images/blueprintlicensed.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+
+	}
+
+	#map.wrapper {
+		padding: 0;
+	}
+	
+	#mapOverlay {
+			padding-top: 3em;
+		padding-bottom: 3em;
+		width: 100%;
+		background-color: rgba(255, 255, 255, 0.7)
+	}
+
 	.googleMap {
-		width: 100vw;
+		width: 80vw;
 		height: 40vh;
 		margin:0;
+		border-radius: 5px;
+		border: 2px solid rgb(45, 45, 45);
+
 	}
 
 	.grey {
@@ -5603,11 +5665,10 @@ input[type="number"] {
 
 	@media only screen and (min-width: 1200px) { 
 		.googleMap {
-			width: 45vw;
-			height: 40vh;
+			width: 30vw;
+			height: 43vh;
 			margin: auto;
-			margin-top: -2em;
-			margin-bottom: 3em;
+
 		}
 	}
 
@@ -5630,6 +5691,28 @@ input[type="number"] {
 		font-size: 1rem;
 	}
 }
+
+#indexOurWork {
+	background-image: url("/assets/images/John\'s\ Stairs\ 1.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 50% 100%;
+	height: 90vh;
+	position: relative;
+	margin-top: 3em;
+	background-color: black;
+	background-attachment: fixed;
+
+}
+
+#indexOurWorkOverlay  {
+	width: 100%;
+	height: 90vh;
+	background-color: rgba(24, 24, 24, 0.7);
+	position: absolute;
+	bottom: 0;
+}
+
 .mailingList input[type="email"] {
 	color: black;
 	opacity: 1;
@@ -7069,7 +7152,7 @@ a {
 
 @media only screen and (min-width: 1300px) {	
 #quoteBackground {
-	background-image: url("/assets/images/3dstair.png");
+	background-image: url("/assets/images/Straight-L-Shaped-Right-With-Pies-and-Walls.png");
 	background-color: rgb(227, 227, 227);
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -7165,15 +7248,245 @@ margin-top: 2em;
 
 }
 
+.kanit {
+	font-family: 'Kanit';
+	font-weight: 300;
+	color:rgb(119, 10, 2);
+}
+
+.arrowIcon {
+	width: 50px;
+	height: 50px;
+	margin-right: 0.5em;
+	margin-top: -1em;
+}
+
+#serviceGrid {
+	margin-top: 3em;
+}
+
+#serviceList {
+	margin: right;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	
+}
+
+.servicegrid1 {
+	grid-column: 1/2;
+	grid-row: 1/2;
+	display: flex;
+	justify-content: left;
+}
+
+.servicegrid2 {
+	grid-column: 1/2;
+	grid-row: 2/3;
+	display: flex;
+	justify-content: left;
+}
+
+
+.servicegrid3 {
+	grid-column: 1/2;
+	grid-row: 3/4;
+	display: flex;
+	justify-content: left;
+}
+
+
+.servicegrid4 {
+	grid-column: 1/2;
+	grid-row: 4/5;
+	display: flex;
+	justify-content: left;
+}
+
+
+.servicegrid5 {
+	grid-column: 1/2;
+	grid-row: 5/6;
+	display: flex;
+	justify-content: left;
+}
+
+.servicegrid6 {
+	grid-column: 2/3;
+	grid-row: 1/2;
+	display: flex;
+	justify-content: left;
+}
+
+.servicegrid7 {
+	grid-column: 2/3;
+	grid-row: 2/3;
+	display: flex;
+	justify-content: left;
+}
+
+
+.servicegrid8 {
+	grid-column: 2/3;
+	grid-row: 3/4;
+	display: flex;
+	justify-content: left;
+}
+
+
+.servicegrid9 {
+	grid-column: 2/3;
+	grid-row: 4/5;
+	display: flex;
+	justify-content: left;
+}
+
+
+.servicegrid10 {
+	grid-column: 2/3;
+	grid-row: 5/6;
+	display: flex;
+	justify-content: left;
+}
+
+.servicegrid11 {
+	grid-column: 2/3;
+	grid-row: 6/7;
+	display: flex;
+	justify-content: center;
+	margin-top: 1em;
+}
+
+
 .checkIcon {
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
+}
+
+li {
+	list-style: none;
+}
+
+.serviceList h4 {
+	font-size: 1.2rem;
+}
+
+.servicegrid11 h4 {
+	font-size: 130%;
+	margin-top: -0.3em;
 }
 
 #dstairs {
-	width: 600px;
-	height: 600px;
+	width: 650px;
+	height: 425px;
+	display:block;
+	margin: auto;
+	object-fit: cover;
 
+}
+
+#girdOurWork {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-bottom: 3em;
+	padding-top: 0;
+}
+
+.OurWorkOverlay {
+	display: flex;
+	justify-content: center;
+
+}
+
+.gridstairs1 {
+	width: 30vw;
+	height: 20vw;
+	grid-column: 1/2;
+	margin: 0.5em;
+	border: 1px solid white;
+	-webkit-box-shadow: 8px 8px 8px -7px rgba(0,0,0,0.9);
+	-moz-box-shadow: 8px 8px 8px -7px rgba(0,0,0,0.9);
+	box-shadow: 8px 8px 8px -7px rgba(0,0,0,0.9);
+	border-radius: 5px;
+}
+
+.gridstairs2 {
+	width: 30vw;
+	height: 20vw;
+	grid-column: 2/3;
+	margin: 0.5em;
+	border: 1px solid white;
+	-webkit-box-shadow: 8px 8px 8px -7px rgba(0,0,0,0.9);
+	-moz-box-shadow: 8px 8px 8px -7px rgba(0,0,0,0.9);
+	box-shadow: 8px 8px 8px -7px rgba(0,0,0,0.9);
+	border-radius: 5px;
+}
+
+
+.gridstairs3 {
+	width: 30vw;
+	height: 20vw;
+	grid-column: 3/4;
+	margin: 0.5em;
+	border: 1px solid white;
+	-webkit-box-shadow: 8px 8px 8px -7px rgba(0,0,0,0.9);
+	-moz-box-shadow: 8px 8px 8px -7px rgba(0,0,0,0.9);
+	box-shadow: 8px 8px 8px -7px rgba(0,0,0,0.9);
+		border-radius: 5px;
+}
+
+
+#girdBuilding {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	border: 8px solid rgb(150, 2, 2);
+	border-radius: 10px;
+	margin: auto;
+	margin-top: 4em;
+	margin-bottom: 3em;
+	margin-left: 1.4em;
+	margin-right: 1.4em;
+	-webkit-box-shadow: 10px 10px 12px -12px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 12px -12px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 12px -12px rgba(0,0,0,0.75);
+}
+
+.businessOverlay {
+	grid-column: 1/2;
+	grid-row: 1/2;
+	margin-left: 3em;
+	margin: right;
+}
+
+.stairs3d {
+	width: 500px;
+	height: 300px;
+	margin-left: 3em;
+
+}
+
+.businessTextOverlay {
+	grid-column: 2/3;
+	grid-row: 1/2;
+	margin: auto;
+}
+
+.businessTextOverlay h1 {
+	font-size: 3.5rem;
+	text-align: center;
+	font-family: "Kanit";
+	font-weight: 900;
+	color: #1e2022;
+}
+
+.drop-cap {
+	font-size: 4.5rem;
+	margin-top: .15em;
+}
+
+.businessLight {
+	font-family: "Kanit";
+	font-weight: 300;
+	color: rgb(150, 2, 2);
 }
 
 #homeQuoteSection {
@@ -7205,10 +7518,9 @@ grid-row-start: 2;
 	color: rgb(199, 199, 199);
 }
 
-#map {
-	min-height: 90vh;
-	background-image: url("/assets/images/contactPageBackgroundLicensed.jpg");
-}
+
+
+
 
 
 
