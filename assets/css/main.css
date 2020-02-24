@@ -6,7 +6,7 @@
 
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700,700i");
-@import url('https://fonts.googleapis.com/css?family=Kanit:300,900|Raleway:600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kanit:300,400,600,700,900&display=swap');
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -100,7 +100,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: white;
+		background: #c1c5cb;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -153,7 +153,7 @@ input, select, textarea {
 		}
 
 	body {
-		background-color: #ffffff;
+		background-color: rgb(242, 242, 243);
 		color: #1e2022;
 	}
 
@@ -3826,13 +3826,67 @@ input, select, textarea {
 
 	#topper {
 		width: 100%;
-		height: 4rem;
+		height: 3rem;
 		position: absolute;
 		top: 3.75rem;
-		background-color: rgba(12, 87, 116, 1);
+		background-color: rgba(24, 24, 24, 0.9);
 		z-index: 809;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
 
-		
+	.socialNav {
+		display: none;
+	}
+
+	@media (min-width: 980px) {
+	.socialIconsNav {
+		max-width:70px;
+		justify-content: left;
+		margin-top: 1em;
+		grid-column: 1/2;
+		display: flex;
+		justify-content: flex-start;
+		margin-left: 4.5em;
+	}
+
+
+	.socialNav {
+		display: block;
+		width: 20px;
+		height: 20px;
+		transition: all .2s ease-in-out;
+		margin-right: 1em;
+	}
+
+	.socialNav:hover {
+		transform: scale(1.1);
+	}
+}
+
+
+	#topper h3 {
+		margin: auto;
+	}
+
+	#topper .icons {
+		text-align: right; 
+		margin-top: .5em;
+		margin-right: 68px;
+	}
+	
+	#topper h3 {
+		font-size: 1.1rem;
+	}
+	
+	@media (max-width: 980px) {	
+	
+		#topper .icons {
+			text-align: center;
+			margin-top: 0.5em;
+			grid-column: 1/3;
+		}
+	
 	}
 
 	#header {
@@ -4230,12 +4284,14 @@ input, select, textarea {
 		-ms-flex-wrap: no-wrap;
 		flex-wrap: no-wrap;
 		cursor: default;
-		height: 87vh;
+		height: 90vh;
 		position: relative;
 	}
 
-	.bannerTitle {
-		text-shadow: 1px 1px 1px black;
+
+	.heroButton {
+		z-index: 1000;
+		opacity: 1;
 	}
 
 
@@ -4253,7 +4309,7 @@ input, select, textarea {
 		}
 
 		#banner h1, #banner h2, #banner h3, #banner h4, #banner h5, #banner h6 {
-			color: #ffffff;
+			color: rgb(244, 244, 244);
 		}
 
 		#banner blockquote {
@@ -4310,24 +4366,37 @@ input, select, textarea {
 			padding: 0;
 			position: absolute;
 			text-align: center;
-			top: 1em;
+			/* top: 1em; */
 			visibility: hidden;
 			width: 100%;
 			z-index: 800;
 		}
 
-			#banner > article:after {
+			#heroOverlay {
 				-moz-transition: opacity 1s ease-in-out;
 				-webkit-transition: opacity 1s ease-in-out;
 				-ms-transition: opacity 1s ease-in-out;
 				transition: opacity 1s ease-in-out;
-				background-color: rgba(42, 48, 55, 0.5);
+				background-color: rgba(19, 19, 19, 0.6);
 				content: '';
 				height: 100%;
 				left: 0;
 				position: absolute;
 				top: 0;
 				width: 100%;
+			}
+
+			#heroInfoOverlay {
+				background-color: rgba(0, 0, 0, 0.55);
+				padding-top: 2em;
+				padding-bottom: 1px;
+				padding-left: 1em;
+				padding-right: 1em;
+				width: 50vw;
+				margin: auto;
+				border-radius: 15px;
+				margin-top: -3em;
+
 			}
 
 			#banner > article .inner > :last-child {
@@ -4419,6 +4488,21 @@ input, select, textarea {
 					background-color: #ffffff;
 				}
 
+				#heroBar {
+					position: absolute;
+					bottom: -1em;
+					background-color: red;
+					width: 100%;
+					z-index: 1000;
+					padding: 2em;
+					margin: auto; 
+					background-color: rgba(0, 0, 0, 0.7)
+				}
+
+				#heroBar h3 {
+					margin: auto;
+				}
+
 		body.is-preload #banner:after {
 			opacity: 1.0;
 			visibility: visible;
@@ -4427,7 +4511,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#banner {
-				height: 90vh;
+				height: 91vh;
 			}
 
 		}
@@ -4687,7 +4771,7 @@ input, select, textarea {
 	#footer {
 		background-color: #ffffff;
 		color: #c1c5cb;
-		padding-top: 2em;
+		padding-top: 1em;
 		/* padding: 2rem 0 0 0 ; */
 		background: rgb(242, 242, 243);
 		/* background-image: url("/assets/images/AdobeStock_71712811_Preview.jpeg");
@@ -5035,7 +5119,7 @@ input, select, textarea {
 			width: 100%;
 			text-align: center;
 			background-color: rgb(12, 87, 116);
-			padding: 2.0em;
+			padding-top: 1em;
 	
 		}
 
@@ -5280,6 +5364,7 @@ input, select, textarea {
 	margin: auto;
 	display: flex;
 	align-content: center;
+	padding:0;
 	
 }
 
@@ -5399,8 +5484,7 @@ input[type="number"] {
 #footerlogo {
 	display: block;
 	margin: auto;
-	height: 13vh;
-	margin-top: 2em;
+	height: 10vh;
 	
 }
 
@@ -5760,21 +5844,7 @@ input[type="number"] {
 	/* width: 60vw */
 }
 
-#topper .icons {
-	text-align: right; 
-	margin-top: 15px; 
-	margin-right: 68px;
-}
 
-@media (max-width: 980px) {	
-
-	#topper .icons {
-		text-align: center;
-		margin: 0;
-		margin-top: 1em;
-	}
-
-}
 
 
 
@@ -5793,8 +5863,8 @@ input[type="number"] {
 	} */
 
 	.social {
-		width: 50px;
-		height: 50px;
+		width: 45px;
+		height: 45px;
 		transition: all .2s ease-in-out;
 	}
 
@@ -5802,14 +5872,32 @@ input[type="number"] {
 		transform: scale(1.1);
 	}
 
+
 	.socialIcons {
-		max-width: 200px;
+		max-width: 175px;
 		justify-content: center;
-		margin-top: 1em;
+		margin-top: 0.5em;
 	}
 
 	.hero1 {
-		object-position: top;
+		object-position: bottom;
+	}
+
+	.bannerTitle {
+		font-family: "kanit";
+		font-weight: 600;
+		margin-bottom: 0;
+		color: rgb(215, 215, 215);
+		text-shadow: 1px 1px 3px black;
+	}
+
+	#bannerSubTitle {
+		text-shadow: 1px 1px 3px black;
+		font-family: "kanit";
+		font-weight: 400;
+		color: rgb(255, 255, 255) !important;
+		z-index: 500;
+		font-size: 1.5rem;
 	}
 
 	#quoteBanner {
@@ -7009,10 +7097,21 @@ a {
 
 	@media only screen and (min-width: 1200px){
 		.optionImg {
-			width: 250px;
-			height: 250px;
+			width: 200px;
+			height: 200px;
 			object-fit: contain;
 		}
+
+		.Imgsmaller {
+			width: 185px;
+			height: 200px;
+		}
+
+		.ImgLarger {
+			width: 225px;
+			height: 200px;
+		}
+
 		
 		}
 		
@@ -7025,6 +7124,10 @@ a {
 							transform .5s; /* changes speed it flips */
 			opacity: 1;
 			z-index: 800;
+			}
+
+			.stairStyleOptions {
+				margin-top: 2em;
 			}
 
 
@@ -7074,7 +7177,7 @@ a {
 
 #advancedButton, #balustradeButton, #fileButton, #stairButton, #submitButton, #infoButton {
 	background-color: rgb(146, 198, 68);
-	border: 1px solid white;
+	border: 2px solid white;
 	-webkit-box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.7);
 	-moz-box-shadow:     1px 1px 3px rgba(0, 0, 0, 0.7);
 	box-shadow:         1px 1px 3px rgba(0, 0, 0, 0.7);
@@ -7082,6 +7185,26 @@ a {
 	text-align: left;
 	color: #ffffff;
 	height: 50px;
+}
+
+.heroAboutButton {
+	border: 2px solid rgb(146, 198, 68);
+}
+
+.heroAboutButton:hover {
+	background-color: rgb(146, 198, 68);
+	border: 2px solid white;
+}
+
+.heroQuoteButton {
+	background-color: rgb(146, 198, 68);
+	border: 2px solid white;
+	text-shadow: 1px 1px 3px black;
+}
+
+.heroQuoteButton:hover {
+	background-color: transparent;
+	border: 2px solid rgb(146, 198, 68);
 }
 
 
@@ -7209,6 +7332,16 @@ margin-top: 2em;
 	margin-bottom: 1.5em;
 }
 
+#quoteNav {
+	background-color: rgb(146, 198, 68);
+box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.838) inset;
+}
+
+#quoteNav a {
+	color: rgb(243, 243, 243) !important;
+	text-shadow: 1px 1px 3px black;
+}
+
 #quoteInfo {
 	margin-bottom: 3em;
 	margin-top: -2em;
@@ -7271,6 +7404,8 @@ margin-top: 2em;
 	grid-template-columns: 1fr 1fr;
 	
 }
+
+
 
 .servicegrid1 {
 	grid-column: 1/2;
@@ -7356,7 +7491,6 @@ margin-top: 2em;
 	margin-top: 1em;
 }
 
-
 .checkIcon {
 	width: 30px;
 	height: 30px;
@@ -7441,8 +7575,7 @@ li {
 	border: 8px solid rgb(150, 2, 2);
 	border-radius: 10px;
 	margin: auto;
-	margin-top: 4em;
-	margin-bottom: 3em;
+	margin-bottom: 8em;
 	margin-left: 1.4em;
 	margin-right: 1.4em;
 	-webkit-box-shadow: 10px 10px 12px -12px rgba(0,0,0,0.75);
