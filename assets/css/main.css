@@ -7095,25 +7095,37 @@ a {
 	}
 
 
-	@media only screen and (min-width: 1200px){
-		.optionImg {
-			width: 200px;
-			height: 200px;
-			object-fit: contain;
+
+
+
+	/* @media only screen and (min-width: 1000px){ */
+
+		.stairStyleOptions {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+
 		}
 
-		.Imgsmaller {
-			width: 185px;
-			height: 200px;
+		.optionImg {
+			width: 40vw;
+			height: 40vh;
+			object-fit: contain;
+			margin-bottom: 2em;
 		}
 
 		.ImgLarger {
-			width: 225px;
-			height: 200px;
+			width: 40vw;
+			height: 40vh;
 		}
 
-		
-		}
+		/* .Imgsmaller {
+			width: 20vw;
+			height: 20vw;
+		} */
+
+
+
+
 		
 		.optionImg:hover {
 			transform: scale(1.1);
@@ -7128,10 +7140,36 @@ a {
 
 			.stairStyleOptions {
 				margin-top: 2em;
+				margin-bottom: 1em;
 			}
 
+@media only screen and (max-width: 800px){
 
 
+	.stairStyleOptions {
+		display: grid;
+		grid-template-columns: 1fr;
+
+	}
+
+	.optionImg {
+		width: 80vw;
+		height: 30vh;
+		object-fit: contain;
+		margin-bottom: 0;
+	}
+
+	.ImgLarger {
+		width: 80vw;
+		height: 30vh;
+	}
+
+		.Imgsmaller {
+			width: 40vw;
+			height: 40vw;
+		}
+
+}
 
 
 /* Quote Form */
@@ -7290,10 +7328,7 @@ a {
 
 
 
-.stairStyleOptions {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-}
+
 
 
 #fileButton {
