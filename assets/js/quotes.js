@@ -195,7 +195,7 @@ function joistLogic() {
 
 // Stair Styles
 
-$(".style1").click(function(){
+$(".style1stair").click(function(){
   var straightStair = '<div class="straightStairMeasurements">' +
 '<label>You Chose:<input type="text" name="Stair Type" value="' + $(this).attr("name") + '" placeholder="' + $(this).attr("name") +'" readonly /></input></label>' +
 '<label>A) Total Height from Floor to Floor <img class="questionMark questionA" src="assets/images/question.svg">' +

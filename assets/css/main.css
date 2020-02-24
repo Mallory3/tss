@@ -7094,11 +7094,53 @@ a {
 		margin-top: -2em;
 	}
 
+	@media only screen and (min-width: 1200px){
+
+		.stairStyleOptions {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			margin-right: 6em;
+		}
+
+		.stairStyleOptions a {
+			margin-bottom: 2em;
+		}
+
+		.optionImg {
+			width: 30vw;
+			height: 30vh;
+			object-fit: contain;
+			margin-bottom: 4em;
+			display: flex;
+			margin: auto;
+		}
+
+		.ImgLarger {
+			width: 30vw;
+			height: 30vh;
+		}
+
+		.Imgsmaller {
+			width: 30vw;
+			height: 30vh;
+		}
+
+		.stairSylesStep {
+			margin-right: 6em;;
+		}
+/* img.optionImg {
+	margin: auto;
+	margin-left: 0;
+} */
+
+	}
 
 
 
 
-	/* @media only screen and (min-width: 1000px){ */
+
+
+	@media only screen and (max-width: 1200px){
 
 		.stairStyleOptions {
 			display: grid;
@@ -7106,22 +7148,30 @@ a {
 
 		}
 
-		.optionImg {
-			width: 40vw;
-			height: 40vh;
-			object-fit: contain;
+		.stairStyleOptions a {
 			margin-bottom: 2em;
 		}
 
-		.ImgLarger {
-			width: 40vw;
-			height: 40vh;
+		.optionImg {
+			width: 30vw;
+			height: 30vh;
+			object-fit: contain;
+			margin-bottom: 4em;
+			display: block;
+			margin: auto;
 		}
 
-		/* .Imgsmaller {
-			width: 20vw;
-			height: 20vw;
-		} */
+		.ImgLarger {
+			width: 50vw;
+			height: 30vh;
+		}
+
+		.Imgsmaller {
+			width: 40vw;
+			height: 30vh;
+		}
+
+	}
 
 
 
@@ -7143,7 +7193,7 @@ a {
 				margin-bottom: 1em;
 			}
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 680px){
 
 
 	.stairStyleOptions {
@@ -7178,6 +7228,8 @@ a {
 
 
 #quoteForm {
+	grid-column: 1/2;
+	grid-row: 1;
 	margin-left: 6em;
 	max-width: 450px;
 	background-attachment: fixed;
@@ -7308,22 +7360,29 @@ a {
 
 
 #quoteBackground {
-	background-color: grey;
-	padding-bottom: 1em;
-	padding-top: 1em;
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+
 }
 
 @media only screen and (min-width: 1300px) {	
-#quoteBackground {
-	background-image: url("/assets/images/Straight-L-Shaped-Right-With-Pies-and-Walls.png");
-	background-color: rgb(227, 227, 227);
+#dimensions {
+	grid-column: 2/3;
+	/* background-image: url("/assets/images/dimensions/Straight-Stairs-With-Walls-Letters.png"); */
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: right;
 	width: 100%;
-	background-attachment: fixed;
-	padding-bottom: 1em;
-	padding-top: 1em;
+	height: 80vh;
+margin-top: 3em;
+margin-right: 8em;
+
+}
+
+#dimensionsImage {
+	width: 800px;
+	height:600px;
+
 }
 }
 
