@@ -5732,12 +5732,11 @@ input[type="number"] {
 		text-shadow: 0px 0px 1px rgb(255, 255, 255);
 	}
 	
-	#mapBackground {
-		background-image: url("/assets/images/AdobeStock_137075521_Preview.jpeg");
+	#map {
+		background-image: url("/assets/images/blueprintlicensed-1.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: bottom;
-		height: 80vh;
 
 	}
 
@@ -5746,10 +5745,11 @@ input[type="number"] {
 	}
 	
 	#mapOverlay {
-			padding-top: 3em;
+		padding-top: 3em;
 		width: 100%;
-		background-color: rgba(237, 237, 237, 0.5)
+		background-color: rgba(255, 255, 255, 0.8);
 	}
+
 
 	
 
