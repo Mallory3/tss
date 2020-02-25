@@ -3829,7 +3829,7 @@ input, select, textarea {
 		height: 3rem;
 		position: absolute;
 		top: 3.75rem;
-		background-color: rgba(24, 24, 24, 0.9);
+		background-color: rgba(11, 8, 8, 0.4);
 		z-index: 809;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -3847,7 +3847,7 @@ input, select, textarea {
 		grid-column: 1/2;
 		display: flex;
 		justify-content: flex-start;
-		margin-left: 4.5em;
+		margin-left: 8em;
 	}
 
 
@@ -4284,7 +4284,7 @@ input, select, textarea {
 		-ms-flex-wrap: no-wrap;
 		flex-wrap: no-wrap;
 		cursor: default;
-		height: 90vh;
+		height: 93vh;
 		position: relative;
 	}
 
@@ -4377,7 +4377,7 @@ input, select, textarea {
 				-webkit-transition: opacity 1s ease-in-out;
 				-ms-transition: opacity 1s ease-in-out;
 				transition: opacity 1s ease-in-out;
-				background-color: rgba(19, 19, 19, 0.6);
+				background-color: rgba(16, 14, 14, 0.6);
 				content: '';
 				height: 100%;
 				left: 0;
@@ -4387,12 +4387,12 @@ input, select, textarea {
 			}
 
 			#heroInfoOverlay {
-				background-color: rgba(0, 0, 0, 0.55);
+				background-color: rgba(11, 8, 8, 0.4);
 				padding-top: 2em;
 				padding-bottom: 1px;
 				padding-left: 1em;
 				padding-right: 1em;
-				width: 50vw;
+				max-width: 42vw;
 				margin: auto;
 				border-radius: 15px;
 				margin-top: -3em;
@@ -4511,7 +4511,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#banner {
-				height: 91vh;
+				height: 93vh;
 			}
 
 		}
@@ -4527,7 +4527,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#banner {
-				height: 90vh;
+				height: 93vh;
 			}
 
 				#banner > article h1 {
@@ -5317,7 +5317,7 @@ input, select, textarea {
 }
 
 .hero {
-	object-position: top;
+	object-position: bottom;
 	-o-object-position: top;
 }
 
@@ -5365,6 +5365,7 @@ input, select, textarea {
 	display: flex;
 	align-content: center;
 	padding:0;
+	padding-top: 1em;
 	
 }
 
@@ -5374,7 +5375,9 @@ input, select, textarea {
 #logoimg {
 	position: relative;
 	top: 0.3em;
-	left: 1em;
+	left: 4.5em;
+	width: 120px;
+	height: 55px;
 }
 
 
@@ -5491,7 +5494,7 @@ input[type="number"] {
 /* Green Underlines */
 
 #trustedheader:before, #serviceheader:before, #connectheader:before, #reviewheader:before, #galleryheader:before, .serviceheader:before  {
-	background-color: rgb(84, 165, 166);
+	background-color: rgb(12, 87, 116);
 	content: '';
 	display: block;
 	height: 4px;
@@ -5731,7 +5734,7 @@ input[type="number"] {
 			padding-top: 3em;
 		padding-bottom: 3em;
 		width: 100%;
-		background-color: rgba(255, 255, 255, 0.7)
+		background-color: rgba(237, 237, 237, 0.7)
 	}
 
 	.googleMap {
@@ -5880,14 +5883,14 @@ input[type="number"] {
 	}
 
 	.hero1 {
-		object-position: bottom;
+		object-position: top;
 	}
 
 	.bannerTitle {
 		font-family: "kanit";
 		font-weight: 600;
 		margin-bottom: 0;
-		color: rgb(215, 215, 215);
+		color: rgb(218, 218, 218) !important;
 		text-shadow: 1px 1px 3px black;
 	}
 
@@ -6851,6 +6854,10 @@ a {
 	text-shadow: 1px 1px 1px black;
 }
 
+#quoteHeader h1, #quoteHeader h1 {
+	text-shadow: 0px 0px 1px rgb(0, 0, 0);
+}
+
 #quoteContainer {
 	grid-row-start: 3;
 	margin-left: 3em;
@@ -7280,23 +7287,24 @@ a {
 }
 
 .heroAboutButton {
-	border: 2px solid rgb(146, 198, 68);
+	border: 2px solid rgb(12, 87, 116);
 }
 
 .heroAboutButton:hover {
-	background-color: rgb(146, 198, 68);
+	background-color: rgb(12, 87, 116);
 	border: 2px solid white;
 }
 
 .heroQuoteButton {
-	background-color: rgb(146, 198, 68);
-	border: 2px solid white;
+	background-color: rgb(12, 87, 116);
+	border: 2px solid rgb(218, 218, 218);
 	text-shadow: 1px 1px 3px black;
+	color: rgb(218, 218, 218) !important;
 }
 
 .heroQuoteButton:hover {
 	background-color: transparent;
-	border: 2px solid rgb(146, 198, 68);
+	border: 2px solid rgb(12, 87, 116);
 }
 
 
@@ -7429,13 +7437,13 @@ margin-top: 2em;
 }
 
 #quoteNav {
-	background-color: rgb(146, 198, 68);
-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.838) inset;
+	background-color: rgb(12, 87, 116);
+box-shadow: 2px 2px 5px 0px rgba(35, 35, 35, 0.838) inset;
 }
 
 #quoteNav a {
 	color: rgb(243, 243, 243) !important;
-	text-shadow: 1px 1px 3px black;
+	text-shadow: 1px 1px 2px black;
 }
 
 #quoteInfo {
@@ -7596,6 +7604,25 @@ li {
 	list-style: none;
 }
 
+.indexTitle {
+	text-align: center;
+	font-family: "kanit";
+	font-weight: 700;
+}
+
+#trustedheader {
+	font-family: "kanit";
+	font-weight: 400;
+	font-size: 1.6rem;
+
+}
+
+.indexP {
+	font-family: "kanit";
+	text-align: left;
+	font-weight: 300;
+}
+
 .serviceList h4 {
 	font-size: 1.2rem;
 }
@@ -7617,8 +7644,9 @@ li {
 #girdOurWork {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	margin-bottom: 3em;
+	margin-bottom: 1em;
 	padding-top: 0;
+	background-color: transparent;
 }
 
 .OurWorkOverlay {
@@ -7628,10 +7656,10 @@ li {
 }
 
 .gridstairs1 {
-	width: 30vw;
+	width: 32vw;
 	height: 20vw;
 	grid-column: 1/2;
-	margin: 0.5em;
+	
 	border: 1px solid white;
 	-webkit-box-shadow: 8px 8px 8px -7px rgba(0,0,0,0.9);
 	-moz-box-shadow: 8px 8px 8px -7px rgba(0,0,0,0.9);
@@ -7640,10 +7668,10 @@ li {
 }
 
 .gridstairs2 {
-	width: 30vw;
+	width: 32vw;
 	height: 20vw;
 	grid-column: 2/3;
-	margin: 0.5em;
+
 	border: 1px solid white;
 	-webkit-box-shadow: 8px 8px 8px -7px rgba(0,0,0,0.9);
 	-moz-box-shadow: 8px 8px 8px -7px rgba(0,0,0,0.9);
@@ -7653,10 +7681,10 @@ li {
 
 
 .gridstairs3 {
-	width: 30vw;
+	width: 32vw;
 	height: 20vw;
 	grid-column: 3/4;
-	margin: 0.5em;
+
 	border: 1px solid white;
 	-webkit-box-shadow: 8px 8px 8px -7px rgba(0,0,0,0.9);
 	-moz-box-shadow: 8px 8px 8px -7px rgba(0,0,0,0.9);
@@ -7669,11 +7697,11 @@ li {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	border: 8px solid rgb(150, 2, 2);
-	border-radius: 10px;
+	/* border-radius: 10px; */
 	margin: auto;
-	margin-bottom: 8em;
+	/* margin-bottom: 8em;
 	margin-left: 1.4em;
-	margin-right: 1.4em;
+	margin-right: 1.4em; */
 	-webkit-box-shadow: 10px 10px 12px -12px rgba(0,0,0,0.75);
 	-moz-box-shadow: 10px 10px 12px -12px rgba(0,0,0,0.75);
 	box-shadow: 10px 10px 12px -12px rgba(0,0,0,0.75);
@@ -7722,13 +7750,14 @@ li {
 	display: grid;
 	grid-template-rows: 1fr;
 	width: 100%;
-	min-height: 90vh;
+	padding-bottom: 2em;;
+	/* min-height: 90vh; */
 	background-image: url("/assets/images/blueprint.png");
 }
 
 #quoteOverlay {
 	width: 100%;
-	min-height: 90vh;
+	/* min-height: 90vh; */
 	background-color: rgba(0, 0, 0, 0.5)
 }
 
@@ -7747,6 +7776,17 @@ grid-row-start: 2;
 	color: rgb(199, 199, 199);
 }
 
+.flipMargin {
+	margin-left: 1em;
+	margin-right: 1em;
+	font-size: 0.92rem;
+	font-weight: 600;
+	
+}
+
+.mt-1 {
+	margin-top: 0.5em;
+}
 
 
 
