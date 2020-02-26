@@ -4,6 +4,7 @@ $(window).on('load', (function() {
   $("#quoteInfo").hide();
   $('#anotherFile2').hide();
   $('#maximum').hide();
+  $('#quoteBackground').hide();
   
   }));
 
@@ -196,6 +197,12 @@ function joistLogic() {
 // Stair Styles
 
 $(".style1stair").click(function(){
+  $('#quoteBackground').show();
+
+  var imageModel = '<img class="sticky" id="dimensionsImage"src="/assets/images/Straight-Stairs-With-Walls-Letters (1).png" alt="">'
+
+  $('#addStairModel').html(imageModel)
+
   var straightStair = '<div class="straightStairMeasurements">' +
 '<label>You Chose:<input type="text" name="Stair Type" value="' + $(this).attr("name") + '" placeholder="' + $(this).attr("name") +'" readonly /></input></label>' +
 '<label>A) Total Height from Floor to Floor <img class="questionMark questionA" src="assets/images/question.svg">' +
