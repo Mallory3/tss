@@ -38,22 +38,22 @@ $("#anotherFile2").click(function(){
 
 
 $("#balustradeButton").click(function(){
-  $("#balustrade").slideToggle(1000);
+  $("#balustrade").slideToggle();
 
 });
 
 $("#fileButton").click(function(){
-  $("#file").slideToggle(500);
+  $("#file").slideToggle();
 
 });
 
 $("#infoButton").click(function(){
-  $("#quoteInfo").slideToggle(1000);
+  $("#quoteInfo").slideToggle();
 
 });
 
 $("#stairButton").click(function(){
-  $("#stairMeasurements").slideToggle(1000);
+  $("#stairMeasurements").slideToggle();
   $("#quoteInfo").hide('slow');
 
 
@@ -205,19 +205,19 @@ $(".style1stair").click(function(){
 
   var straightStair = '<div class="straightStairMeasurements">' +
 '<label>You Chose:<input type="text" name="Stair Type" value="' + $(this).attr("name") + '" placeholder="' + $(this).attr("name") +'" readonly /></input></label>' +
-'<label>A) Total Height from Floor to Floor <img class="questionMark questionA" src="assets/images/question.svg">' +
+'<label>A1) Total Height from Floor to Floor <img class="questionMark questionA" src="assets/images/question.svg">' +
     '<div class="answerA answer"></div>' +
     '<div class="flex">' +
     '<input class="converts" type="text" name="A)TOTAL HEIGHT FROM FLOOR TO FLOOR" value="" placeholder="0 mm" />' +
 '</label>' +
 '</div>' +
 
-'<label>B) Total Run of Stair <img class="questionMark questionB" src="assets/images/question.svg">' +
+'<label class="mt-2">B1) Total Run of Stair <img class="questionMark questionB" src="assets/images/question.svg">' +
     '<div class="answerB answer"></div>' +
     '<input class="converts" type="text" name="B)TOTAL RUN OF STAIR" value="" placeholder="0 mm" />' +
 '</label>' +
 
-'<label>C) Width of Stair Riser (R.O or O.S.M) <img class="questionMark questionC" src="assets/images/question.svg">' +
+'<label>C1) Width of Stair Riser (R.O or O.S.M) <img class="questionMark questionC" src="assets/images/question.svg">' +
     '<div class="answerC answer"></div>' +
     '<div class="flex">' +
     '<input class="dimension1 converts" type="text" name="C)WIDTH-OF-STAIR (mm)" value="" placeholder="0 mm" />' +
