@@ -261,7 +261,12 @@ $(".style1stair").click(function(){
 
 
 
-$(".style2, .style3").click(function(){
+$(".style7stair").click(function(){
+  $('#quoteBackground').show();
+
+  var imageModel = '<img class="sticky" id="dimensionsImage"src="/assets/images/Straight-Stairs-With-Walls-Letters (1).png" alt="">'
+
+  $('#addStairModel').html(imageModel)
 
   showStairForm()
   joistLogic()

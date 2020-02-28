@@ -4015,12 +4015,13 @@ input, select, textarea {
 						padding-right: 0.5rem;
 					}
 
-					#header nav > ul > li.opener.active a {
+					/* #header nav > ul > li.opener.active a {
 						color: rgb(12, 87, 116);
-					}
+					} */
 
-					#header nav > ul > li:hover a {
-						color: rgb(12, 87, 116);
+					#header nav > ul > li:hover{
+						box-shadow: 2px 2px 5px 0px rgba(35, 35, 35, 0.838) inset;
+						
 					}
 
 					#header nav > ul > li > ul {
@@ -4038,9 +4039,9 @@ input, select, textarea {
 						font-weight: 800;
 					}
 
-						#header nav > ul > li a:hover, #header nav > ul > li a:focus, #header nav > ul > li a.active {
+						/* #header nav > ul > li a:hover, #header nav > ul > li a:focus, #header nav > ul > li a.active {
 							color: rgb(12, 87, 116);
-						}
+						} */
 
 						#header nav > ul > li a.active {
 							border-bottom: 3px solid rgb(84, 165, 166);
@@ -5346,10 +5347,6 @@ input, select, textarea {
 }
 
 
-#showroom {
-	margin: auto;
-}
-
 
 #laptopImg {
 	background-image: url("/assets/images/laptopspiralstairslicensed.jpg");
@@ -5389,10 +5386,17 @@ input, select, textarea {
 	display: flex;
 	align-content: center;
 	padding:0;
-	padding-top: 1em;
+	background-image: url("/assets/images/blueprint.png");
+	background-position: bottom;
 	
 }
 
+#newsletterOverlay {
+	padding-top: 1em;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+}
 
 
 
@@ -5446,7 +5450,7 @@ input[type="number"] {
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: 100% 0%;
-	height:65vh;
+	height:80vh;
 }
 
 
@@ -5511,7 +5515,7 @@ input[type="number"] {
 #footerlogo {
 	display: block;
 	margin: auto;
-	height: 10vh;
+	height: 9vh;
 	
 }
 
@@ -5680,23 +5684,32 @@ input[type="number"] {
 		font-weight: 600;
 	}
 
+#showroomInfo {
+	width: 36vw;
+}
+
+#showroomInfo h2, #mapPhone, #mapHours {
+	font-family: "kanit";
+}
+
+#showroomTitle {
+	transition: all .2s ease-in-out;
+}
+
+#showroomTitle:hover {
+	transform: scale(1.1);
+}
 
 
-	#map strong, #map h2 {
-		color: #1e2022;
-
-	}
 
 	.mapP {
 		color: #1e2022;
-		text-align: center;
 		max-width: 55vw;
-		margin: auto;
 		font-size: 1.3rem;
-		text-shadow: 0px 0px 1px rgb(247, 245, 245);
+	
 	}
 
-	#mapMarker {
+	.mapMarker {
 		width: 40px;
 		height: 40px;
 		display: block;
@@ -5708,28 +5721,13 @@ input[type="number"] {
 		display: block;
 	}
 
-	#mapgrid {
-		display: grid;
-		grid-template-rows: 1fr;
-		grid-template-columns: 3fr 1fr;
-
-	
-		max-width: 100vw;
-	}
 
 	#googleMapGrid {
 		grid-column: 1/3;
 		grid-row-start: 2;
 	}
 
-	#mapInfo {
-		grid-column: 1/3;
-		grid-row-start: 1;
-		width: 80vw;
-		height: 35vh;
-		margin: auto;
-	
-	}
+
 
 	.googleMap {
 		width: 100vw;
@@ -5745,15 +5743,11 @@ input[type="number"] {
 	}
 
 
-	#mapHours {
-		margin: 1em;
-		text-shadow: 0px 0px 1px rgb(247, 247, 247);
-	}
+
 
 	.mapPhone {
 		font-size: 2rem;
 		margin-top: 1em;
-		text-shadow: 0px 0px 1px rgb(255, 255, 255);
 	}
 	
 	#map {
@@ -5885,8 +5879,8 @@ input[type="number"] {
 	} */
 
 	.social {
-		width: 45px;
-		height: 45px;
+		width: 40px;
+		height: 40px;
 		transition: all .2s ease-in-out;
 	}
 
@@ -5914,9 +5908,8 @@ input[type="number"] {
 	}
 
 	#bannerSubTitle {
-		text-shadow: 1px 1px 3px black;
+		text-shadow: none;
 		font-family: "kanit";
-		font-weight: 400;
 		color: rgb(255, 255, 255) !important;
 		z-index: 500;
 		font-size: 1.5rem;
@@ -6371,9 +6364,7 @@ bottom: 0;
 }
 
 	@media only screen and (max-width: 1280px) { 
-	#contactPage {
-			background-image: url("/assets/images/greybackground.png");
-	}
+
 
 .messageLarge {
 	display: none;
@@ -7266,7 +7257,7 @@ a {
 	margin-left: 8em;
 	min-width: 440px;
 	max-width: 440px;
-	background-image: url("/assets/images/woodlicensedgreyreversed.jpg");
+	/* background-image: url("/assets/images/woodlicensedgreyreversed.jpg"); */
 	background-size: contain;
 	margin-top: 3em;
 	padding: 20px;
@@ -7275,12 +7266,12 @@ a {
 	-webkit-box-shadow: 10px 10px 12px -12px rgba(0,0,0,0.75);
 	-moz-box-shadow: 10px 10px 12px -12px rgba(0,0,0,0.75);
 	box-shadow: 10px 10px 12px -12px rgba(0,0,0,0.75);
-	/* background: rgba(209,209,209,1);
+	background: rgba(209,209,209,1);
 	background: -moz-linear-gradient(left, rgba(209,209,209,1) 0%, rgba(209,209,209,1) 4%, rgba(254,254,254,1) 34%, rgba(226,226,226,1) 100%);
 	background: -webkit-linear-gradient(left, rgba(209,209,209,1) 0%, rgba(209,209,209,1) 4%, rgba(254,254,254,1) 34%, rgba(226,226,226,1) 100%);
 	background: -o-linear-gradient(left, rgba(209,209,209,1) 0%, rgba(209,209,209,1) 4%, rgba(254,254,254,1) 34%, rgba(226,226,226,1) 100%);
 	background: -ms-linear-gradient(left, rgba(209,209,209,1) 0%, rgba(209,209,209,1) 4%, rgba(254,254,254,1) 34%, rgba(226,226,226,1) 100%);
-	background: linear-gradient(to right, rgba(209,209,209,1) 0%, rgba(209,209,209,1) 4%, rgba(254,254,254,1) 34%, rgba(226,226,226,1) 100%);  */
+	background: linear-gradient(to right, rgba(209,209,209,1) 0%, rgba(209,209,209,1) 4%, rgba(254,254,254,1) 34%, rgba(226,226,226,1) 100%); 
 }
 
 #quoteForm h3 { 
@@ -7342,7 +7333,17 @@ a {
 	border: 2px solid rgb(12, 87, 116);
 }
 
+.joinButton {
+	background-color: rgb(12, 87, 116);
+	border: 2px solid rgb(218, 218, 218);
+	text-shadow: 1px 1px 3px black;
+	color: rgb(218, 218, 218) !important;
+}
 
+.joinButton:hover {
+	background-color: transparent;
+	border: 2px solid rgb(12, 87, 116);
+}
 #submitButton {
 	text-align: center;
 }
@@ -7419,6 +7420,7 @@ a {
 	background: linear-gradient(to right, rgba(209,209,209,1) 0%, rgba(209,209,209,1) 4%, rgba(254,254,254,1) 34%, rgba(226,226,226,1) 100%);
 
 }
+
 
 @media only screen and (min-width: 1300px) {	
 #dimensions {
@@ -7801,7 +7803,7 @@ li {
 
 #quoteOverlay {
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.5)
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .quotePageOverlay {
