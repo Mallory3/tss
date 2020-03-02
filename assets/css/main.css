@@ -23,7 +23,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	text-decoration: none;}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -3868,7 +3869,7 @@ input, select, textarea {
 	}
 
 	.socialNav:hover {
-		transform: scale(1.1);
+		transform: scale(1.3);
 	}
 }
 
@@ -5328,8 +5329,11 @@ input, select, textarea {
 
 .address {
 	margin-top: 1em;
-	margin-bottom: 1em;
 	justify-content: center;
+}
+
+.address h1 {
+	margin-bottom: 0.5em;
 }
 
 
@@ -5713,6 +5717,7 @@ input[type="number"] {
 		width: 40px;
 		height: 40px;
 		display: block;
+		margin: 0.5em;
 	}
 
 	.titleIcon {
@@ -6340,7 +6345,7 @@ bottom: 0;
 	/* Contact Page */
 
 	#contactPage {
-		padding-top: 3em;
+		padding-top: 6em;
 		/* background-image: url("/assets/images/contactPageBackgroundLicensed.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -6355,7 +6360,7 @@ bottom: 0;
 
 	.contactMap {
 		width: 400px;
-		height: 250px;
+		height: 225px;
 	}
 
 
@@ -6396,6 +6401,17 @@ bottom: 0;
 		}
 	
 	}
+
+	@media only screen and (min-width: 1079px) {
+	.contactSidebar {
+		margin-top: 2em;
+	}
+
+	.contactSubmit {
+		padding-top: 0 !important;
+	}
+
+}
 
 
 
@@ -7487,6 +7503,11 @@ margin-top: 2em;
 
 #quoteNav {
 	background-color: rgb(12, 87, 116);
+box-shadow: 2px 2px 5px 0px rgba(35, 35, 35, 0.838) inset;
+}
+
+#quoteNav:hover {
+	background-color: rgb(146, 198, 68);
 box-shadow: 2px 2px 5px 0px rgba(35, 35, 35, 0.838) inset;
 }
 
