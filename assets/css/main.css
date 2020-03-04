@@ -5922,6 +5922,11 @@ input[type="number"] {
 
 	#quoteBanner {
 		margin-top: 3em;
+		background-image: url("/assets/images/blueprint.png");
+	}
+
+	#quoteBanner h1, #quoteBanner h2 {
+		color: white;
 	}
 
 
@@ -6653,9 +6658,9 @@ bottom: 0;
 /* About Page */
 
 
-#about-main {
+/* #about-main {
 	background-color: rgb(242, 242, 243);
-}
+} */
 
 #promotionParallax {
 	padding-top: 4.5em; 
@@ -6823,9 +6828,7 @@ justify-content: center;
 padding-top: 14.5em;
 }
 
-.aboutquoteBanner {
-	margin-top: 0;
-}
+
 
 a {
 	text-decoration: none;
@@ -6837,7 +6840,101 @@ a {
 	height: 25px;
 }
 
+/* SERVICES PAGE */
+.sliding-background-services {
+	background: url("/assets/images/shutterstock_205360306-2-1.jpg");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 70vh;
+	width: 100%;
+	padding: 0;
+	border-radius: 0;
+	background-color: black;
+}
 
+@media only screen and (min-width: 1079px) { 
+	.sliding-background-services {
+		background-attachment: fixed;
+	
+	}
+} 
+
+.auto {
+	margin: auto;
+}
+
+#servicesGrid {
+	display: grid;
+	grid-template-columns: 1fr 3fr 3fr 1fr;
+	grid-row: 1fr 1fr 1fr;
+	width: 100%;
+}
+
+#serviceCell1 {
+	grid-column: 2/3;
+	grid-row: 1/2;
+	width: 40vw;
+	height: 40vh;
+	background-color: black;
+	margin: auto;
+}
+
+#serviceCell2 {
+	grid-column: 3/4;
+	grid-row: 1/2;
+	width: 40vw;
+	height: 40vh;
+	background-color: red;
+}
+
+#serviceCell3 {
+	grid-column: 2/3;
+	grid-row: 2/3;
+	width: 40vw;
+	height: 40vh;
+	background-color: red;
+}
+
+#serviceCell4 {
+	grid-column: 3/4;
+	grid-row: 2/3;
+	width: 40vw;
+	height: 40vh;
+	background-color: black;
+}
+
+#serviceCell5 {
+	grid-column: 2/3;
+	grid-row: 3/4;
+	width: 40vw;
+	height: 40vh;
+	background-color: black;
+}
+
+#serviceCell6 {
+	grid-column: 3/4;
+	grid-row: 3/4;
+	width: 40vw;
+	height: 40vh;
+	background-color: red;
+}
+
+#serviceCell7 {
+	grid-column: 2/3;
+	grid-row: 4/5;
+	width: 40vw;
+	height: 40vh;
+	background-color: red;
+}
+
+#serviceCell8 {
+	grid-column: 3/4;
+	grid-row: 4/5;
+	width: 40vw;
+	height: 40vh;
+	background-color: black;
+}
 /* TERMINOLOGY PAGE */
 
 #terminologySection {
@@ -7874,6 +7971,9 @@ grid-row-start: 2;
 	height: 600px;
 }
 
+.bold {
+	font-weight: bold;
+}
 
 
 

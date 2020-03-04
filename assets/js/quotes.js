@@ -38,22 +38,22 @@ $("#anotherFile2").click(function(){
 
 
 $("#balustradeButton").click(function(){
-  $("#balustrade").slideToggle();
+  $("#balustrade").toggle();
 
 });
 
 $("#fileButton").click(function(){
-  $("#file").slideToggle();
+  $("#file").toggle();
 
 });
 
 $("#infoButton").click(function(){
-  $("#quoteInfo").slideToggle();
+  $("#quoteInfo").toggle();
 
 });
 
 $("#stairButton").click(function(){
-  $("#stairMeasurements").slideToggle();
+  $("#stairMeasurements").toggle();
   $("#quoteInfo").hide('slow');
 
 
