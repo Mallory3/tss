@@ -1,8 +1,4 @@
-/*
-	Zenith by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
-*/
+@import "compass/css3";
 
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700,700i");
@@ -5818,6 +5814,7 @@ input[type="number"] {
 	bottom: 0;
 }
 
+
 .mailingList input[type="email"] {
 	color: black;
 	opacity: 1;
@@ -7973,6 +7970,24 @@ grid-row-start: 2;
 
 .bold {
 	font-weight: bold;
+}
+
+.jiggle {
+
+  animation: anim 3s ease-in infinite;
+
+}
+
+@keyframes anim {
+  5% {
+    transform: scale(1.1, 0.9);
+  }
+  10% {
+    transform: scale(0.9, 1.1) translateY(-0.5rem);
+  }
+  15% {
+    transform: scale(1);
+  }
 }
 
 
