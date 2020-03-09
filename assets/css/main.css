@@ -2130,7 +2130,7 @@ input, select, textarea {
 	.button {
 		background-color: transparent;
 		box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
-		color: #474d55;
+		color: #ffffff;
 	}
 
 		input[type="submit"]:hover,
@@ -4787,7 +4787,7 @@ input, select, textarea {
 	#footer {
 		background-color: #ffffff;
 		color: #c1c5cb;
-		padding-top: 1em;
+		/* padding-top: 1em; */
 		/* padding: 2rem 0 0 0 ; */
 		background: rgba(209,209,209,1);
 		background: -moz-linear-gradient(left, rgba(209,209,209,1) 0%, rgba(209,209,209,1) 4%, rgba(254,254,254,1) 34%, rgba(226,226,226,1) 100%);
@@ -4795,7 +4795,7 @@ input, select, textarea {
 		background: -o-linear-gradient(left, rgba(209,209,209,1) 0%, rgba(209,209,209,1) 4%, rgba(254,254,254,1) 34%, rgba(226,226,226,1) 100%);
 		background: -ms-linear-gradient(left, rgba(209,209,209,1) 0%, rgba(209,209,209,1) 4%, rgba(254,254,254,1) 34%, rgba(226,226,226,1) 100%);
 		background: linear-gradient(to right, rgba(209,209,209,1) 0%, rgba(209,209,209,1) 4%, rgba(254,254,254,1) 34%, rgba(226,226,226,1) 100%);
-		box-shadow: 0px 1px 15px rgb(44, 44, 44);
+
 		/* background-image: url("/assets/images/AdobeStock_71712811_Preview.jpeg");
 		background-repeat: no-repeat;
 		background-position: bottom;
@@ -5137,11 +5137,58 @@ input, select, textarea {
 				margin-bottom: 2.75rem;
 			}
 
-		#footer .copyright {
+			#footerGrid {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				margin-left: 6em;
+				margin-right: 6em;
+			}
+
+			.showroomHours {
+				font-size: 1.2rem;
+			}
+
+			#showroomPar {
+				margin: auto;
+				max-width: 55vw;
+				font-size: 1.2rem;
+				color: black;
+				font-weight: bold;
+				margin-bottom: 0.5em;
+			}
+
+			.phoneUs {
+				color: rgb(146, 198, 68);
+			}
+
+			.showroomTitle {
+				margin-bottom: 0.5em;
+				margin-top: 0.5em;
+			}
+
+			#footer1 {
+				grid-column: 1/2;
+				margin: 1em;
+			}
+
+			#footer2 {
+				grid-column: 2/3;
+				margin:1em;
+			}
+
+			#footer3 {
+				grid-column: 3/4;
+				margin: 1em;
+			}
+
+.copyright {
 			width: 100%;
 			text-align: center;
 			background-color: rgb(12, 87, 116);
 			padding-top: 1em;
+			padding-bottom: 1em;
+			z-index: 1000;
+
 	
 		}
 
@@ -5516,6 +5563,8 @@ input[type="number"] {
 	display: block;
 	margin: auto;
 	height: 9vh;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
 	
 }
 
@@ -5688,17 +5737,16 @@ input[type="number"] {
 	width: 36vw;
 }
 
-#showroomInfo h2, #mapPhone, #mapHours {
-	font-family: "kanit";
-}
 
-#showroomTitle {
+
+/* #showroomTitle {
 	transition: all .2s ease-in-out;
 }
 
 #showroomTitle:hover {
 	transform: scale(1.1);
-}
+} */
+
 
 
 
@@ -5709,11 +5757,23 @@ input[type="number"] {
 	
 	}
 
+	.showroomP {
+		color: #1e2022;
+		max-width: 55vw;
+		font-size: 1.1rem;
+		margin-top: -1em;
+		text-align: left;
+	}
+
 	.mapMarker {
-		width: 40px;
-		height: 40px;
+		width: 30px;
+		height: 30px;
 		display: block;
-		margin: 0.5em;
+	}
+
+.footershowroom {
+		justify-content: left;
+		margin-bottom: 0;
 	}
 
 	.titleIcon {
@@ -5747,8 +5807,8 @@ input[type="number"] {
 
 
 	.mapPhone {
-		font-size: 2rem;
-		margin-top: 1em;
+		font-size: 1.2rem;
+
 	}
 	
 	#map {
@@ -7420,7 +7480,39 @@ a {
 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 	text-align: left;
 	color: #ffffff;
-	height: 50px;
+	height: 55px;
+}
+
+.footerQuoteButton {
+	background-color: rgb(146, 198, 68);
+	border: 2px solid white;
+	-webkit-box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow:     1px 1px 3px rgba(0, 0, 0, 0.7);
+	box-shadow:         1px 1px 3px rgba(0, 0, 0, 0.7);
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+	text-align: center;
+	color: #ffffff;
+	padding: 0;
+	border-radius: 5px;
+
+}
+.footerContactButton {
+	background-color: rgb(12, 87, 116);
+	border: 2px solid white;
+	-webkit-box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow:     1px 1px 3px rgba(0, 0, 0, 0.7);
+	box-shadow:         1px 1px 3px rgba(0, 0, 0, 0.7);
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+	text-align: center;
+	color: #ffffff;
+	margin-left: 1em;
+	padding: 0;
+	border-radius: 5px;
+
+}
+
+#footerContactButton:hover {
+	background-color: rgba(12, 87, 116, 0.9);
 }
 
 .heroAboutButton {
@@ -7811,7 +7903,21 @@ li {
 	grid-template-columns: 1fr 1fr 1fr;
 	margin-bottom: 1em;
 	padding-top: 0;
-	background-color: transparent;
+	background: rgba(209,209,209,1);
+	background: -moz-linear-gradient(left, rgba(209,209,209,1) 0%, rgba(209,209,209,1) 4%, rgba(254,254,254,1) 34%, rgba(226,226,226,1) 100%);
+	background: -webkit-linear-gradient(left, rgba(209,209,209,1) 0%, rgba(209,209,209,1) 4%, rgba(254,254,254,1) 34%, rgba(226,226,226,1) 100%);
+	background: -o-linear-gradient(left, rgba(209,209,209,1) 0%, rgba(209,209,209,1) 4%, rgba(254,254,254,1) 34%, rgba(226,226,226,1) 100%);
+	background: -ms-linear-gradient(left, rgba(209,209,209,1) 0%, rgba(209,209,209,1) 4%, rgba(254,254,254,1) 34%, rgba(226,226,226,1) 100%);
+	background: linear-gradient(to right, rgba(209,209,209,1) 0%, rgba(209,209,209,1) 4%, rgba(254,254,254,1) 34%, rgba(226,226,226,1) 100%);
+}
+
+#galleryPage {
+	background: rgba(209,209,209,1);
+	background: -moz-linear-gradient(left, rgba(209,209,209,1) 0%, rgba(209,209,209,1) 4%, rgba(254,254,254,1) 34%, rgba(226,226,226,1) 100%);
+	background: -webkit-linear-gradient(left, rgba(209,209,209,1) 0%, rgba(209,209,209,1) 4%, rgba(254,254,254,1) 34%, rgba(226,226,226,1) 100%);
+	background: -o-linear-gradient(left, rgba(209,209,209,1) 0%, rgba(209,209,209,1) 4%, rgba(254,254,254,1) 34%, rgba(226,226,226,1) 100%);
+	background: -ms-linear-gradient(left, rgba(209,209,209,1) 0%, rgba(209,209,209,1) 4%, rgba(254,254,254,1) 34%, rgba(226,226,226,1) 100%);
+	background: linear-gradient(to right, rgba(209,209,209,1) 0%, rgba(209,209,209,1) 4%, rgba(254,254,254,1) 34%, rgba(226,226,226,1) 100%);
 }
 
 .OurWorkOverlay {
