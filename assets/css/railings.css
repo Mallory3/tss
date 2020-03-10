@@ -1,12 +1,13 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  color: #676767;
+
 }
+
+/* main {
+  background-color: white;
+} */
 h2 {
-  font-weight: 100;
   margin-bottom: 50px;
-  text-transform: lowercase;
   margin-top: 40px;
 }
 p {
@@ -29,25 +30,48 @@ p {
 .will-fadeIn {
   display: block;
   width: 100%;
-  max-width: 640px;
+  max-width: 80vw;
   margin: 20px auto;
-  height: 250px;
-  background-color: #b7f7f7;
+  height: 60vh;
   padding: 10px;
 }
-.will-fadeIn:nth-child(odd) {
-  background: #ffeded;
+.will-fadeIn:nth-child(1) {
+  background: rgba(84, 165, 166, 0.359);
+  z-index: 0;
 }
-.will-fadeIn:first-child {
-  height: auto;
-  background-color: #edffff;
+
+.will-fadeIn:nth-child(2) {
+  background-image: url("/assets/images/promotionImgLicensed.jpg");
+  background-position: center;
+  z-index: 1;
 }
+
+.will-fadeIn:nth-child(3) {
+  background-image: url("/assets/images/hero1Licensed.jpeg");
+  z-index: 1;
+}
+
+.will-fadeIn:nth-child(4) {
+  background: rgba(84, 165, 166, 0.59);
+  z-index: -1;
+}
+
+.will-fadeIn:nth-child(5) {
+  background: rgba(84, 165, 166, 0.759);
+  z-index: 0;
+}
+
+.will-fadeIn:nth-child(6) {
+  background-image: url("/assets/images/hero1Licensed.jpeg");
+  z-index: 1;
+}
+
 .fadeInRight {
-  -webkit-animation: fadeInRight .5s ease .4s both;
-  -moz-animation: fadeInRight .5s ease .4s both;
-  -ms-animation: fadeInRight .5s ease .4s both;
-  -o-animation: fadeInRight .5s ease .4s both;
-  animation: fadeInRight .5s ease .4s both;
+  -webkit-animation: fadeInRight 1s ease .9s both;
+  -moz-animation: fadeInRight 1s ease .9s both;
+  -ms-animation: fadeInRight 1s ease .9s both;
+  -o-animation: fadeInRight 1s ease .9s both;
+  animation: fadeInRight 1s ease .9s both;
 }
 @media (prefers-reduced-motion) {
   .fadeInRight .animated {
@@ -58,11 +82,11 @@ p {
  }
 }
 .fadeInLeft {
-  -webkit-animation: fadeInLeft .5s ease .4s both;
-  -moz-animation: fadeInLeft .5s ease .4s both;
-  -ms-animation: fadeInLeft .5s ease .4s both;
-  -o-animation: fadeInLeft .5s ease .4s both;
-  animation: fadeInLeft .5s ease .4s both;
+  -webkit-animation: fadeInLeft .7s ease .7s both;
+  -moz-animation: fadeInLeft .7s ease .7s both;
+  -ms-animation: fadeInLeft .7s ease .7s both;
+  -o-animation: fadeInLeft .7s ease .7s both;
+  animation: fadeInLeft .7s ease .7s both;
 }
 @media (prefers-reduced-motion) {
   .fadeInLeft .animated {
@@ -251,4 +275,10 @@ p {
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
  }
+}
+
+#railingGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 6em;
 }
