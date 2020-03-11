@@ -6,13 +6,23 @@ body {
 /* main {
   background-color: white;
 } */
-h2 {
-  margin-bottom: 50px;
-  margin-top: 40px;
+.will-fadeIn h2 {
+  display: block;
+ margin: 1em !important;
+ font-size: 2rem;
 }
 p {
-  font-size: 13px;
   margin: 15px auto;
+}
+
+#spindlesInfo {
+  margin-left: 4em;
+  margin-right: 4em;
+}
+
+.spindlesP {
+  margin: 1em;
+  font-size: 1.5rem;
 }
 .doing {
   transform: rotate(-35deg);
@@ -30,9 +40,9 @@ p {
 .will-fadeIn {
   display: block;
   width: 100%;
-  max-width: 80vw;
+  width: 40vw;
   margin: 20px auto;
-  height: 60vh;
+  height: 50vh;
   padding: 10px;
 }
 .will-fadeIn:nth-child(1) {
@@ -41,14 +51,19 @@ p {
 }
 
 .will-fadeIn:nth-child(2) {
-  background-image: url("/assets/images/promotionImgLicensed.jpg");
-  background-position: center;
+  background-image: url("/assets/images/ironSpindlesLicensed.jpeg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
   z-index: 1;
 }
 
 .will-fadeIn:nth-child(3) {
-  background-image: url("/assets/images/hero1Licensed.jpeg");
+  background-image: url("/assets/images/classicIronSpindlesLicensed.jpeg");
   z-index: 1;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .will-fadeIn:nth-child(4) {
@@ -62,16 +77,32 @@ p {
 }
 
 .will-fadeIn:nth-child(6) {
-  background-image: url("/assets/images/hero1Licensed.jpeg");
+  background-image: url("/assets/images/classicSpindlesLicensed.jpeg");
   z-index: 1;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.will-fadeIn:nth-child(7) {
+  background-image: url("/assets/images/woodspindles.jpeg");
+  z-index: 1;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.will-fadeIn:nth-child(8) {
+  background: rgba(84, 165, 166, 0.9);
+  z-index: 0;
 }
 
 .fadeInRight {
-  -webkit-animation: fadeInRight 1s ease .9s both;
-  -moz-animation: fadeInRight 1s ease .9s both;
-  -ms-animation: fadeInRight 1s ease .9s both;
-  -o-animation: fadeInRight 1s ease .9s both;
-  animation: fadeInRight 1s ease .9s both;
+  -webkit-animation: fadeInRight .6s ease .6s both;
+  -moz-animation: fadeInRight .6s ease .6s both;
+  -ms-animation: fadeInRight .6s ease .6s both;
+  -o-animation: fadeInRight .6s ease .6s both;
+  animation: fadeInRight .6s ease .6s both;
 }
 @media (prefers-reduced-motion) {
   .fadeInRight .animated {
@@ -82,11 +113,11 @@ p {
  }
 }
 .fadeInLeft {
-  -webkit-animation: fadeInLeft .7s ease .7s both;
-  -moz-animation: fadeInLeft .7s ease .7s both;
-  -ms-animation: fadeInLeft .7s ease .7s both;
-  -o-animation: fadeInLeft .7s ease .7s both;
-  animation: fadeInLeft .7s ease .7s both;
+  -webkit-animation: fadeInLeft .6s ease .6s both;
+  -moz-animation: fadeInLeft .6s ease .6s both;
+  -ms-animation: fadeInLeft .6s ease .6s both;
+  -o-animation: fadeInLeft .6s ease .6s both;
+  animation: fadeInLeft .6s ease .6s both;
 }
 @media (prefers-reduced-motion) {
   .fadeInLeft .animated {
@@ -281,4 +312,26 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 6em;
+}
+
+@media screen and (max-width: 980px) {
+  #railingGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1em;
+  }
+  .will-fadeIn {
+    display: block;
+    width: 100%;
+    width: 90vw;
+    margin: 20px auto;
+    height: 50vh;
+    padding: 10px;
+  }
+
+  #spindlesInfo {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
 }
