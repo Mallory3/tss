@@ -1,3 +1,8 @@
+$( document ).ready(function() {
+  $('.will-fadeIn').css("opacity", 0)
+});
+
+
 function Utils() {}
         Utils.prototype = {
             constructor: Utils,
