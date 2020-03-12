@@ -37,9 +37,11 @@ function addFadeIn(repeat) {
                         if(index % 2 == 0) $(this).addClass('fadeInRight');
                         else $(this).addClass('fadeInLeft');
                     }
-                } else if(repeat) {
-                    $(this).removeClass('fadeInRight');
-                    $(this).removeClass('fadeInLeft');
-                }
+                } 
+                // add to repeat fadeIn
+                // else if(repeat) {
+                //     $(this).removeClass('fadeInRight');
+                //     $(this).removeClass('fadeInLeft');
+                // }
             });
         }

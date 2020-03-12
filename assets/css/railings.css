@@ -7,12 +7,17 @@ body {
   background-color: white;
 } */
 .will-fadeIn h2 {
-  display: block;
+display: block;
  margin: 1em !important;
- font-size: 2rem;
+ font-size: 1.8rem;
+ margin-top: 3em !important;
+}
+
+.will-fadeIn:nth-child(3) h2 {
+  font-size: 1.5rem;
 }
 p {
-  margin: 15px auto;
+  margin: auto;
 }
 
 #spindlesInfo {
@@ -21,7 +26,7 @@ p {
 }
 
 .spindlesP {
-  margin-left: 1em;
+  margin-left: 1.2em;
   margin-right: 1em;
   font-size: 1.5rem;
   text-align: left;
@@ -61,24 +66,20 @@ p {
 }
 
 .will-fadeIn:nth-child(3) {
-  background-image: url("/assets/images/classicIronSpindlesLicensed.jpeg");
-  z-index: 1;
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.will-fadeIn:nth-child(4) {
-  background: rgba(84, 165, 166, 0.59);
-  z-index: -1;
-}
-
-.will-fadeIn:nth-child(5) {
-  background: rgba(84, 165, 166, 0.759);
+  background: rgba(84, 165, 166, 0.359);
   z-index: 0;
 }
 
-.will-fadeIn:nth-child(6) {
+.will-fadeIn:nth-child(4) {
+  background-image: url("/assets/images/spindleAnatomyLicensed.jpeg");
+  background-position: center;
+  background-size: contain;
+  background-color: white;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.will-fadeIn:nth-child(5) {
   background-image: url("/assets/images/classicSpindlesLicensed.jpeg");
   z-index: 1;
   background-position: bottom;
@@ -86,16 +87,46 @@ p {
   background-repeat: no-repeat;
 }
 
+.will-fadeIn:nth-child(6) {
+  background: rgba(84, 165, 166, 0.359);
+  z-index: -1;
+}
 
 .will-fadeIn:nth-child(7) {
+  background: rgba(84, 165, 166, 0.359);
+  z-index: 0;
+}
+
+.will-fadeIn:nth-child(8) {
+  background-image: url("/assets/images/glassRailingLicensed.jpeg");
+  z-index: 1;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.will-fadeIn:nth-child(9) {
+  background-image: url("/assets/images/classicIronSpindlesLicensed.jpeg");
+  z-index: 1;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.will-fadeIn:nth-child(10) {
+  background: rgba(84, 165, 166, 0.359);
+  z-index: 0;
+}
+
+
+.will-fadeIn:nth-child(12) {
   background-image: url("/assets/images/woodspindles.jpeg");
   z-index: 1;
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.will-fadeIn:nth-child(8) {
-  background: rgba(84, 165, 166, 0.9);
+.will-fadeIn:nth-child(11) {
+  background: rgba(84, 165, 166, 0.359);
   z-index: 0;
 }
 
@@ -336,4 +367,18 @@ p {
     margin-right: 2em;
   }
 
+  .will-fadeIn:nth-child(3) h2 {
+    font-size: 1.3rem;
+  }
+
+  .will-fadeIn h2 {
+     font-size: 1.6rem;
+     margin-top: 3.5em !important;
+    }
+
+}
+
+.light {
+  font-weight: 300;
+  font-size: 110%;
 }
